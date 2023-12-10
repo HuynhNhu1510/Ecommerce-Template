@@ -20,10 +20,12 @@
 **9. Forgot password**
 ![image](https://github.com/HuynhNhu1510/Ecommerce-Template/assets/103118620/96c07766-a02f-4960-8c97-efdf5f74e3eb)
 **10. ETC**
-![image](https://github.com/HuynhNhu1510/Ecommerce-Template/assets/103118620/22cd861f-c4bc-4852-93b4-9c142071456a)
-![image](https://github.com/HuynhNhu1510/Ecommerce-Template/assets/103118620/25296109-6e70-4dcb-8ecd-fef476020c33)
-![image](https://github.com/HuynhNhu1510/Ecommerce-Template/assets/103118620/827fb9bb-27ba-42d6-8d58-22cab6034d44)
-![image](https://github.com/HuynhNhu1510/Ecommerce-Template/assets/103118620/1ac6a682-3a9d-4e74-9247-66ad372a4883)
-![image](https://github.com/HuynhNhu1510/Ecommerce-Template/assets/103118620/fa3baa36-8fa6-4f32-8ebf-085fc7a91445)
+![image](https://github.com/HuynhNhu1510/Ecommerce-Template/assets/103118620/dbffd969-d31d-4c4c-9394-2e9b50f4bab0)
+![image](https://github.com/HuynhNhu1510/Ecommerce-Template/assets/103118620/9806ec15-7b2d-4cc7-af33-fd5e9a6df852)
+![image](https://github.com/HuynhNhu1510/Ecommerce-Template/assets/103118620/5d31b37f-18a2-4a9c-b1a9-c516b9316af8)
+![image](https://github.com/HuynhNhu1510/Ecommerce-Template/assets/103118620/d66e37bc-cf03-40e4-a3dc-4781098f5307)
+![image](https://github.com/HuynhNhu1510/Ecommerce-Template/assets/103118620/de0e3a34-bdb8-43d6-972c-58bdf2e4e5b9)
+![image](https://github.com/HuynhNhu1510/Ecommerce-Template/assets/103118620/38ecc762-689f-4e12-b8fd-71524e27baae)
+
 
 
