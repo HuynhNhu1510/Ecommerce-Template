@@ -1,0 +1,1993 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./images/svg/logo.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/bootstrap-icons%401.7.2/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="../unpkg.com/metismenujs%401.4.0/dist/metismenujs.min.css" />
+  <link rel="stylesheet" href="libraries/nice-select2/nice-select2.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Besnik. - My Account</title>
+</head>
+
+<body class="flex min-h-screen flex-col overflow-hidden bg-body font-poppins text-txt">
+  <header class="header-section relative z-30 shadow-custom-1">
+    <div class="hidden bg-secondary-color sm:flex">
+      <div class="container mx-auto grid h-full grid-cols-12 px-2 py-[6px] sm:px-8" style="background-color: #011638;">
+        <div class="col-span-8 self-center">
+          <div class="flex gap-[15px]">
+            <div class="flex items-center gap-2">
+              <i class="bi bi-envelope flex text-2xl text-primary-color"></i>
+              <a href="#" class="font-light text-white">Besnik.@example.com</a>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="bi bi-telephone flex text-xl text-primary-color"></i>
+              <a href="#" class="font-light text-white">0987-083-245</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-4 self-center justify-self-end">
+          <div class="flex items-center gap-[10px]">
+            <a href="#">
+              <i class="bi bi-instagram transition-all-300 flex text-icon hover:text-white"></i>
+            </a>
+            <a href="#">
+              <i class="bi bi-facebook transition-all-300 flex text-icon hover:text-white"></i>
+            </a>
+            <a href="#">
+              <i class="bi bi-twitter transition-all-300 flex text-icon hover:text-white"></i>
+            </a>
+            <a href="#">
+              <i class="bi bi-youtube transition-all-300 flex text-icon hover:text-white"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-secondary-color">
+      <div class="container mx-auto grid h-full grid-cols-4 gap-1 px-2 py-5 sm:px-8 lg:grid-cols-12 lg:gap-0"
+        style="background-color: #fff; color: #011638;">
+        <div class="order-1 col-span-2 self-center lg:order-1 lg:col-span-3">
+          <a href="index.html">
+            <img class="inline" src="images/svg/logo.svg" alt="Besnik." />
+          </a>
+        </div>
+        <div
+          class="header-search transition-all-300 order-3 col-span-4 mt-[10px] hidden self-center lg:order-2 lg:col-span-6 lg:mt-0 lg:block">
+          <form class="search" action="#">
+            <div class="flex h-[40px] overflow-hidden rounded-[50px] bg-primary-rgba">
+              <input
+                class="search w-full border-none bg-transparent py-[5px] pl-5 text-white placeholder-icon focus:border-none focus:ring-0 focus:ring-transparent"
+                type="search" placeholder="Search..." />
+              <button class="btn-search px-3 text-white" type="submit">
+                <i class="bi bi-search flex text-xl"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="order-2 col-span-2 flex gap-2 self-center justify-self-end lg:order-3 lg:col-span-3 xl:gap-5">
+          <div class="flex items-center lg:hidden">
+            <button class="btn-search-mob p-[5px] text-white">
+              <i class="bi bi-search pointer-events-none flex text-2xl"></i>
+            </button>
+          </div>
+          <div class="flex items-center lg:hidden">
+            <button class="btn-open-modal text-white" data-target=".menu-mob">
+              <i class="bi bi-list pointer-events-none flex text-3xl"></i>
+            </button>
+          </div>
+          <div class="group-items hidden items-center gap-5 text-white lg:flex">
+            <div class="relative">
+              <a class="btn-open-modal" data-target=".wishlist-modal" href="javascript:void(0)">
+                <i class="bi bi-heart pointer-events-none flex translate-y-1 transform text-[32px] text-white"
+                  style="color: #011638;"></i>
+              </a>
+              <span class="badge absolute top-0 right-[-6px] h-[15px] min-w-[15px] px-[2px]">0</span>
+            </div>
+            <div class="relative">
+              <a class="btn-open-modal" data-target=".shopping-cart-modal" href="javascript:void(0)">
+                <i class="bi bi-cart2 pointer-events-none flex text-[35px] text-white" style="color: #011638;"></i>
+              </a>
+              <span class="badge absolute top-0 right-[-6px] h-[15px] min-w-[15px] px-[2px]">0</span>
+            </div>
+          </div>
+          <div class="group relative hidden lg:flex">
+            <div class="flex cursor-pointer select-none items-center gap-1">
+              <span class="font-semibold text-white" style="color: #011638;">My account</span>
+              <i class="bi bi-caret-down-fill transition-all-300 flex rotate-0 text-sm text-white group-hover:rotate-180"
+                style="color: #011638;"></i>
+            </div>
+            <div
+              class="transition-all-300 invisible absolute top-full z-30 w-[120%] pt-[10px] opacity-0 group-hover:visible group-hover:opacity-100">
+              <div class="arrow relative">
+                <ul class="overflow-hidden rounded-md bg-white p-[6px] shadow-custom-1">
+                  <li class="hover:font-semibold">
+                    <a href="#" class="btn-open-modal" data-tab="0" data-target=".entry-modal">
+                      <div class="pointer-events-none flex items-center gap-2 p-1">
+                        <i class="bi bi-box-arrow-in-right flex text-xl text-primary-color" style="color: #011638;"></i>
+                        <span>Login</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="hover:font-semibold">
+                    <a href="#" class="btn-open-modal" data-tab="1" data-target=".entry-modal">
+                      <div class="pointer-events-none flex items-center gap-2 p-1">
+                        <i class="bi bi-person flex text-xl text-primary-color" style="color: #011638;"></i>
+                        <span>Sign up</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hidden bg-white lg:block">
+      <nav class="container mx-auto px-2 sm:px-8">
+        <ul class="menu flex flex-wrap items-center justify-between py-[10px] text-lg">
+          <li class="underlined-animated group relative">
+            <a href="#" class="btn-open flex items-center gap-1 font-semibold">
+              <span>Products</span>
+              <i
+                class="bi bi-caret-down-fill transition-all-300 flex rotate-0 text-xs text-primary-color group-hover:rotate-180"></i>
+            </a>
+            <div
+              class="submenu transition-all-300 invisible absolute left-0 pt-[10px] opacity-0 group-hover:visible group-hover:opacity-100">
+              <ul class="relative w-[250px] bg-white text-base shadow-custom-1">
+
+                <li class="group-1">
+                  <a href="#" class="flex items-center gap-2 p-2">
+                    <i class="bi bi-circle-fill group-1-hover-visible invisible flex text-[6px] text-primary-color"></i>
+                    <span class="group-1-hover-font">Ergonic Chair</span>
+                    <i
+                      class="bi bi-caret-right-fill group-1-hover-visible invisible ml-auto flex text-xs text-primary-color"></i>
+                  </a>
+                  <div
+                    class="submenu group-1-hover-visible transition-all-300 invisible absolute top-0 left-full min-h-full min-w-[680px] opacity-0">
+                    <div class="bg-white shadow-custom-2">
+                      <div class="border-b-2 border-primary-color py-[10px]">
+                        <span class="px-5 text-3xl font-bold uppercase text-primary-color">Ergonic Chair</span>
+                      </div>
+                      <div class="submenu-categories flex flex-wrap">
+                        <div class="group-2 p-[10px]">
+                          <a class="categorie-container inline-block" href="#">
+                            <div class="categorie-img h-[150px] w-[150px]">
+                              <img class="img-product group-2-hover-img"
+                                src="images/categories/pc_components/motherboards.jpg" alt="motherboard" />
+                            </div>
+                            <span class="group-2-hover-font block text-center">Keyboard</span>
+                          </a>
+                        </div>
+                        <div class="group-2 p-[10px]">
+                          <a class="categorie-container inline-block" href="#">
+                            <div class="categorie-img h-[150px] w-[150px]">
+                              <img class="img-product group-2-hover-img"
+                                src="images/categories/pc_components/processors.jpg" alt="processors" />
+                            </div>
+                            <span class="group-2-hover-font block text-center">Gaming Gear</span>
+                          </a>
+                        </div>
+                        <div class="group-2 p-[10px]">
+                          <a class="categorie-container inline-block" href="#">
+                            <div class="categorie-img h-[150px] w-[150px]">
+                              <img class="img-product group-2-hover-img" src="images/categories/pc_components/rams.jpg"
+                                alt="rams" />
+                            </div>
+                            <span class="group-2-hover-font block text-center">Smarthome</span>
+                          </a>
+                        </div>
+                        <div class="group-2 p-[10px]">
+                          <a class="categorie-container inline-block" href="#">
+                            <div class="categorie-img h-[150px] w-[150px]">
+                              <img class="img-product group-2-hover-img"
+                                src="images/categories/pc_components/video_cards.jpg" alt="video cards" />
+                            </div>
+                            <span class="group-2-hover-font block text-center">Computer Accessories</span>
+                          </a>
+                        </div>
+                        <div class="group-2 p-[10px]">
+                          <a class="categorie-container inline-block" href="#">
+                            <div class="categorie-img h-[150px] w-[150px]">
+                              <img class="img-product group-2-hover-img"
+                                src="images/categories/pc_components/power_supplys.jpg" alt="video cards" />
+                            </div>
+                            <span class="group-2-hover-font block object-contain text-center">Power Supplys</span>
+                          </a>
+                        </div>
+                        <div class="group-2 p-[10px]">
+                          <a class="categorie-container inline-block" href="#">
+                            <div class="categorie-img h-[150px] w-[150px]">
+                              <img class="img-product group-2-hover-img"
+                                src="images/categories/pc_components/hard_drives.jpg" alt="video cards" />
+                            </div>
+                            <span class="group-2-hover-font block text-center">Hard Drives</span>
+                          </a>
+                        </div>
+                        <div class="group-2 p-[10px]">
+                          <a class="categorie-container inline-block" href="#">
+                            <div class="categorie-img h-[150px] w-[150px]">
+                              <img class="img-product group-2-hover-img"
+                                src="images/categories/pc_components/ssd_disk.jpg" alt="video cards" />
+                            </div>
+                            <span class="group-2-hover-font block text-center">SSD Disk</span>
+                          </a>
+                        </div>
+                        <div class="group-2 p-[10px]">
+                          <a class="categorie-container inline-block" href="#">
+                            <div class="categorie-img h-[150px] w-[150px]">
+                              <img class="img-product group-2-hover-img"
+                                src="images/categories/pc_components/computer_case.jpg" alt="video cards" />
+                            </div>
+                            <span class="group-2-hover-font block text-center">Case</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="group-1">
+                  <a href="#" class="flex items-center gap-2 p-2">
+                    <i class="bi bi-circle-fill group-1-hover-visible invisible flex text-[6px] text-primary-color"></i>
+                    <span class="group-1-hover-font">Keyboard</span>
+                    <i
+                      class="bi bi-caret-right-fill group-1-hover-visible invisible ml-auto flex text-xs text-primary-color"></i>
+                  </a>
+                  <div
+                    class="submenu group-1-hover-visible transition-all-300 invisible absolute top-0 left-full min-h-full min-w-[680px] opacity-0">
+                    <div class="bg-white shadow-custom-2">
+                      <div class="border-b-2 border-primary-color py-[10px]">
+                        <span class="px-5 text-3xl font-bold uppercase text-primary-color">Keyboard</span>
+                      </div>
+                      <div class="submenu-categories flex flex-wrap">
+                        <div class="group-2 p-[10px]">
+                          <a class="categorie-container inline-block" href="#">
+                            <div class="categorie-img h-[150px] w-[150px]">
+                              <img class="img-product group-2-hover-img"
+                                src="images/categories/peripherals/keywords.jpg" alt="motherboard" />
+                            </div>
+                            <span class="group-2-hover-font block text-center">Keywords</span>
+                          </a>
+                        </div>
+                        <div class="group-2 p-[10px]">
+                          <a class="categorie-container inline-block" href="#">
+                            <div class="categorie-img h-[150px] w-[150px]">
+                              <img class="img-product group-2-hover-img" src="images/categories/peripherals/mouse.jpg"
+                                alt="processors" />
+                            </div>
+                            <span class="group-2-hover-font block text-center">Mouses</span>
+                          </a>
+                        </div>
+                        <div class="group-2 p-[10px]">
+                          <a class="categorie-container inline-block" href="#">
+                            <div class="categorie-img h-[150px] w-[150px]">
+                              <img class="img-product group-2-hover-img" src="images/categories/peripherals/mic.jpg"
+                                alt="rams" />
+                            </div>
+                            <span class="group-2-hover-font block text-center">Mics</span>
+                          </a>
+                        </div>
+                        <div class="group-2 p-[10px]">
+                          <a class="categorie-container inline-block" href="#">
+                            <div class="categorie-img h-[150px] w-[150px]">
+                              <img class="img-product group-2-hover-img" src="images/categories/peripherals/webcam.jpg"
+                                alt="rams" />
+                            </div>
+                            <span class="group-2-hover-font block text-center">Webcam</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="group-1">
+                  <a href="#" class="flex items-center gap-2 p-2">
+                    <i class="bi bi-circle-fill group-1-hover-visible invisible flex text-[6px] text-primary-color"></i>
+                    <span class="group-1-hover-font">Gaming Gear</span>
+                    <i
+                      class="bi bi-caret-right-fill group-1-hover-visible invisible ml-auto flex text-xs text-primary-color"></i>
+                  </a>
+                  <div
+                    class="submenu group-1-hover-visible transition-all-300 invisible absolute top-0 left-full min-h-full min-w-[680px] opacity-0">
+                    <div class="bg-white shadow-custom-2">
+                      <div class="border-b-2 border-primary-color py-[10px]">
+                        <span class="px-5 text-3xl font-bold uppercase text-primary-color">Gaming Gear</span>
+                      </div>
+                      <div class="submenu-categories flex flex-wrap">
+                        <div class="group-2 p-[10px]">
+                          <a class="categorie-container inline-block" href="#">
+                            <div class="categorie-img h-[150px] w-[150px]">
+                              <img class="img-product group-2-hover-img" src="images/categories/computers/desktops.jpg"
+                                alt="motherboard" />
+                            </div>
+                            <span class="group-2-hover-font block text-center">Desktops</span>
+                          </a>
+                        </div>
+                        <div class="group-2 p-[10px]">
+                          <a class="categorie-container inline-block" href="#">
+                            <div class="categorie-img h-[150px] w-[150px]">
+                              <img class="img-product group-2-hover-img" src="images/categories/computers/notebooks.jpg"
+                                alt="processors" />
+                            </div>
+                            <span class="group-2-hover-font block text-center">Notebooks</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="group-1">
+                  <a href="#" class="flex items-center gap-2 p-2">
+                    <i class="bi bi-circle-fill group-1-hover-visible invisible flex text-[6px] text-primary-color"></i>
+                    <span class="group-1-hover-font">Smarthome</span>
+                  </a>
+                </li>
+
+                <li class="group-1">
+                  <a href="#" class="flex items-center gap-2 p-2">
+                    <i class="bi bi-circle-fill group-1-hover-visible invisible flex text-[6px] text-primary-color"></i>
+                    <span class="group-1-hover-font">Computer Accessories</span>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </li>
+          <li class="underlined-animated">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="underlined-animated">
+            <a href="#">Smarthome</a>
+          </li>
+          <li class="underlined-animated">
+            <a href="#">Keyboard</a>
+          </li>
+          <li class="underlined-animated">
+            <a href="#">Computer Accessories</a>
+          </li>
+          <li class="underlined-animated group">
+            <a href="shop-mixed.html" class="flex items-center gap-1">
+              <span>Shop</span>
+              <i
+                class="bi bi-caret-down-fill transition-all-300 flex rotate-0 text-xs text-primary-color group-hover:rotate-180"></i>
+            </a>
+          </li>
+          <li class="underlined-animated group">
+            <a href="#" class="flex items-center gap-1">
+              <span>Pages</span>
+              <i
+                class="bi bi-caret-down-fill transition-all-300 flex rotate-0 text-xs text-primary-color group-hover:rotate-180"></i>
+            </a>
+            <div
+              class="transition-all-300 invisible absolute left-0 pt-[10px] opacity-0 group-hover:visible group-hover:opacity-100">
+              <ul class="relative w-[250px] bg-white text-base shadow-custom-1">
+                <li class="group-1">
+                  <a href="wishlist.html" class="flex items-center gap-2 p-2">
+                    <i class="bi bi-circle-fill group-1-hover-visible invisible flex text-[6px] text-primary-color"></i>
+                    <span class="group-1-hover-font">Wishlist</span>
+                  </a>
+                </li>
+                <li class="group-1">
+                  <a href="shopping-cart.html" class="flex items-center gap-2 p-2">
+                    <i class="bi bi-circle-fill group-1-hover-visible invisible flex text-[6px] text-primary-color"></i>
+                    <span class="group-1-hover-font">Shopping Cart</span>
+                  </a>
+                </li>
+                <li class="group-1">
+                  <a href="product-details.html" class="flex items-center gap-2 p-2">
+                    <i class="bi bi-circle-fill group-1-hover-visible invisible flex text-[6px] text-primary-color"></i>
+                    <span class="group-1-hover-font">Product Details</span>
+                  </a>
+                </li>
+                <li class="group-1">
+                  <a href="checkout.html" class="flex items-center gap-2 p-2">
+                    <i class="bi bi-circle-fill group-1-hover-visible invisible flex text-[6px] text-primary-color"></i>
+                    <span class="group-1-hover-font">Checkout</span>
+                  </a>
+                </li>
+                <li class="group-1">
+                  <a href="my-account.html" class="flex items-center gap-2 p-2">
+                    <i class="bi bi-circle-fill group-1-hover-visible invisible flex text-[6px] text-primary-color"></i>
+                    <span class="group-1-hover-font">My Account</span>
+                  </a>
+                </li>
+                <li class="group-1">
+                  <a href="login.html" class="flex items-center gap-2 p-2">
+                    <i class="bi bi-circle-fill group-1-hover-visible invisible flex text-[6px] text-primary-color"></i>
+                    <span class="group-1-hover-font">Login</span>
+                  </a>
+                </li>
+                <li class="group-1">
+                  <a href="sign-up.html" class="flex items-center gap-2 p-2">
+                    <i class="bi bi-circle-fill group-1-hover-visible invisible flex text-[6px] text-primary-color"></i>
+                    <span class="group-1-hover-font">Sign Up</span>
+                  </a>
+                </li>
+                <li class="group-1">
+                  <a href="forgot-password.html" class="flex items-center gap-2 p-2">
+                    <i class="bi bi-circle-fill group-1-hover-visible invisible flex text-[6px] text-primary-color"></i>
+                    <span class="group-1-hover-font">Forgot Password</span>
+                  </a>
+                </li>
+                <li class="group-1">
+                  <a href="error404.html" class="flex items-center gap-2 p-2">
+                    <i class="bi bi-circle-fill group-1-hover-visible invisible flex text-[6px] text-primary-color"></i>
+                    <span class="group-1-hover-font">Error 404</span>
+                  </a>
+                </li>
+                <li class="group-1">
+                  <a href="purchase-completed.html" class="flex items-center gap-2 p-2">
+                    <i class="bi bi-circle-fill group-1-hover-visible invisible flex text-[6px] text-primary-color"></i>
+                    <span class="group-1-hover-font">Purchase Completed</span>
+                  </a>
+                </li>
+                <li class="group-1">
+                  <a href="purchase-failed.html" class="flex items-center gap-2 p-2">
+                    <i class="bi bi-circle-fill group-1-hover-visible invisible flex text-[6px] text-primary-color"></i>
+                    <span class="group-1-hover-font">Purchase Failed</span>
+                  </a>
+                </li>
+                <li class="group-1">
+                  <a href="message-sent.html" class="flex items-center gap-2 p-2">
+                    <i class="bi bi-circle-fill group-1-hover-visible invisible flex text-[6px] text-primary-color"></i>
+                    <span class="group-1-hover-font">Message Sent</span>
+                  </a>
+                </li>
+                <li class="group-1">
+                  <a href="verification.html" class="flex items-center gap-2 p-2">
+                    <i class="bi bi-circle-fill group-1-hover-visible invisible flex text-[6px] text-primary-color"></i>
+                    <span class="group-1-hover-font">Verification</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="underlined-animated">
+            <a href="contact-us.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container mx-auto my-5 px-2 sm:px-8">
+    <div class="tabs-container grid grid-cols-12 gap-2">
+      <!-- <div class="col-span-12 lg:col-span-4">
+        <div class="flex flex-col items-center gap-5 rounded bg-white p-5">
+          <div class="flex flex-col items-center">
+            <div class="relative">
+              <div class="h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-md">
+                <img class="h-full w-full object-cover" src="images/comments/profile_1.png" alt="profile" />
+              </div>
+              <i
+                class="bi bi-camera-fill transition-all-300 absolute top-0 left-0 flex cursor-pointer rounded-full bg-slate-500 p-1 text-white shadow-md hover:bg-slate-400"></i>
+            </div>
+            <div class="mt-2 text-center">
+              <span class="block font-bold">John Doe</span>
+              <span class="text-slate-400">@JOHNDOE98</span>
+            </div>
+          </div>
+          <ul class="w-full text-sm">
+            <li class="btn-tabs tab-active-2 transition-all-300 active border-t hover:bg-gray-100">
+              <a class="flex items-center gap-2 px-1 py-2" href="javascript:void(0)">
+                <i class="bi bi-person flex text-3xl text-primary-color"></i>
+                <span>My Account</span>
+              </a>
+            </li>
+            <li class="btn-tabs tab-active-2 transition-all-300 border-t hover:bg-gray-100">
+              <a class="flex items-center gap-2 px-1 py-2" href="javascript:void(0)">
+                <i class="bi bi-house-door flex text-3xl text-primary-color"></i>
+                <span>My Address</span>
+              </a>
+            </li>
+            <li class="btn-tabs tab-active-2 transition-all-300 border-t hover:bg-gray-100">
+              <a class="flex items-center gap-2 px-1 py-2" href="javascript:void(0)">
+                <i class="bi bi-clipboard flex text-3xl text-primary-color"></i>
+                <span>My Order</span>
+              </a>
+            </li>
+            <li class="btn-tabs tab-active-2 transition-all-300 border-t hover:bg-gray-100">
+              <a class="flex items-center gap-2 px-1 py-2" href="javascript:void(0)">
+                <i class="bi bi-credit-card flex text-3xl text-primary-color"></i>
+                <span>Payment Methods</span>
+              </a>
+            </li>
+            <li class="btn-tabs tab-active-2 transition-all-300 border-t hover:bg-gray-100">
+              <a class="flex items-center px-1 py-2" href="javascript:void(0)">
+                <div class="flex items-center gap-2">
+                  <i class="bi bi-headset flex text-3xl text-primary-color"></i>
+                  <span>Support Tickets</span>
+                </div>
+                <span class="badge ml-auto h-[22px] min-w-[22px] px-[6px]">1</span>
+              </a>
+            </li>
+            <li class="transition-all-300 border-t hover:bg-gray-100">
+              <a class="flex items-center gap-2 px-1 py-2" href="javascript:void(0)">
+                <i class="bi bi-box-arrow-left flex text-3xl text-primary-color"></i>
+                <span>Log out</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div> -->
+
+      <div class="tabs-content col-span-12 lg:col-span-8">
+        <div class="tab-content active flex h-full flex-col gap-5 rounded bg-white p-5">
+          <span class="block text-xl font-bold">My Account</span>
+          <form class="grid grid-cols-12 gap-2" action="#">
+            <div class="col-span-12 xs:col-span-6">
+              <label class="flex flex-col text-sm">
+                First name
+                <input class="input h-10" type="text" placeholder="John" value="John" required />
+              </label>
+            </div>
+            <div class="col-span-12 xs:col-span-6">
+              <label class="flex flex-col text-sm">
+                Last name
+                <input class="input h-10" type="text" placeholder="Doe" value="Doe" required />
+              </label>
+            </div>
+            <div class="col-span-12 xs:col-span-6">
+              <label class="flex flex-col text-sm">
+                Telephone
+                <input class="input input-number h-10" type="number" placeholder="011234567890" value="011234567890"
+                  required />
+              </label>
+            </div>
+            <div class="col-span-12 xs:col-span-6">
+              <label class="flex flex-col text-sm">
+                D.N.I
+                <input class="input input-number h-10" type="number" placeholder="1234567890" value="1234567890"
+                  required />
+              </label>
+            </div>
+            <div class="col-span-12">
+              <label class="flex flex-col text-sm">
+                Email
+                <input class="input h-10" type="text" placeholder="johndoe@example.com" value="johndoe@example.com"
+                  required />
+              </label>
+            </div>
+            <div class="col-span-12">
+              <button class="btn-effect w-full rounded-lg bg-primary-color p-2 font-bold uppercase text-white"
+                type="submit">
+                <span class="text-center">Save Changes</span>
+              </button>
+            </div>
+          </form>
+          <div class="flex flex-col gap-2">
+            <a class="btn-open-modal transition-all-300 rounded-lg border bg-slate-100 p-2 hover:bg-slate-200"
+              href="javascript:void(0)" data-target=".change-password-modal">
+              <div class="pointer-events-none flex items-center justify-between gap-2">
+                <div>
+                  <i class="bi bi-lock-fill"></i>
+                  <span>Change Password</span>
+                </div>
+                <i class="bi bi-arrow-right-short flex text-2xl text-primary-color"></i>
+              </div>
+            </a>
+            <a class="btn-open-modal transition-all-300 rounded-lg border bg-slate-100 p-2 hover:bg-slate-200"
+              href="javascript:void(0)" data-target=".deactivate-account-modal">
+              <div class="pointer-events-none flex items-center justify-between gap-2">
+                <div>
+                  <i class="bi bi-person-x-fill"></i>
+                  <span>Deactivate Account</span>
+                </div>
+                <i class="bi bi-arrow-right-short flex text-2xl text-primary-color"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        <div class="tab-content flex h-full flex-col gap-5 rounded bg-white p-5">
+          <span class="block text-xl font-bold">My Address</span>
+          <ul class="flex flex-col gap-4">
+            <li class="relative">
+              <input class="peer sr-only" type="radio" value="" name="address" id="address-1" checked="" />
+              <label
+                class="flex w-full cursor-pointer flex-col gap-5 rounded-lg border border-gray-300 bg-white p-2 hover:bg-gray-50 focus:outline-none peer-checked:border-transparent peer-checked:ring-2 peer-checked:ring-primary-color"
+                for="address-1">
+                <span class="font-bold">John Doe</span>
+                <div class="text-sm">
+                  <span class="block">Olavarría, Buenos Aires</span>
+                  <span class="block">7400</span>
+                  <span class="block">Av. Colón 0101</span>
+                  <span class="block">(+01)1234567890</span>
+                </div>
+                <div class="flex items-center justify-end gap-4 text-slate-400">
+                  <div class="btn-open-modal tippy tippy-edit transition-all-300 hover:text-primary-color"
+                    data-target=".edit-address-modal">
+                    <i class="bi bi-pencil-fill pointer-events-none flex"></i>
+                  </div>
+                  <div class="btn-open-modal tippy tippy-remove transition-all-300 hover:text-primary-color"
+                    data-target=".delete-modal">
+                    <i class="bi bi-trash-fill pointer-events-none flex"></i>
+                  </div>
+                </div>
+              </label>
+            </li>
+            <li class="relative">
+              <input class="peer sr-only" type="radio" value="" name="address" id="address-2" />
+              <label
+                class="flex w-full cursor-pointer flex-col gap-5 rounded-lg border border-gray-300 bg-white p-2 hover:bg-gray-50 focus:outline-none peer-checked:border-transparent peer-checked:ring-2 peer-checked:ring-primary-color"
+                for="address-2">
+                <span class="font-bold">John Doe</span>
+                <div class="text-sm">
+                  <span class="block">Olavarría, Buenos Aires</span>
+                  <span class="block">7400</span>
+                  <span class="block">Av. Colón 0101</span>
+                  <span class="block">(+01)1234567890</span>
+                </div>
+                <div class="flex items-center justify-end gap-4 text-slate-400">
+                  <div class="btn-open-modal tippy tippy-edit transition-all-300 hover:text-primary-color"
+                    data-target=".edit-address-modal">
+                    <i class="bi bi-pencil-fill pointer-events-none flex"></i>
+                  </div>
+                  <div class="btn-open-modal tippy tippy-remove transition-all-300 hover:text-primary-color"
+                    data-target=".delete-modal">
+                    <i class="bi bi-trash-fill pointer-events-none flex"></i>
+                  </div>
+                </div>
+              </label>
+            </li>
+          </ul>
+          <button
+            class="btn-open-modal btn-effect w-full rounded-lg bg-primary-color p-2 font-bold uppercase text-white"
+            data-target=".add-address-modal">
+            <span class="pointer-events-none text-center">Add Address</span>
+          </button>
+        </div>
+        <div class="tab-content flex h-full flex-col gap-5 rounded bg-white p-5">
+          <span class="block text-xl font-bold">My Orders</span>
+          <div class="flex flex-wrap justify-between gap-5">
+            <form class="search" action="#">
+              <div class="flex h-[40px] overflow-hidden rounded-[50px] bg-gray-100">
+                <input
+                  class="search w-full border-none bg-transparent py-[5px] pl-5 text-slate-600 focus:border-none focus:ring-0 focus:ring-transparent"
+                  type="search" placeholder="Search..." />
+                <button class="btn-search px-3 text-slate-600" type="submit">
+                  <i class="bi bi-search flex text-xl"></i>
+                </button>
+              </div>
+            </form>
+            <ul class="order-mix flex flex-wrap">
+              <li class="control relative cursor-pointer rounded py-2 px-3" data-filter=".mix-main">
+                <span>All</span>
+              </li>
+              <li class="control relative flex cursor-pointer items-center gap-2 rounded py-2 px-3"
+                data-filter=".mix-processing">
+                <i class="bi bi-clock-history text-yellow-300"></i>
+                <span>Processing</span>
+              </li>
+              <li class="control relative flex cursor-pointer items-center gap-2 rounded py-2 px-3"
+                data-filter=".mix-completed">
+                <i class="bi bi-check-circle text-green-300"></i>
+                <span>Completed</span>
+              </li>
+              <li class="control relative flex cursor-pointer items-center gap-2 rounded py-2 px-3"
+                data-filter=".mix-cancelled">
+                <i class="bi bi-x-circle text-red-300"></i>
+                <span>Cancelled </span>
+              </li>
+            </ul>
+          </div>
+          <div class="mix-elements mix-all grid grid-cols-12">
+            <div class="mix mix-main mix-processing col-span-12">
+              <a class="btn-open-modal transition-all-300 relative block p-4 hover:bg-gray-100"
+                href="javascript:void(0)" data-target=".order-details-modal">
+                <div class="pointer-events-none flex flex-col gap-5 sm:flex-row">
+                  <div class="relative">
+                    <div class="h-[80px] w-[80px] min-w-[80px] overflow-hidden rounded-lg border bg-white">
+                      <img class="h-full w-full object-cover" src="images/product/prod-1.jpg" alt="product" />
+                    </div>
+                    <div
+                      class="absolute -top-2 -right-2 h-[30px] w-[30px] min-w-[30px] overflow-hidden rounded-lg border bg-white">
+                      <img class="h-full w-full object-cover" src="images/cards/mousepad.jpg" alt="product" />
+                    </div>
+                  </div>
+                  <div class="flex flex-col justify-between">
+                    <span class="clamp-2 break-all text-lg font-semibold">Ryzen 5 3600x
+                      <span>, Mousepad Hyperx Fury S Pro Speed </span>
+                    </span>
+                    <div class="my-1 flex items-center gap-1 text-xs">
+                      <i class="bi bi-clock flex"></i>
+                      <span>08/01/2022</span>
+                    </div>
+                    <div class="flex flex-col">
+                      <span class="text-xs font-light">Transaction. ID</span>
+                      <span class="text-sm font-semibold">#1998ARG</span>
+                    </div>
+                  </div>
+                  <div class="mt-auto flex flex-col sm:ml-auto">
+                    <span class="whitespace-nowrap text-xs font-light">Total Payment</span>
+                    <span class="text-sm font-semibold">$37.00</span>
+                  </div>
+                  <span class="absolute top-0 right-0 m-2 rounded-xl bg-yellow-200 py-px px-2 text-sm text-yellow-500">
+                    Processing
+                  </span>
+                </div>
+              </a>
+            </div>
+            <div class="mix mix-main mix-completed col-span-12">
+              <a class="btn-open-modal transition-all-300 relative block p-4 hover:bg-gray-100"
+                href="javascript:void(0)" data-target=".order-details-modal">
+                <div class="pointer-events-none flex flex-col gap-5 sm:flex-row">
+                  <div class="h-[80px] w-[80px] min-w-[80px] overflow-hidden rounded-lg border">
+                    <img class="h-full w-full object-cover" src="images/product/prod-1.jpg" alt="product" />
+                  </div>
+                  <div class="flex flex-col justify-between">
+                    <span class="clamp-2 break-all text-lg font-semibold">Ryzen 5 3600x</span>
+                    <div class="my-1 flex items-center gap-1 text-xs">
+                      <i class="bi bi-clock flex"></i>
+                      <span>08/01/2022</span>
+                    </div>
+                    <div class="flex flex-col">
+                      <span class="text-xs font-light">Transaction. ID</span>
+                      <span class="text-sm font-semibold">#1998ARG</span>
+                    </div>
+                  </div>
+                  <div class="mt-auto flex flex-col sm:ml-auto">
+                    <span class="whitespace-nowrap text-xs font-light">Total Payment</span>
+                    <span class="text-sm font-semibold">$37.00</span>
+                  </div>
+                  <span class="absolute top-0 right-0 m-2 rounded-xl bg-green-200 py-px px-2 text-sm text-green-500">
+                    Completed
+                  </span>
+                </div>
+              </a>
+            </div>
+            <div class="mix mix-main mix-cancelled col-span-12">
+              <a class="btn-open-modal transition-all-300 relative block p-4 hover:bg-gray-100"
+                href="javascript:void(0)" data-target=".order-details-modal">
+                <div class="pointer-events-none flex flex-col gap-5 sm:flex-row">
+                  <div class="h-[80px] w-[80px] min-w-[80px] overflow-hidden rounded-lg border">
+                    <img class="h-full w-full object-cover" src="images/product/prod-1.jpg" alt="product" />
+                  </div>
+                  <div class="flex flex-col justify-between">
+                    <span class="clamp-2 break-all text-lg font-semibold">Ryzen 5 3600x</span>
+                    <div class="my-1 flex items-center gap-1 text-xs">
+                      <i class="bi bi-clock flex"></i>
+                      <span>08/01/2022</span>
+                    </div>
+                    <div class="flex flex-col">
+                      <span class="text-xs font-light">Transaction. ID</span>
+                      <span class="text-sm font-semibold">#1998ARG</span>
+                    </div>
+                  </div>
+                  <div class="mt-auto flex flex-col sm:ml-auto">
+                    <span class="whitespace-nowrap text-xs font-light">Total Payment</span>
+                    <span class="text-sm font-semibold">$37.00</span>
+                  </div>
+                  <span class="absolute top-0 right-0 m-2 rounded-xl bg-red-200 py-px px-2 text-sm text-red-500">
+                    Cancelled
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <button class="transition-all-300 mx-auto rounded border bg-gray-100 py-2 px-3 hover:bg-gray-200">
+            Show More
+          </button>
+        </div>
+        <div class="tab-content flex h-full flex-col gap-5 rounded bg-white p-5">
+          <span class="block text-xl font-bold">Payment Methods</span>
+          <div class="flex flex-col gap-4">
+            <div class="transition-all-300 grid grid-cols-12 items-start gap-1 rounded-lg border p-2 hover:bg-gray-100">
+              <div class="col-span-6 sm:col-span-2">
+                <div class="flex flex-col">
+                  <span class="text-xs font-light">Card</span>
+                  <div class="h-10 w-10">
+                    <img class="h-full w-full object-contain" src="images/svg/visa-logo.svg" alt="visa" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-span-6 sm:col-span-3">
+                <div class="flex flex-col">
+                  <span class="text-xs font-light">Name</span>
+                  <span class="font-semibold">John Doe</span>
+                </div>
+              </div>
+              <div class="col-span-12 xs:col-span-6 sm:col-span-4">
+                <div class="flex flex-col">
+                  <span class="text-xs font-light">Card Number</span>
+                  <span>1234***********</span>
+                </div>
+              </div>
+              <div class="col-span-12 xs:col-span-6 sm:col-span-2">
+                <div class="flex flex-col">
+                  <span class="text-xs font-light">Expire Date</span>
+                  <span>09/29</span>
+                </div>
+              </div>
+              <div class="col-span-12 self-center sm:col-span-1">
+                <div class="btn-open-modal flex text-primary-color hover:text-primary-hover sm:hidden"
+                  data-target=".delete-modal">
+                  Remove
+                </div>
+                <div
+                  class="btn-open-modal tippy tippy-remove transition-all-300 hidden cursor-pointer text-slate-400 hover:text-primary-color sm:inline"
+                  data-target=".delete-modal">
+                  <i class="bi bi-trash-fill pointer-events-none inline text-xl"></i>
+                </div>
+              </div>
+            </div>
+            <div class="transition-all-300 grid grid-cols-12 items-start gap-1 rounded-lg border p-2 hover:bg-gray-100">
+              <div class="col-span-6 sm:col-span-2">
+                <div class="flex flex-col">
+                  <span class="text-xs font-light">Card</span>
+                  <div class="h-10 w-10">
+                    <img class="h-full w-full object-contain" src="images/svg/mastercard-logo.svg" alt="visa" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-span-6 sm:col-span-3">
+                <div class="flex flex-col">
+                  <span class="text-xs font-light">Name</span>
+                  <span class="font-semibold">John Doe</span>
+                </div>
+              </div>
+              <div class="col-span-12 xs:col-span-6 sm:col-span-4">
+                <div class="flex flex-col">
+                  <span class="text-xs font-light">Card Number</span>
+                  <span>1234***********</span>
+                </div>
+              </div>
+              <div class="col-span-12 xs:col-span-6 sm:col-span-2">
+                <div class="flex flex-col">
+                  <span class="text-xs font-light">Expire Date</span>
+                  <span>09/29</span>
+                </div>
+              </div>
+              <div class="col-span-12 self-center sm:col-span-1">
+                <div class="btn-open-modal flex text-primary-color hover:text-primary-hover sm:hidden"
+                  data-target=".delete-modal">
+                  Remove
+                </div>
+                <div
+                  class="btn-open-modal tippy tippy-remove transition-all-300 hidden cursor-pointer text-slate-400 hover:text-primary-color sm:inline"
+                  data-target=".delete-modal">
+                  <i class="bi bi-trash-fill pointer-events-none inline text-xl"></i>
+                </div>
+              </div>
+            </div>
+            <button
+              class="btn-open-modal btn-effect w-full rounded-lg bg-primary-color p-2 font-bold uppercase text-white"
+              data-target=".add-payment-modal">
+              <span class="pointer-events-none text-center">Add Payment</span>
+            </button>
+          </div>
+        </div>
+        <div class="tab-content flex h-full flex-col gap-5 rounded bg-white p-5">
+          <span class="block text-xl font-bold">Support Tickets</span>
+          <div class="flex flex-col gap-4">
+            <a class="btn-open-modal transition-all-300 rounded-lg border p-2 hover:bg-gray-100"
+              href="javascript:void(0)" data-target=".ticket-details-modal">
+              <div class="pointer-events-none grid grid-cols-12 items-start gap-2">
+                <div class="col-span-12 sm:col-span-3">
+                  <div class="flex flex-col">
+                    <span class="text-xs font-light">Ticket. ID</span>
+                    <span class="font-semibold">#1196SD2F</span>
+                  </div>
+                </div>
+                <div class="col-span-12 sm:col-span-3">
+                  <div class="flex flex-col">
+                    <span class="text-xs font-light">Date</span>
+                    <span>08/01/2022</span>
+                  </div>
+                </div>
+                <div class="col-span-12 sm:col-span-4">
+                  <div class="flex flex-col">
+                    <span class="text-xs font-light">Subject</span>
+                    <p class="clamp">There is a problem with the product.</p>
+                  </div>
+                </div>
+                <div class="col-span-12 sm:col-span-2 sm:justify-self-end">
+                  <div class="flex flex-col">
+                    <span class="text-xs font-light">Status</span>
+                    <span class="w-min rounded-xl bg-green-200 py-px px-2 text-sm text-green-500">
+                      Open
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="btn-open-modal transition-all-300 rounded-lg border p-2 hover:bg-gray-100"
+              href="javascript:void(0)" data-target=".ticket-details-modal">
+              <div class="pointer-events-none grid grid-cols-12 items-start gap-2">
+                <div class="col-span-12 sm:col-span-3">
+                  <div class="flex flex-col">
+                    <span class="text-xs font-light">Ticket. ID</span>
+                    <span class="font-semibold">#1196SD2F</span>
+                  </div>
+                </div>
+                <div class="col-span-12 sm:col-span-3">
+                  <div class="flex flex-col">
+                    <span class="text-xs font-light">Date</span>
+                    <span>08/01/2022</span>
+                  </div>
+                </div>
+                <div class="col-span-12 sm:col-span-4">
+                  <div class="flex flex-col">
+                    <span class="text-xs font-light">Subject</span>
+                    <p class="clamp">There is a problem with the product.</p>
+                  </div>
+                </div>
+                <div class="col-span-12 sm:col-span-2 sm:justify-self-end">
+                  <div class="flex flex-col">
+                    <span class="text-xs font-light">Status</span>
+                    <span class="w-min rounded-xl bg-red-200 py-px px-2 text-sm text-red-500">
+                      Close
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <button
+              class="btn-open-modal btn-effect w-full rounded-lg bg-primary-color p-2 font-bold uppercase text-white"
+              data-target=".new-ticket-modal">
+              <span class="pointer-events-none text-center">New Ticket</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modals -->
+  <div class="menu-mob modal transition-all-300 invisible fixed inset-0 z-50 h-full w-full bg-overlay opacity-0">
+    <div class="flex h-full w-full">
+      <div
+        class="modal-content transition-all-300 relative left-[-999px] mr-auto flex h-full w-[288px] min-w-[250px] flex-col bg-white">
+        <div class="w-full bg-secondary-color">
+          <button class="btn-close-modal transition-all-300 absolute top-5 right-5 p-[3px] text-white">
+            <i class="bi bi-x-lg text-stroke-medium pointer-events-none flex text-xl"></i>
+          </button>
+          <div class="py-12">
+            <img src="images/logo.png" class="mx-auto h-[40px]" alt="logo" />
+          </div>
+        </div>
+        <nav class="h-full w-full overflow-auto bg-white">
+          <ul class="metismenu">
+            <li class="border-b border-gray-200">
+              <a class="flex select-none items-center p-2" href="index.html">
+                <i class="bi bi-house-door mr-3 flex text-xl text-primary-color"></i>
+                <span class="font-semibold">Home</span>
+              </a>
+            </li>
+            <li class="border-b border-gray-200">
+              <div class="btn-open-modal cursor-pointer p-2" data-target=".wishlist-modal">
+                <div class="pointer-events-none flex cursor-pointer select-none items-center">
+                  <i class="bi bi-heart mr-3 flex text-xl text-primary-color"></i>
+                  <span class="font-semibold">Wishlist</span>
+                  <span class="badge ml-auto h-[22px] min-w-[22px] px-[6px]">0</span>
+                </div>
+              </div>
+            </li>
+            <li class="border-b border-gray-200">
+              <div class="btn-open-modal cursor-pointer p-2" data-target=".shopping-cart-modal">
+                <div class="pointer-events-none flex cursor-pointer select-none items-center">
+                  <i class="bi bi-cart mr-3 flex text-xl text-primary-color"></i>
+                  <span class="font-semibold">Shopping Cart</span>
+                  <span class="badge ml-auto h-[22px] min-w-[22px] px-[6px]">0</span>
+                </div>
+              </div>
+            </li>
+            <li class="border-b border-gray-200">
+              <div class="metismenu-btn has-arrow flex cursor-pointer select-none items-center p-2"
+                aria-expanded="false" role="menu">
+                <i class="bi bi-motherboard mr-3 flex text-xl text-primary-color"></i>
+                <span class="font-semibold">Hardware</span>
+              </div>
+              <div class="metismenu-content">
+                <a class="btn-open-modal ml-10 block p-1" href="#">Motherboards</a>
+                <a class="btn-open-modal ml-10 block p-1" href="#">Processors</a>
+                <a class="btn-open-modal ml-10 block p-1" href="#">Rams</a>
+                <a class="btn-open-modal ml-10 block p-1" href="#">Video Cards</a>
+                <a class="btn-open-modal ml-10 block p-1" href="#">Power Supplys</a>
+                <a class="btn-open-modal ml-10 block p-1" href="#">Hard Drives</a>
+                <a class="btn-open-modal ml-10 block p-1" href="#">SSD Disk</a>
+              </div>
+            </li>
+            <li class="border-b border-gray-200">
+              <div class="metismenu-btn has-arrow flex cursor-pointer select-none items-center p-2"
+                aria-expanded="false" role="menu">
+                <i class="bi bi-mouse mr-3 flex text-xl text-primary-color"></i>
+                <span class="font-semibold">Peripherals</span>
+              </div>
+              <div class="metismenu-content">
+                <a class="btn-open-modal ml-10 block p-1" href="#">Keywords</a>
+                <a class="btn-open-modal ml-10 block p-1" href="#">Mouses</a>
+                <a class="btn-open-modal ml-10 block p-1" href="#">Mics</a>
+                <a class="btn-open-modal ml-10 block p-1" href="#">Webcam</a>
+              </div>
+            </li>
+            <li class="border-b border-gray-200">
+              <div class="metismenu-btn has-arrow flex cursor-pointer select-none items-center p-2"
+                aria-expanded="false" role="menu">
+                <i class="bi bi-pc-display mr-3 flex text-xl text-primary-color"></i>
+                <span class="font-semibold">Computers</span>
+              </div>
+              <div class="metismenu-content">
+                <a class="btn-open-modal ml-10 block p-1" href="#">Notebooks</a>
+                <a class="btn-open-modal ml-10 block p-1" href="#">Desktops</a>
+              </div>
+            </li>
+            <li class="border-b border-gray-200">
+              <a class="flex cursor-pointer select-none items-center p-2" href="#">
+                <i class="bi bi-tv mr-3 flex text-xl text-primary-color"></i>
+                <span class="font-semibold">Monitors</span>
+              </a>
+            </li>
+            <li class="border-b border-gray-200">
+              <a class="flex cursor-pointer select-none items-center p-2" href="#">
+                <i class="bi bi-printer mr-3 flex text-xl text-primary-color"></i>
+                <span class="font-semibold">Printers</span>
+              </a>
+            </li>
+            <li class="border-b border-gray-200">
+              <a class="flex cursor-pointer select-none items-center p-2" href="#">
+                <i class="bi bi-phone mr-3 flex text-xl text-primary-color"></i>
+                <span class="font-semibold">Smartphones</span>
+              </a>
+            </li>
+            <li class="border-b border-gray-200">
+              <a class="flex select-none items-center p-2" href="contact-us.html">
+                <i class="bi bi-telephone mr-3 flex text-xl text-primary-color"></i>
+                <span class="font-semibold">Contact Us</span>
+              </a>
+            </li>
+            <li class="border-b border-gray-200">
+              <div class="metismenu-btn has-arrow flex cursor-pointer select-none items-center p-2"
+                aria-expanded="false" role="menu">
+                <span class="font-semibold">Pages</span>
+              </div>
+              <div class="metismenu-content">
+                <a class="btn-open-modal ml-10 block p-1" href="wishlist.html">Wishlist</a>
+                <a class="btn-open-modal ml-10 block p-1" href="shopping-cart.html">Shopping Cart</a>
+                <a class="btn-open-modal ml-10 block p-1" href="product-details.html">Product Details</a>
+                <a class="btn-open-modal ml-10 block p-1" href="checkout.html">Checkout</a>
+                <a class="btn-open-modal ml-10 block p-1" href="shop-mixed.html">Shop - Mixed</a>
+                
+                <a class="btn-open-modal ml-10 block p-1" href="about-us.html">About Us</a>
+                <a class="btn-open-modal ml-10 block p-1" href="my-account.html">My Account</a>
+                <a class="btn-open-modal ml-10 block p-1" href="forgot-password.html">Forgot Password</a>
+                <a class="btn-open-modal ml-10 block p-1" href="login.html">Login</a>
+                <a class="btn-open-modal ml-10 block p-1" href="sign-up.html">Sign Up</a>
+                <a class="btn-open-modal ml-10 block p-1" href="verification.html">Verification</a>
+                
+                <a class="btn-open-modal ml-10 block p-1" href="error404.html">Error 404</a>
+                <a class="btn-open-modal ml-10 block p-1" href="message-sent.html">Message Sent</a>
+                <a class="btn-open-modal ml-10 block p-1" href="purchase-completed.html">Purchase Completed</a>
+                <a class="btn-open-modal ml-10 block p-1" href="purchase-failed.html">Purchase Failed</a>
+                
+              </div>
+            </li>
+            <li class="border-b border-gray-200">
+              <a class="flex select-none items-center p-2" href="#">
+                <i class="bi bi-box-arrow-left mr-3 flex text-xl text-primary-color"></i>
+                <span class="font-semibold">Log out</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="shopping-cart-modal modal transition-all-300 invisible fixed inset-0 z-50 h-full w-full bg-overlay opacity-0">
+    <div class="flex h-full w-full">
+      <div
+        class="modal-content transition-all-300 relative right-[-999px] ml-auto flex h-full w-[400px] min-w-[250px] flex-col bg-white">
+        <div class="w-full">
+          <div class="border-b-2 border-gray-200 p-5">
+            <h3 class="text-xl font-bold uppercase">Shopping Cart</h3>
+          </div>
+          <button class="btn-close-modal transition-all-300 absolute top-5 right-5 p-[3px] hover:text-slate-400">
+            <i class="bi bi-x-lg text-stroke-medium pointer-events-none flex text-xl"></i>
+          </button>
+        </div>
+        <div class="h-full overflow-auto">
+          <!-- If the shopping cart is empty (replace hidden with flex) -->
+          <div class="hidden flex-col items-center justify-center gap-4 p-5">
+            <i class="bi bi-cart-x text-8xl text-gray-200"></i>
+            <p class="font-semibold">There are no products in the cart.</p>
+            <a class="btn-effect transition-all-300 flex items-center justify-center gap-2 rounded-lg bg-primary-color p-2"
+              href="#">
+              <span class="font-bold uppercase text-white">Go to the store</span>
+            </a>
+          </div>
+          <!-- -->
+          <a class="transition-all-300 flex h-[100px] w-full items-center justify-between gap-5 bg-white p-2 hover:bg-gray-100"
+            href="#">
+            <div class="h-[80px] w-[80px] min-w-[80px] overflow-hidden rounded-lg border">
+              <img class="h-full w-full object-cover" src="images/product/prod-1.jpg" alt="product" />
+            </div>
+            <div class="flex w-full flex-col">
+              <h6 class="clamp-2 break-all text-lg font-semibold">
+                Ryzen 5 3600x
+              </h6>
+              <div class="flex gap-2">
+                <div class="flex gap-1 leading-7 text-gray-400">
+                  <span>1</span>
+                  <span>X</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="font-bold text-primary-color">$37.00</span>
+                  <small class="text-xs text-primary-color line-through">$50.00</small>
+                </div>
+              </div>
+            </div>
+            <div class="transition-all-300 flex text-slate-400 hover:text-primary-color">
+              <i class="bi bi-trash-fill pointer-events-none text-2xl"></i>
+            </div>
+          </a>
+        </div>
+        <div class="mt-auto border-t-2 border-gray-200 bg-white px-1 pt-5 xs:px-5">
+          <div class="flex justify-between">
+            <span class="text-lg uppercase">Subtotal:</span>
+            <span class="text-lg font-semibold text-primary-color">$37.00</span>
+          </div>
+          <a class="btn-effect transition-all-300 my-5 flex w-full items-center justify-center rounded-lg bg-primary-color p-2"
+            href="shopping-cart.html">
+            <span class="font-bold uppercase text-white">View Shopping Cart</span>
+          </a>
+          <a class="btn-effect transition-all-300 my-5 flex w-full items-center justify-center rounded-lg bg-primary-color p-2"
+            href="checkout.html">
+            <span class="font-bold uppercase text-white">Checkout now</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wishlist-modal modal transition-all-300 invisible fixed inset-0 z-50 h-full w-full bg-overlay opacity-0">
+    <div class="flex h-full w-full">
+      <div
+        class="modal-content transition-all-300 relative right-[-999px] ml-auto flex h-full w-[400px] min-w-[250px] flex-col bg-white">
+        <div class="w-full">
+          <div class="border-b-2 border-gray-200 p-5">
+            <h3 class="text-xl font-bold uppercase">Wishlist</h3>
+          </div>
+          <button class="btn-close-modal transition-all-300 absolute top-5 right-5 p-[3px] hover:text-slate-400">
+            <i class="bi bi-x-lg text-stroke-medium pointer-events-none flex text-xl"></i>
+          </button>
+        </div>
+        <div class="h-full overflow-auto">
+          <!-- If the wishlist is empty (replace hidden with flex) -->
+          <div class="hidden flex-col items-center justify-center gap-4 p-5">
+            <i class="bi bi-heart text-8xl text-gray-200"></i>
+            <p class="font-semibold">
+              There are no products in the wishlist.
+            </p>
+            <a class="btn-effect transition-all-300 flex items-center justify-center gap-2 rounded-lg bg-primary-color p-2"
+              href="#">
+              <span class="font-bold uppercase text-white">Go to the store</span>
+            </a>
+          </div>
+          <a class="transition-all-300 flex h-[100px] w-full items-center justify-between gap-5 bg-white p-2 hover:bg-gray-100"
+            href="#">
+            <div class="h-[80px] w-[80px] min-w-[80px] overflow-hidden rounded-lg border">
+              <img class="h-full w-full object-cover" src="images/product/prod-1.jpg" alt="product" />
+            </div>
+
+            <div class="flex w-full flex-col">
+              <h6 class="clamp-2 break-all text-lg font-semibold">
+                Ryzen 5 3600x
+              </h6>
+              <div class="flex items-center gap-2">
+                <span class="font-bold text-primary-color">$37.00</span>
+                <small class="text-xs text-primary-color line-through">$50.00</small>
+              </div>
+            </div>
+
+            <div class="transition-all-300 flex text-slate-400 hover:text-primary-color">
+              <i class="bi bi-trash-fill pointer-events-none text-2xl"></i>
+            </div>
+          </a>
+        </div>
+        <div class="mt-auto border-t-2 border-gray-200 bg-white px-1 xs:px-5">
+          <a class="btn-effect transition-all-300 my-5 flex w-full items-center justify-center rounded-lg bg-primary-color p-2"
+            href="wishlist.html">
+            <span class="font-bold uppercase text-white">View Wishlist</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="change-password-modal modal transition-all-300 invisible fixed inset-0 z-50 flex h-full w-full flex-col items-center justify-start overflow-auto bg-overlay opacity-0">
+    <div class="my-10 flex w-full justify-center">
+      <div
+        class="modal-content transition-all-300 relative mx-3 w-[500px] min-w-[250px] scale-0 rounded-lg bg-white px-3 pb-3 pt-7 xs:px-5 xs:pb-5 md:m-5">
+        <button
+          class="btn-close-modal btn-reset-progressbar transition-all-300 absolute top-0 right-0 p-2 sm:top-[-10px] sm:right-[-10px] sm:rounded-lg sm:bg-primary-color sm:text-white sm:hover:bg-primary-hover"
+          data-target=".step-password">
+          <i class="bi bi-x-lg text-stroke-medium pointer-events-none flex"></i>
+        </button>
+        <span class="mb-5 block text-xl font-bold">Change Password</span>
+        <form class="step-container step-password" action="javascript:void(0)">
+          <div class="progressbar-container mb-4 flex flex-row items-center justify-between gap-2">
+            <div class="step-number">
+              <div
+                class="transition-all-300 active flex h-10 w-10 items-center justify-center rounded-full bg-gray-200 text-current">
+                <span class="text-lg font-bold">1</span>
+              </div>
+            </div>
+            <div class="progressbar relative h-2 w-full overflow-hidden rounded-full bg-gray-200">
+              <div class="transition-all-300 absolute h-full w-0 rounded-full bg-primary-color"></div>
+            </div>
+            <div class="step-number">
+              <div
+                class="transition-all-300 flex h-10 w-10 items-center justify-center rounded-full bg-gray-200 text-current">
+                <span class="text-lg font-bold">2</span>
+              </div>
+            </div>
+            <div class="progressbar relative h-2 w-full overflow-hidden rounded-full bg-gray-200">
+              <div class="transition-all-300 absolute h-full w-0 rounded-full bg-primary-color"></div>
+            </div>
+            <div class="step-number">
+              <div
+                class="transition-all-300 flex h-10 w-10 items-center justify-center rounded-full bg-gray-200 text-current">
+                <span class="text-lg font-bold">3</span>
+              </div>
+            </div>
+          </div>
+          <div class="step-content active hidden flex-col gap-2">
+            <label class="flex flex-col">
+              <span class="text-sm">Current Password</span>
+              <input class="input" type="password" />
+            </label>
+            <a class="btn-next-step btn-effect ml-auto w-max rounded-lg bg-primary-color p-2 px-3 font-bold uppercase text-white"
+              href="javascript:void(0)">
+              <span class="text-center">Next</span>
+            </a>
+          </div>
+          <div class="step-content hidden flex-col gap-2">
+            <label class="flex flex-col">
+              <span class="text-sm">New Password</span>
+              <input class="input" type="password" />
+            </label>
+            <label class="flex flex-col">
+              <span class="text-sm">Confirm Password</span>
+              <input class="input" type="password" />
+            </label>
+            <div class="flex justify-between">
+              <a class="btn-prev-step btn-effect rounded-lg bg-primary-color p-2 px-3 font-bold uppercase text-white"
+                href="javascript:void(0)">
+                <span class="text-center">Previous</span>
+              </a>
+              <button
+                class="btn-next-step btn-effect rounded-lg bg-primary-color p-2 px-3 font-bold uppercase text-white"
+                type="submit">
+                <span class="text-center">Complete</span>
+              </button>
+            </div>
+          </div>
+          <div class="step-content hidden flex-col gap-2">
+            <div class="flex flex-col items-center gap-2 text-center">
+              <div class="max-h-[200px] max-w-[200px]">
+                <img class="h-full w-full" src="images/svg/password-successfull.svg" alt="password-successfull" />
+              </div>
+              <h1 class="text-2xl uppercase text-primary-color">
+                Password Changed Successfully
+              </h1>
+              <p>
+                Your password has been changed successfully, you can now log
+                in again with your new password.
+              </p>
+            </div>
+            <a class="btn-close-modal btn-reset-progressbar btn-effect ml-auto w-max rounded-lg bg-primary-color p-2 px-3 font-bold uppercase text-white"
+              href="javascript:void(0)" data-target=".step-password">
+              <span class="text-center">Close</span>
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="deactivate-account-modal modal transition-all-300 invisible fixed inset-0 z-50 flex h-full w-full flex-col items-center justify-start overflow-auto bg-overlay opacity-0">
+    <div class="my-10 flex w-full justify-center">
+      <div
+        class="modal-content transition-all-300 relative mx-3 w-[500px] min-w-[250px] scale-0 rounded-lg bg-white px-3 pb-3 pt-7 xs:px-5 xs:pb-5 md:m-5">
+        <button
+          class="btn-close-modal btn-reset-progressbar transition-all-300 absolute top-0 right-0 p-2 sm:top-[-10px] sm:right-[-10px] sm:rounded-lg sm:bg-primary-color sm:text-white sm:hover:bg-primary-hover"
+          data-target=".step-deactivate">
+          <i class="bi bi-x-lg text-stroke-medium pointer-events-none flex"></i>
+        </button>
+        <span class="mb-5 block text-xl font-bold">Deactivate Account</span>
+        <form class="step-container step-deactivate" action="javascript:void(0)">
+          <div class="progressbar-container mb-4 flex flex-row items-center justify-between gap-2">
+            <div class="step-number">
+              <div
+                class="transition-all-300 active flex h-10 w-10 items-center justify-center rounded-full bg-gray-200 text-current">
+                <span class="text-lg font-bold">1</span>
+              </div>
+            </div>
+            <div class="progressbar relative h-2 w-full overflow-hidden rounded-full bg-gray-200">
+              <div class="transition-all-300 absolute h-full w-0 rounded-full bg-primary-color"></div>
+            </div>
+            <div class="step-number">
+              <div
+                class="transition-all-300 flex h-10 w-10 items-center justify-center rounded-full bg-gray-200 text-current">
+                <span class="text-lg font-bold">2</span>
+              </div>
+            </div>
+            <div class="progressbar relative h-2 w-full overflow-hidden rounded-full bg-gray-200">
+              <div class="transition-all-300 absolute h-full w-0 rounded-full bg-primary-color"></div>
+            </div>
+            <div class="step-number">
+              <div
+                class="transition-all-300 flex h-10 w-10 items-center justify-center rounded-full bg-gray-200 text-current">
+                <span class="text-lg font-bold">3</span>
+              </div>
+            </div>
+          </div>
+          <div class="step-content active hidden flex-col gap-2">
+            <label class="flex flex-col">
+              <span class="text-sm">Confirm Password</span>
+              <input class="input" type="password" />
+            </label>
+            <a class="btn-next-step btn-effect ml-auto w-max rounded-lg bg-primary-color p-2 px-3 font-bold uppercase text-white"
+              href="javascript:void(0)">
+              <span class="text-center">Next</span>
+            </a>
+          </div>
+          <div class="step-content hidden flex-col gap-2">
+            <span>Tell us the reason for your decision (Optional)</span>
+            <div class="h-32">
+              <textarea class="input h-full resize-none" placeholder="Write your message here..."></textarea>
+            </div>
+            <div class="flex justify-between">
+              <a class="btn-prev-step btn-effect rounded-lg bg-primary-color p-2 px-3 font-bold uppercase text-white"
+                href="javascript:void(0)">
+                <span class="text-center">Previous</span>
+              </a>
+              <button
+                class="btn-next-step btn-effect rounded-lg bg-primary-color p-2 px-3 font-bold uppercase text-white"
+                type="submit">
+                <span class="text-center">Submit</span>
+              </button>
+            </div>
+          </div>
+          <div class="step-content hidden flex-col gap-2">
+            <div class="flex flex-col items-center gap-2 text-center">
+              <div class="max-h-[200px] max-w-[200px]">
+                <img class="h-full w-full" src="images/svg/deactivate-account.svg" alt="deactivate-account" />
+              </div>
+              <h1 class="text-2xl uppercase text-primary-color">
+                Delete Account
+              </h1>
+              <p>
+                You have started the process of deleting your account.
+                <br />
+                We are sorry you made this decision, you will receive an email
+                when your account has been fully deleted.
+              </p>
+            </div>
+            <a class="btn-close-modal btn-reset-progressbar btn-effect ml-auto w-max rounded-lg bg-primary-color p-2 px-3 font-bold uppercase text-white"
+              href="javascript:void(0)" data-target=".step-deactivate">
+              <span class="text-center">Close</span>
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="add-address-modal modal transition-all-300 invisible fixed inset-0 z-50 flex h-full w-full flex-col items-center justify-start overflow-auto bg-overlay opacity-0">
+    <div class="my-10 flex w-full justify-center">
+      <div
+        class="modal-content relative mx-3 w-[900px] min-w-[250px] scale-0 rounded-lg bg-body px-3 pb-3 pt-7 xs:px-5 xs:pb-5 md:m-5">
+        <button
+          class="btn-close-modal transition-all-300 absolute top-0 right-0 p-2 sm:top-[-10px] sm:right-[-10px] sm:rounded-lg sm:bg-primary-color sm:text-white sm:hover:bg-primary-hover">
+          <i class="bi bi-x-lg text-stroke-medium pointer-events-none flex"></i>
+        </button>
+        <span class="block text-xl font-bold">Add Address</span>
+        <form class="mt-5 grid grid-cols-12 gap-2" action="#">
+          <div class="col-span-12 sm:col-span-6">
+            <label class="flex flex-col">
+              <span class="text-sm">Full Name</span>
+              <input class="input" type="text" required />
+            </label>
+          </div>
+          <div class="col-span-12 sm:col-span-6">
+            <label class="flex flex-col">
+              <span class="text-sm">Phone Number</span>
+              <input class="input input-number" type="number" required />
+            </label>
+          </div>
+          <div class="col-span-12 sm:col-span-6">
+            <label class="flex flex-col">
+              <span class="text-sm">Country</span>
+              <input class="input" type="text" required />
+            </label>
+          </div>
+          <div class="col-span-12 sm:col-span-6">
+            <label class="flex flex-col">
+              <span class="text-sm">City</span>
+              <input class="input" type="text" required />
+            </label>
+          </div>
+          <div class="col-span-12 sm:col-span-6">
+            <label class="flex flex-col">
+              <span class="text-sm">Postal Code</span>
+              <input class="input input-number" type="number" required />
+            </label>
+          </div>
+          <div class="col-span-12 sm:col-span-6">
+            <label class="flex flex-col">
+              <span class="text-sm">Address</span>
+              <input class="input" type="text" required />
+            </label>
+          </div>
+          <div class="col-span-12 justify-end">
+            <button class="btn-effect ml-auto block rounded-lg bg-primary-color p-2 px-3 font-bold uppercase text-white"
+              type="submit">
+              <span>Add Address</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="edit-address-modal modal transition-all-300 invisible fixed inset-0 z-50 flex h-full w-full flex-col items-center justify-start overflow-auto bg-overlay opacity-0">
+    <div class="my-10 flex w-full justify-center">
+      <div
+        class="modal-content relative mx-3 w-[900px] min-w-[250px] scale-0 rounded-lg bg-body px-3 pb-3 pt-7 xs:px-5 xs:pb-5 md:m-5">
+        <button
+          class="btn-close-modal transition-all-300 absolute top-0 right-0 p-2 sm:top-[-10px] sm:right-[-10px] sm:rounded-lg sm:bg-primary-color sm:text-white sm:hover:bg-primary-hover">
+          <i class="bi bi-x-lg text-stroke-medium pointer-events-none flex"></i>
+        </button>
+        <span class="block text-xl font-bold">Edit Address</span>
+        <form class="mt-5 grid grid-cols-12 gap-2" action="#">
+          <div class="col-span-12 sm:col-span-6">
+            <label class="flex flex-col">
+              <span class="text-sm">Full name</span>
+              <input class="input" type="text" value="John Doe" required />
+            </label>
+          </div>
+          <div class="col-span-12 sm:col-span-6">
+            <label class="flex flex-col">
+              <span class="text-sm">Phone Number</span>
+              <input class="input input-number" type="number" value="011234567890" required />
+            </label>
+          </div>
+          <div class="col-span-12 sm:col-span-6">
+            <label class="flex flex-col">
+              <span class="text-sm">Country</span>
+              <input class="input" type="text" value="Buenos Aires" required />
+            </label>
+          </div>
+          <div class="col-span-12 sm:col-span-6">
+            <label class="flex flex-col">
+              <span class="text-sm">City</span>
+              <input class="input" type="text" value="Olavarria" required />
+            </label>
+          </div>
+          <div class="col-span-12 sm:col-span-6">
+            <label class="flex flex-col">
+              <span class="text-sm">Postal Code</span>
+              <input class="input input-number" type="number" value="7400" required />
+            </label>
+          </div>
+          <div class="col-span-12 sm:col-span-6">
+            <labe class="flex flex-col">
+              <span class="text-sm">Address</span>
+              <input class="input" type="text" value="Av. Colón 0101" required />
+            </labe>
+          </div>
+          <div class="col-span-12 justify-end">
+            <button class="btn-effect ml-auto block rounded-lg bg-primary-color p-2 px-3 font-bold uppercase text-white"
+              type="submit">
+              <span>Save Changes</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="order-details-modal modal transition-all-300 invisible fixed inset-0 z-50 flex h-full w-full flex-col items-center justify-start overflow-auto bg-overlay opacity-0">
+    <div class="my-10 flex w-full justify-center">
+      <div
+        class="modal-content relative mx-3 w-[900px] min-w-[250px] scale-0 rounded-lg bg-body px-3 pb-3 pt-7 xs:px-5 xs:pb-5 md:m-5">
+        <button
+          class="btn-close-modal transition-all-300 absolute top-0 right-0 p-2 sm:top-[-10px] sm:right-[-10px] sm:rounded-lg sm:bg-primary-color sm:text-white sm:hover:bg-primary-hover">
+          <i class="bi bi-x-lg text-stroke-medium pointer-events-none flex"></i>
+        </button>
+        <div class="flex flex-col gap-5">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="block text-xl font-bold">Order Details</span>
+            <span class="font-semibold">(#1196SD2F)</span>
+            <div class="flex items-center gap-2">
+              <span class="text-sm text-slate-400"><i class="bi bi-calendar3 mr-1"></i> 18 Feb, 11:30AM</span>
+            </div>
+          </div>
+          <div class="rounded-lg bg-white p-2 sm:p-5">
+            <span class="block pb-4 font-semibold">Order Status</span>
+            <div
+              class="progressbar-container delivery-status mx-auto flex w-4/5 items-center justify-between gap-2 pb-5">
+              <div class="step-number relative flex justify-center">
+                <div
+                  class="transition-all-300 active flex h-8 w-8 items-center justify-center rounded-full bg-gray-200 text-current">
+                  <i class="bi bi-clipboard-check flex"></i>
+                </div>
+                <span class="absolute bottom-[-25px] hidden whitespace-nowrap text-sm sm:block">Corder Received</span>
+              </div>
+              <div class="progressbar relative h-2 w-full overflow-hidden rounded-full bg-gray-200">
+                <div class="transition-all-300 absolute h-full w-full rounded-full bg-green-500"></div>
+              </div>
+              <div class="step-number relative flex justify-center">
+                <div
+                  class="transition-all-300 active flex h-8 w-8 items-center justify-center rounded-full bg-gray-200 text-current">
+                  <i class="bi bi-box-seam flex"></i>
+                </div>
+                <span class="absolute bottom-[-25px] hidden whitespace-nowrap text-sm sm:block">Preparing order</span>
+              </div>
+              <div class="progressbar relative h-2 w-full overflow-hidden rounded-full bg-gray-200">
+                <div class="transition-all-300 absolute h-full w-0 rounded-full bg-green-500"></div>
+              </div>
+              <div class="step-number relative flex justify-center">
+                <div
+                  class="transition-all-300 flex h-8 w-8 items-center justify-center rounded-full bg-gray-200 text-current">
+                  <i class="bi bi-truck flex"></i>
+                  <span class="absolute bottom-[-25px] hidden whitespace-nowrap text-sm sm:block">On the way</span>
+                </div>
+              </div>
+              <div class="progressbar relative h-2 w-full overflow-hidden rounded-full bg-gray-200">
+                <div class="transition-all-300 absolute h-full w-0 rounded-full bg-green-500"></div>
+              </div>
+              <div class="step-number relative flex justify-center">
+                <div
+                  class="transition-all-300 flex h-8 w-8 items-center justify-center rounded-full bg-gray-200 text-current">
+                  <i class="bi bi-check flex"></i>
+                  <span class="absolute bottom-[-25px] hidden whitespace-nowrap text-sm sm:block">Delivered Order</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-lg bg-white p-2 sm:p-5">
+            <span class="block pb-4 font-semibold">Destination</span>
+            <span>Colón 0101, Olavarría</span>
+          </div>
+          <div class="rounded-lg bg-white p-2 sm:p-5">
+            <span class="block pb-4 font-semibold">Products</span>
+            <div class="max-h-[300px] overflow-auto">
+              <a class="flex w-full flex-col items-center justify-between gap-5 bg-white p-2 hover:bg-gray-100 sm:flex-row"
+                href="#">
+                <div class="h-[80px] w-[80px] min-w-[80px] overflow-hidden rounded-lg border">
+                  <img class="h-full w-full object-cover" src="images/product/prod-1.jpg" alt="product" />
+                </div>
+                <div class="flex w-full flex-col">
+                  <h6 class="clamp-2 break-all text-lg font-semibold">
+                    Ryzen 5 3600x
+                  </h6>
+                  <div class="flex gap-2">
+                    <div class="flex gap-1 leading-7 text-gray-400">
+                      <span>2</span>
+                      <span>X</span>
+                    </div>
+                    <div class="flex items-center">
+                      <span class="font-bold text-primary-color">$37.00</span>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-2 text-sm">
+                    <span class="font-bold">Total:</span>
+                    <span>$74.00</span>
+                  </div>
+                </div>
+              </a>
+              <a class="flex w-full flex-col items-center justify-between gap-5 bg-white p-2 hover:bg-gray-100 sm:flex-row"
+                href="#">
+                <div class="h-[80px] w-[80px] min-w-[80px] overflow-hidden rounded-lg border">
+                  <img class="h-full w-full object-cover" src="images/cards/mousepad.jpg" alt="product" />
+                </div>
+                <div class="flex w-full flex-col">
+                  <div>
+                    <h3 class="clamp-2 break-all text-lg font-semibold">
+                      Mousepad Hyperx Fury S Pro Speed
+                    </h3>
+                    <small class="block"><span class="font-semibold">Size:</span> XL</small>
+                    <small class="block"><span class="font-semibold">Color:</span> Black</small>
+                  </div>
+                  <div class="flex gap-2">
+                    <div class="flex gap-1 leading-7 text-gray-400">
+                      <span>2</span>
+                      <span>X</span>
+                    </div>
+                    <div class="flex items-center">
+                      <span class="font-bold text-primary-color">$37.00</span>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-2 text-sm">
+                    <span class="font-bold">Total:</span>
+                    <span>$74.00</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="rounded-lg bg-white p-2 sm:p-5">
+            <span class="block pb-4 font-semibold">Total Summary</span>
+            <div class="flex flex-wrap items-center justify-between py-1">
+              <span>Subtotal:</span>
+              <span>$74.00</span>
+            </div>
+            <div class="flex flex-wrap items-center justify-between py-1">
+              <span>Shipping:</span>
+              <span>$0.00</span>
+            </div>
+            <div class="flex flex-wrap items-center justify-between py-1">
+              <span>Discount:</span>
+              <span>$0.00</span>
+            </div>
+            <div class="flex flex-wrap items-center justify-between py-1 font-bold">
+              <span>Total Cost:</span>
+              <span>$74.00</span>
+            </div>
+          </div>
+          <a class="btn-close-modal btn-effect ml-auto w-max rounded-lg bg-primary-color p-2 px-3 font-bold uppercase text-white"
+            href="javascript:void(0)">
+            <span class="text-center">Close</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="add-payment-modal modal transition-all-300 invisible fixed inset-0 z-50 flex h-full w-full flex-col items-center justify-start overflow-auto bg-overlay opacity-0">
+    <div class="my-10 flex w-full justify-center">
+      <div
+        class="modal-content relative mx-3 w-[900px] min-w-[250px] scale-0 rounded-lg bg-body px-3 pb-3 pt-7 xs:px-5 xs:pb-5 md:m-5">
+        <button
+          class="btn-close-modal transition-all-300 absolute top-0 right-0 p-2 sm:top-[-10px] sm:right-[-10px] sm:rounded-lg sm:bg-primary-color sm:text-white sm:hover:bg-primary-hover">
+          <i class="bi bi-x-lg text-stroke-medium pointer-events-none flex"></i>
+        </button>
+        <span class="block text-xl font-bold">Add Payment</span>
+        <form class="mt-5 grid grid-cols-12 gap-3" action="#">
+          <div class="col-span-12 sm:col-span-6">
+            <div class="flex h-full flex-col">
+              <label class="text-sm" for="card-payment">Card</label>
+              <select class="nice-select card-payment select flex h-full w-full items-center" id="card-payment"
+                required>
+                <option value="1">Visa</option>
+                <option value="2">Mastercard</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-span-12 sm:col-span-6">
+            <label class="flex flex-col">
+              <span class="text-sm">Card Number</span>
+              <input class="input input-number" type="number" required />
+            </label>
+          </div>
+          <div class="col-span-12 sm:col-span-6">
+            <label class="flex flex-col">
+              <span class="text-sm">Expire Date</span>
+              <input class="input input-number" type="number" required />
+            </label>
+          </div>
+          <div class="col-span-12 sm:col-span-6">
+            <label class="flex flex-col">
+              <span class="text-sm">CVC</span>
+              <input class="input input-number" type="number" required />
+            </label>
+          </div>
+          <div class="col-span-12 justify-end">
+            <button class="btn-effect ml-auto block rounded-lg bg-primary-color p-2 px-3 font-bold uppercase text-white"
+              type="submit">
+              <span>Add Payment</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="ticket-details-modal modal transition-all-300 invisible fixed inset-0 z-50 flex h-full w-full flex-col items-center justify-start overflow-auto bg-overlay opacity-0">
+    <div class="my-10 flex w-full justify-center">
+      <div
+        class="modal-content relative mx-3 w-[900px] min-w-[250px] scale-0 rounded-lg bg-body px-3 pb-3 pt-7 xs:px-5 xs:pb-5 md:m-5">
+        <button
+          class="btn-close-modal transition-all-300 absolute top-0 right-0 p-2 sm:top-[-10px] sm:right-[-10px] sm:rounded-lg sm:bg-primary-color sm:text-white sm:hover:bg-primary-hover">
+          <i class="bi bi-x-lg text-stroke-medium pointer-events-none flex"></i>
+        </button>
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="block text-xl font-bold">Ticket Details</span>
+          <span class="font-semibold">(#1196SD2F)</span>
+          <div class="flex items-center gap-2">
+            <span class="text-slate-400">&#183;</span>
+            <span class="text-sm text-slate-400"><i class="bi bi-calendar3 mr-1"></i> 18 Feb, 11:30AM</span>
+          </div>
+        </div>
+        <div class="mt-5 flex flex-col gap-5">
+          <p class="text-lg font-semibold">
+            There is a problem with the product.
+          </p>
+          <div class="flex max-h-[350px] flex-col gap-5 overflow-auto">
+            <div class="flex gap-5">
+              <div class="hidden h-14 w-14 min-w-[3.5rem] overflow-hidden rounded-full shadow-md sm:block">
+                <img class="h-full w-full object-cover" src="images/comments/profile_1.png" alt="profile_logo" />
+              </div>
+              <div class="rounded-lg bg-white p-2">
+                <div class="flex flex-col">
+                  <a class="font-bold hover:text-primary-color" href="#">John Doe</a>
+                  <span class="text-xs text-slate-400">2 feb. 11:28am</span>
+                </div>
+                <p class="my-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Possimus odit aperiam cupiditate, impedit, velit optio
+                  fugit, iure molestiae dolor exercitationem corrupti rem
+                  neque consequuntur. Architecto quod animi, expedita dolorem
+                  dignissimos aperiam voluptate quos a unde ducimus fugit
+                  obcaecati assumenda ipsam voluptatum asperiores neque
+                  sapiente rem? A libero neque eos? Omnis.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <div class="order-2 hidden h-14 w-14 min-w-[3.5rem] overflow-hidden rounded-full shadow-md sm:block">
+                <img class="h-full w-full object-cover" src="images/svg/logo.svg" alt="profile_logo" />
+              </div>
+              <div class="order-1 rounded-lg bg-sky-400 p-2 shadow-md">
+                <div class="flex flex-col items-end">
+                  <a class="font-bold hover:text-primary-color" href="#">Besnik.</a>
+                  <span class="text-xs text-slate-200">Just now</span>
+                </div>
+                <p class="my-2 text-white">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Possimus odit aperiam cupiditate, impedit, velit optio
+                  fugit, iure molestiae dolor exercitationem corrupti rem
+                  neque consequuntur. Architecto quod animi, expedita dolorem
+                  dignissimos aperiam voluptate quos a unde ducimus fugit
+                  obcaecati assumenda ipsam voluptatum asperiores neque
+                  sapiente rem? A libero neque eos? Omnis.
+                </p>
+              </div>
+            </div>
+          </div>
+          <form action="#">
+            <div class="h-32">
+              <textarea class="input h-full resize-none" placeholder="Write your message here..."
+                required=""></textarea>
+            </div>
+            <button
+              class="btn-effect mt-2 ml-auto block rounded-lg bg-primary-color p-2 px-3 font-bold uppercase text-white"
+              type="submit">
+              <span>Send message</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="new-ticket-modal modal transition-all-300 invisible fixed inset-0 z-50 flex h-full w-full flex-col items-center justify-start overflow-auto bg-overlay opacity-0">
+    <div class="my-10 flex w-full justify-center">
+      <div
+        class="modal-content relative mx-3 w-[900px] min-w-[250px] scale-0 rounded-lg bg-body px-3 pb-3 pt-7 xs:px-5 xs:pb-5 md:m-5">
+        <button
+          class="btn-close-modal transition-all-300 absolute top-0 right-0 p-2 sm:top-[-10px] sm:right-[-10px] sm:rounded-lg sm:bg-primary-color sm:text-white sm:hover:bg-primary-hover">
+          <i class="bi bi-x-lg text-stroke-medium pointer-events-none flex"></i>
+        </button>
+        <span class="block text-xl font-bold">Send Ticket</span>
+        <form class="mt-5 flex flex-col gap-2" action="#">
+          <div>
+            <label class="flex flex-col">
+              <span class="text-sm">Subject</span>
+              <input class="input" type="text" required />
+            </label>
+          </div>
+          <div class="h-32">
+            <textarea class="input h-full resize-none" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button class="btn-effect ml-auto block rounded-lg bg-primary-color p-2 px-3 font-bold uppercase text-white"
+            type="submit">
+            <span>Send ticket</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="delete-modal modal transition-all-300 invisible fixed inset-0 z-50 flex h-full w-full flex-col items-center justify-start overflow-auto bg-overlay opacity-0">
+    <div class="my-10 flex w-full justify-center">
+      <div
+        class="modal-content transition-all-300 relative mx-3 w-[500px] min-w-[250px] scale-0 rounded-lg bg-white px-3 pb-3 pt-7 xs:px-5 xs:pb-5 md:m-5">
+        <button
+          class="btn-close-modal btn-reset-progressbar transition-all-300 absolute top-0 right-0 p-2 sm:top-[-10px] sm:right-[-10px] sm:rounded-lg sm:bg-primary-color sm:text-white sm:hover:bg-primary-hover">
+          <i class="bi bi-x-lg text-stroke-medium pointer-events-none flex"></i>
+        </button>
+        <div class="flex flex-col items-center gap-5">
+          <i class="bi bi-x-circle flex text-9xl text-red-500"></i>
+          <span class="text-2xl font-bold">You Are Sure?</span>
+          <p>Are you sure you want to delete this?</p>
+          <div class="flex gap-5">
+            <button
+              class="btn-close-modal transition-all-300 ml-auto w-max rounded-lg border bg-slate-100 p-2 px-3 font-semibold uppercase hover:bg-slate-200">
+              <span class="text-center">Cancel</span>
+            </button>
+            <button
+              class="btn-close-modal btn-effect ml-auto w-max rounded-lg bg-primary-color p-2 px-3 font-bold uppercase text-white">
+              <span class="text-center">Delete</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -->
+
+  <div class="btn-gotop transition-all-300 invisible fixed bottom-[-999px] right-10 z-50 opacity-0">
+    <div class="transition-all-300 cursor-pointer rounded-lg bg-[rgba(0,0,0,.3)] p-3 hover:bg-primary-color">
+      <i class="bi bi-chevron-compact-up pointer-events-none flex text-2xl text-white"></i>
+    </div>
+  </div>
+
+  <div class="loader fixed z-[999] flex h-screen w-screen items-center justify-center bg-body">
+    <div class="loader-content flex flex-col items-center gap-2">
+      <span class="text-3xl font-semibold text-gray-200">Megabyte</span>
+      <div class="flex h-1 w-40 gap-1 overflow-hidden bg-gray-200">
+        <div class="animation-loader h-full w-20 bg-primary-color"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-section mt-auto w-full bg-[#00abcc] text-gray-400">
+    <div class="container mx-auto grid grid-cols-12 px-4 sm:px-8">
+      <div class="col-span-12 py-[50px]">
+        <div class="grid grid-cols-12 gap-2">
+          <div class="col-span-12 sm:col-span-6 lg:col-span-4">
+            <div class="pb-6">
+              <img src="images/svg/logo.svg" class="h-[40px]" alt="logo" />
+            </div>
+            <div>
+              <div class="flex items-center gap-[10px] py-2">
+                <i class="bi bi-envelope-fill flex text-xl text-primary-color"></i>
+                <a class="break-all" href="#">besnik.@example.com</a>
+              </div>
+              <div class="flex items-center gap-[10px] py-2">
+                <i class="bi bi-telephone-fill flex text-xl text-primary-color"></i>
+                <a class="break-all" href="#">0987-083245</a>
+              </div>
+              <div class="flex items-center gap-[10px] py-2">
+                <i class="bi bi-geo-alt-fill flex text-xl text-primary-color"></i>
+                <span class="break-all">22/26 Dong Hung Thuan 17 - Q12 - TP HCM</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-12 py-5 sm:col-span-6 sm:py-0 lg:col-span-4">
+            <h3 class="pb-2 font-semibold text-gray-300">Useful Links</h3>
+            <div>
+              <ul class="flex flex-col flex-wrap gap-2 text-sm xs:max-h-[200px]">
+                <li class="group relative flex items-center hover:text-primary-color">
+                  <i
+                    class="bi bi-circle-fill invisible absolute -left-4 flex text-[6px] text-primary-color group-hover:visible"></i>
+                  <a href="#" class="transition-all-300 group-hover:text-white">Terms &amp; Conditions</a>
+                </li>
+                <li class="group relative flex items-center hover:text-primary-color">
+                  <i
+                    class="bi bi-circle-fill invisible absolute -left-4 flex text-[6px] text-primary-color group-hover:visible"></i>
+                  <a href="#" class="transition-all-300 group-hover:text-white">New products</a>
+                </li>
+                <li class="group relative flex items-center hover:text-primary-color">
+                  <i
+                    class="bi bi-circle-fill invisible absolute -left-4 flex text-[6px] text-primary-color group-hover:visible"></i>
+                  <a href="#" class="transition-all-300 group-hover:text-white">Best sales</a>
+                </li>
+                <li class="group relative flex items-center hover:text-primary-color">
+                  <i
+                    class="bi bi-circle-fill invisible absolute -left-4 flex text-[6px] text-primary-color group-hover:visible"></i>
+                  <a href="#" class="transition-all-300 group-hover:text-white">Secure payment</a>
+                </li>
+                <li class="group relative flex items-center hover:text-primary-color">
+                  <i
+                    class="bi bi-circle-fill invisible absolute -left-4 flex text-[6px] text-primary-color group-hover:visible"></i>
+                  <a href="#" class="transition-all-300 group-hover:text-white">Services</a>
+                </li>
+                <li class="group relative flex items-center hover:text-primary-color">
+                  <i
+                    class="bi bi-circle-fill invisible absolute -left-4 flex text-[6px] text-primary-color group-hover:visible"></i>
+                  <a href="#" class="transition-all-300 group-hover:text-white">Delivery</a>
+                </li>
+                <li class="group relative flex items-center hover:text-primary-color">
+                  <i
+                    class="bi bi-circle-fill invisible absolute -left-4 flex text-[6px] text-primary-color group-hover:visible"></i>
+                  <a href="#" class="transition-all-300 group-hover:text-white">Legal Notice</a>
+                </li>
+                <li class="group relative flex items-center hover:text-primary-color">
+                  <i
+                    class="bi bi-circle-fill invisible absolute -left-4 flex text-[6px] text-primary-color group-hover:visible"></i>
+                  <a href="#" class="transition-all-300 group-hover:text-white">About us</a>
+                </li>
+                <li class="group relative flex items-center hover:text-primary-color">
+                  <i
+                    class="bi bi-circle-fill invisible absolute -left-4 flex text-[6px] text-primary-color group-hover:visible"></i>
+                  <a href="#" class="transition-all-300 group-hover:text-white">Contact us</a>
+                </li>
+                <li class="group relative flex items-center hover:text-primary-color">
+                  <i
+                    class="bi bi-circle-fill invisible absolute -left-4 flex text-[6px] text-primary-color group-hover:visible"></i>
+                  <a href="#" class="transition-all-300 group-hover:text-white">Stores</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-span-12 lg:col-span-4">
+            <h3 class="pb-2 font-semibold text-gray-300">
+              Be the first to know it
+            </h3>
+            <span class="py-2 text-sm">Subscribe to receive updates on our store and special
+              offers</span>
+            <form class="py-2">
+              <div class="flex overflow-hidden rounded-lg bg-gray-rgba p-2">
+                <input
+                  class="w-full border-none bg-transparent pl-2 focus:border-none focus:ring-0 focus:ring-transparent"
+                  type="text" placeholder="Your email address" />
+                <button class="p-1" type="submit">
+                  <i class="bi bi-send flex text-lg text-white"></i>
+                </button>
+              </div>
+            </form>
+            <div class="flex gap-2 py-2">
+              <div class="relative h-8 w-8 overflow-hidden rounded-full">
+                <a class="instagram-before flex h-8 w-8 items-center justify-center bg-gray-rgba text-center text-white"
+                  href="#">
+                  <i class="bi bi-instagram relative z-[2] flex"></i>
+                </a>
+              </div>
+              <div class="transition-all-300 h-8 w-8 rounded-full bg-gray-rgba hover:bg-facebook">
+                <a class="flex h-8 w-8 items-center justify-center" href="#">
+                  <i class="bi bi-facebook flex text-white"></i>
+                </a>
+              </div>
+              <div class="transition-all-300 h-8 w-8 rounded-full bg-gray-rgba hover:bg-twitter">
+                <a class="flex h-8 w-8 items-center justify-center" href="#">
+                  <i class="bi bi-twitter flex text-white"></i>
+                </a>
+              </div>
+              <div class="transition-all-300 h-8 w-8 rounded-full bg-gray-rgba hover:bg-youtube">
+                <a class="flex h-8 w-8 items-center justify-center" href="#">
+                  <i class="bi bi-youtube flex text-white"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-12 pb-5">
+        <p class="text-center">
+          © <span class="current-year"></span> Example. All rights reserved
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../unpkg.com/popperjs/core.js"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <script src="../unpkg.com/metismenujs%401.4.0/dist/metismenujs.min.js"></script>
+  <script src="libraries/nice-select2/nice-select2.js"></script>
+  <script src="libraries/mixitup/mixitup.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

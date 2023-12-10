@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./images/svg/logo.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/bootstrap-icons%401.7.2/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="../unpkg.com/metismenujs%401.4.0/dist/metismenujs.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Besnik. - Shopping Cart</title>
+</head>
+
+<body class="flex min-h-screen flex-col overflow-hidden bg-body font-poppins text-txt">
+  <header class="header-section relative z-30 shadow-custom-1">
+    <div class="hidden bg-secondary-color sm:flex">
+      <div class="container mx-auto grid h-full grid-cols-12 px-2 py-[6px] sm:px-8" style="background-color: #011638;">
+        <div class="col-span-8 self-center">
+          <div class="flex gap-[15px]">
+            <div class="flex items-center gap-2">
+              <i class="bi bi-envelope flex text-2xl text-primary-color"></i>
+              <a href="#" class="font-light text-white">Besnik.@example.com</a>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="bi bi-telephone flex text-xl text-primary-color"></i>
+              <a href="#" class="font-light text-white">0987-083-245</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-4 self-center justify-self-end">
+          <div class="flex items-center gap-[10px]">
+            <a href="#">
+              <i class="bi bi-instagram transition-all-300 flex text-icon hover:text-white"></i>
+            </a>
+            <a href="#">
+              <i class="bi bi-facebook transition-all-300 flex text-icon hover:text-white"></i>
+            </a>
+            <a href="#">
+              <i class="bi bi-twitter transition-all-300 flex text-icon hover:text-white"></i>
+            </a>
+            <a href="#">
+              <i class="bi bi-youtube transition-all-300 flex text-icon hover:text-white"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-secondary-color">
+      <div class="container mx-auto grid h-full grid-cols-4 gap-1 px-2 py-5 sm:px-8 lg:grid-cols-12 lg:gap-0"
+        style="background-color: #fff; color: #011638;">
+        <div class="order-1 col-span-2 self-center lg:order-1 lg:col-span-3">
+          <a href="index.html">
+            <img class="inline" src="images/svg/logo.svg" alt="Besnik." />
+          </a>
+        </div>
+        <div
+          class="header-search transition-all-300 order-3 col-span-4 mt-[10px] hidden self-center lg:order-2 lg:col-span-6 lg:mt-0 lg:block">
+          <form class="search" action="#">
+            <div class="flex h-[40px] overflow-hidden rounded-[50px] bg-primary-rgba">
+              <input
+                class="search w-full border-none bg-transparent py-[5px] pl-5 text-white placeholder-icon focus:border-none focus:ring-0 focus:ring-transparent"
+                type="search" placeholder="Search..." />
+              <button class="btn-search px-3 text-white" type="submit">
+                <i class="bi bi-search flex text-xl"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="order-2 col-span-2 flex gap-2 self-center justify-self-end lg:order-3 lg:col-span-3 xl:gap-5">
+          <div class="flex items-center lg:hidden">
+            <button class="btn-search-mob p-[5px] text-white">
+              <i class="bi bi-search pointer-events-none flex text-2xl"></i>
+            </button>
+          </div>
+          <div class="flex items-center lg:hidden">
+            <button class="btn-open-modal text-white" data-target=".menu-mob">
+              <i class="bi bi-list pointer-events-none flex text-3xl"></i>
+            </button>
+          </div>
+          <div class="group-items hidden items-center gap-5 text-white lg:flex">
+            <div class="relative">
+              <a class="btn-open-modal" data-target=".wishlist-modal" href="javascript:void(0)">
+                <i class="bi bi-heart pointer-events-none flex translate-y-1 transform text-[32px] text-white"
+                  style="color: #011638;"></i>
+              </a>
+              <span class="badge absolute top-0 right-[-6px] h-[15px] min-w-[15px] px-[2px]">0</span>
+            </div>
+            <div class="relative">
+              <a class="btn-open-modal" data-target=".shopping-cart-modal" href="javascript:void(0)">
+                <i class="bi bi-cart2 pointer-events-none flex text-[35px] text-white" style="color: #011638;"></i>
+              </a>
+              <span class="badge absolute top-0 right-[-6px] h-[15px] min-w-[15px] px-[2px]">0</span>
+            </div>
+          </div>
+          <div class="group relative hidden lg:flex">
+            <div class="flex cursor-pointer select-none items-center gap-1">
+              <span class="font-semibold text-white" style="color: #011638;">My account</span>
+              <i class="bi bi-caret-down-fill transition-all-300 flex rotate-0 text-sm text-white group-hover:rotate-180"
+                style="color: #011638;"></i>
+            </div>
+            <div
+              class="transition-all-300 invisible absolute top-full z-30 w-[120%] pt-[10px] opacity-0 group-hover:visible group-hover:opacity-100">
+              <div class="arrow relative">
+                <ul class="overflow-hidden rounded-md bg-white p-[6px] shadow-custom-1">
+                  <li class="hover:font-semibold">
+                    <a href="#" class="btn-open-modal" data-tab="0" data-target=".entry-modal">
+                      <div class="pointer-events-none flex items-center gap-2 p-1">
+                        <i class="bi bi-box-arrow-in-right flex text-xl text-primary-color" style="color: #011638;"></i>
+                        <span>Login</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="hover:font-semibold">
+                    <a href="#" class="btn-open-modal" data-tab="1" data-target=".entry-modal">
+                      <div class="pointer-events-none flex items-center gap-2 p-1">
+                        <i class="bi bi-person flex text-xl text-primary-color" style="color: #011638;"></i>
+                        <span>Sign up</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hidden bg-white lg:block">
+      <nav class="container mx-auto px-2 sm:px-8">
+        <ul class="menu flex flex-wrap items-center justify-between py-[10px] text-lg">
+          <li class="underlined-animated group relative">
+            <a href="#" class="btn-open flex items-center gap-1 font-semibold">
+              <span>Products</span>
+              <i
+                class="bi bi-caret-down-fill transition-all-300 flex rotate-0 text-xs text-primary-color group-hover:rotate-180"></i>
+            </a>
+            <div
+              class="submenu transition-all-300 invisible absolute left-0 pt-[10px] opacity-0 group-hover:visible group-hover:opacity-100">
+              <ul class="relative w-[250px] bg-white text-base shadow-custom-1">
+
+                <li class="group-1">
+                  <a href="#" class="flex items-center gap-2 p-2">
+                    <i class="bi bi-circle-fill group-1-hover-visible invisible flex text-[6px] text-primary-color"></i>
+                    <span class="group-1-hover-font">Ergonic Chair</span>
+                    <i
+                      class="bi bi-caret-right-fill group-1-hover-visible invisible ml-auto flex text-xs text-primary-color"></i>
+                  </a>
+                  <div
+                    class="submenu group-1-hover-visible transition-all-300 invisible absolute top-0 left-full min-h-full min-w-[680px] opacity-0">
+                    <div class="bg-white shadow-custom-2">
+                      <div class="border-b-2 border-primary-color py-[10px]">
+                        <span class="px-5 text-3xl font-bold uppercase text-primary-color">Ergonic Chair</span>
+                      </div>
+                      <div class="submenu-categories flex flex-wrap">
+                        <div class="group-2 p-[10px]">
+                          <a class="categorie-container inline-block" href="#">
+                            <div class="categorie-img h-[150px] w-[150px]">
+                              <img class="img-product group-2-hover-img"
+                                src="images/categories/pc_components/motherboards.jpg" alt="motherboard" />
+                            </div>
+                            <span class="group-2-hover-font block text-center">Keyboard</span>
+                          </a>
+                        </div>
+                        <div class="group-2 p-[10px]">
+                          <a class="categorie-container inline-block" href="#">
+                            <div class="categorie-img h-[150px] w-[150px]">
+                              <img class="img-product group-2-hover-img"
+                                src="images/categories/pc_components/processors.jpg" alt="processors" />
+                            </div>
+                            <span class="group-2-hover-font block text-center">Gaming Gear</span>
+                          </a>
+                        </div>
+                        <div class="group-2 p-[10px]">
+                          <a class="categorie-container inline-block" href="#">
+                            <div class="categorie-img h-[150px] w-[150px]">
+                              <img class="img-product group-2-hover-img" src="images/categories/pc_components/rams.jpg"
+                                alt="rams" />
+                            </div>
+                            <span class="group-2-hover-font block text-center">Smarthome</span>
+                          </a>
+                        </div>
+                        <div class="group-2 p-[10px]">
+                          <a class="categorie-container inline-block" href="#">
+                            <div class="categorie-img h-[150px] w-[150px]">
+                              <img class="img-product group-2-hover-img"
+                                src="images/categories/pc_components/video_cards.jpg" alt="video cards" />
+                            </div>
+                            <span class="group-2-hover-font block text-center">Computer Accessories</span>
+                          </a>
+                        </div>
+                        <div class="group-2 p-[10px]">
+                          <a class="categorie-container inline-block" href="#">
+                            <div class="categorie-img h-[150px] w-[150px]">
+                              <img class="img-product group-2-hover-img"
+                                src="images/categories/pc_components/power_supplys.jpg" alt="video cards" />
+                            </div>
+                            <span class="group-2-hover-font block object-contain text-center">Power Supplys</span>
+                          </a>
+                        </div>
+                        <div class="group-2 p-[10px]">
+                          <a class="categorie-container inline-block" href="#">
+                            <div class="categorie-img h-[150px] w-[150px]">
+                              <img class="img-product group-2-hover-img"
+                                src="images/categories/pc_components/hard_drives.jpg" alt="video cards" />
+                            </div>
+                            <span class="group-2-hover-font block text-center">Hard Drives</span>
+                          </a>
+                        </div>
+                        <div class="group-2 p-[10px]">
+                          <a class="categorie-container inline-block" href="#">
+                            <div class="categorie-img h-[150px] w-[150px]">
+                              <img class="img-product group-2-hover-img"
+                                src="images/categories/pc_components/ssd_disk.jpg" alt="video cards" />
+                            </div>
+                            <span class="group-2-hover-font block text-center">SSD Disk</span>
+                          </a>
+                        </div>
+                        <div class="group-2 p-[10px]">
+                          <a class="categorie-container inline-block" href="#">
+                            <div class="categorie-img h-[150px] w-[150px]">
+                              <img class="img-product group-2-hover-img"
+                                src="images/categories/pc_components/computer_case.jpg" alt="video cards" />
+                            </div>
+                            <span class="group-2-hover-font block text-center">Case</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="group-1">
+                  <a href="#" class="flex items-center gap-2 p-2">
+                    <i class="bi bi-circle-fill group-1-hover-visible invisible flex text-[6px] text-primary-color"></i>
+                    <span class="group-1-hover-font">Keyboard</span>
+                    <i
+                      class="bi bi-caret-right-fill group-1-hover-visible invisible ml-auto flex text-xs text-primary-color"></i>
+                  </a>
+                  <div
+                    class="submenu group-1-hover-visible transition-all-300 invisible absolute top-0 left-full min-h-full min-w-[680px] opacity-0">
+                    <div class="bg-white shadow-custom-2">
+                      <div class="border-b-2 border-primary-color py-[10px]">
+                        <span class="px-5 text-3xl font-bold uppercase text-primary-color">Keyboard</span>
+                      </div>
+                      <div class="submenu-categories flex flex-wrap">
+                        <div class="group-2 p-[10px]">
+                          <a class="categorie-container inline-block" href="#">
+                            <div class="categorie-img h-[150px] w-[150px]">
+                              <img class="img-product group-2-hover-img"
+                                src="images/categories/peripherals/keywords.jpg" alt="motherboard" />
+                            </div>
+                            <span class="group-2-hover-font block text-center">Keywords</span>
+                          </a>
+                        </div>
+                        <div class="group-2 p-[10px]">
+                          <a class="categorie-container inline-block" href="#">
+                            <div class="categorie-img h-[150px] w-[150px]">
+                              <img class="img-product group-2-hover-img" src="images/categories/peripherals/mouse.jpg"
+                                alt="processors" />
+                            </div>
+                            <span class="group-2-hover-font block text-center">Mouses</span>
+                          </a>
+                        </div>
+                        <div class="group-2 p-[10px]">
+                          <a class="categorie-container inline-block" href="#">
+                            <div class="categorie-img h-[150px] w-[150px]">
+                              <img class="img-product group-2-hover-img" src="images/categories/peripherals/mic.jpg"
+                                alt="rams" />
+                            </div>
+                            <span class="group-2-hover-font block text-center">Mics</span>
+                          </a>
+                        </div>
+                        <div class="group-2 p-[10px]">
+                          <a class="categorie-container inline-block" href="#">
+                            <div class="categorie-img h-[150px] w-[150px]">
+                              <img class="img-product group-2-hover-img" src="images/categories/peripherals/webcam.jpg"
+                                alt="rams" />
+                            </div>
+                            <span class="group-2-hover-font block text-center">Webcam</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="group-1">
+                  <a href="#" class="flex items-center gap-2 p-2">
+                    <i class="bi bi-circle-fill group-1-hover-visible invisible flex text-[6px] text-primary-color"></i>
+                    <span class="group-1-hover-font">Gaming Gear</span>
+                    <i
+                      class="bi bi-caret-right-fill group-1-hover-visible invisible ml-auto flex text-xs text-primary-color"></i>
+                  </a>
+                  <div
+                    class="submenu group-1-hover-visible transition-all-300 invisible absolute top-0 left-full min-h-full min-w-[680px] opacity-0">
+                    <div class="bg-white shadow-custom-2">
+                      <div class="border-b-2 border-primary-color py-[10px]">
+                        <span class="px-5 text-3xl font-bold uppercase text-primary-color">Gaming Gear</span>
+                      </div>
+                      <div class="submenu-categories flex flex-wrap">
+                        <div class="group-2 p-[10px]">
+                          <a class="categorie-container inline-block" href="#">
+                            <div class="categorie-img h-[150px] w-[150px]">
+                              <img class="img-product group-2-hover-img" src="images/categories/computers/desktops.jpg"
+                                alt="motherboard" />
+                            </div>
+                            <span class="group-2-hover-font block text-center">Desktops</span>
+                          </a>
+                        </div>
+                        <div class="group-2 p-[10px]">
+                          <a class="categorie-container inline-block" href="#">
+                            <div class="categorie-img h-[150px] w-[150px]">
+                              <img class="img-product group-2-hover-img" src="images/categories/computers/notebooks.jpg"
+                                alt="processors" />
+                            </div>
+                            <span class="group-2-hover-font block text-center">Notebooks</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="group-1">
+                  <a href="#" class="flex items-center gap-2 p-2">
+                    <i class="bi bi-circle-fill group-1-hover-visible invisible flex text-[6px] text-primary-color"></i>
+                    <span class="group-1-hover-font">Smarthome</span>
+                  </a>
+                </li>
+
+                <li class="group-1">
+                  <a href="#" class="flex items-center gap-2 p-2">
+                    <i class="bi bi-circle-fill group-1-hover-visible invisible flex text-[6px] text-primary-color"></i>
+                    <span class="group-1-hover-font">Computer Accessories</span>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </li>
+          <li class="underlined-animated">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="underlined-animated">
+            <a href="#">Smarthome</a>
+          </li>
+          <li class="underlined-animated">
+            <a href="#">Keyboard</a>
+          </li>
+          <li class="underlined-animated">
+            <a href="#">Computer Accessories</a>
+          </li>
+          <li class="underlined-animated group">
+            <a href="shop-mixed.html" class="flex items-center gap-1">
+              <span>Shop</span>
+              <i
+                class="bi bi-caret-down-fill transition-all-300 flex rotate-0 text-xs text-primary-color group-hover:rotate-180"></i>
+            </a>
+          </li>
+          <li class="underlined-animated group">
+            <a href="#" class="flex items-center gap-1">
+              <span>Pages</span>
+              <i
+                class="bi bi-caret-down-fill transition-all-300 flex rotate-0 text-xs text-primary-color group-hover:rotate-180"></i>
+            </a>
+            <div
+              class="transition-all-300 invisible absolute left-0 pt-[10px] opacity-0 group-hover:visible group-hover:opacity-100">
+              <ul class="relative w-[250px] bg-white text-base shadow-custom-1">
+                <li class="group-1">
+                  <a href="wishlist.html" class="flex items-center gap-2 p-2">
+                    <i class="bi bi-circle-fill group-1-hover-visible invisible flex text-[6px] text-primary-color"></i>
+                    <span class="group-1-hover-font">Wishlist</span>
+                  </a>
+                </li>
+                <li class="group-1">
+                  <a href="shopping-cart.html" class="flex items-center gap-2 p-2">
+                    <i class="bi bi-circle-fill group-1-hover-visible invisible flex text-[6px] text-primary-color"></i>
+                    <span class="group-1-hover-font">Shopping Cart</span>
+                  </a>
+                </li>
+                <li class="group-1">
+                  <a href="product-details.html" class="flex items-center gap-2 p-2">
+                    <i class="bi bi-circle-fill group-1-hover-visible invisible flex text-[6px] text-primary-color"></i>
+                    <span class="group-1-hover-font">Product Details</span>
+                  </a>
+                </li>
+                <li class="group-1">
+                  <a href="checkout.html" class="flex items-center gap-2 p-2">
+                    <i class="bi bi-circle-fill group-1-hover-visible invisible flex text-[6px] text-primary-color"></i>
+                    <span class="group-1-hover-font">Checkout</span>
+                  </a>
+                </li>
+                <li class="group-1">
+                  <a href="my-account.html" class="flex items-center gap-2 p-2">
+                    <i class="bi bi-circle-fill group-1-hover-visible invisible flex text-[6px] text-primary-color"></i>
+                    <span class="group-1-hover-font">My Account</span>
+                  </a>
+                </li>
+                <li class="group-1">
+                  <a href="login.html" class="flex items-center gap-2 p-2">
+                    <i class="bi bi-circle-fill group-1-hover-visible invisible flex text-[6px] text-primary-color"></i>
+                    <span class="group-1-hover-font">Login</span>
+                  </a>
+                </li>
+                <li class="group-1">
+                  <a href="sign-up.html" class="flex items-center gap-2 p-2">
+                    <i class="bi bi-circle-fill group-1-hover-visible invisible flex text-[6px] text-primary-color"></i>
+                    <span class="group-1-hover-font">Sign Up</span>
+                  </a>
+                </li>
+                <li class="group-1">
+                  <a href="forgot-password.html" class="flex items-center gap-2 p-2">
+                    <i class="bi bi-circle-fill group-1-hover-visible invisible flex text-[6px] text-primary-color"></i>
+                    <span class="group-1-hover-font">Forgot Password</span>
+                  </a>
+                </li>
+                <li class="group-1">
+                  <a href="error404.html" class="flex items-center gap-2 p-2">
+                    <i class="bi bi-circle-fill group-1-hover-visible invisible flex text-[6px] text-primary-color"></i>
+                    <span class="group-1-hover-font">Error 404</span>
+                  </a>
+                </li>
+                <li class="group-1">
+                  <a href="purchase-completed.html" class="flex items-center gap-2 p-2">
+                    <i class="bi bi-circle-fill group-1-hover-visible invisible flex text-[6px] text-primary-color"></i>
+                    <span class="group-1-hover-font">Purchase Completed</span>
+                  </a>
+                </li>
+                <li class="group-1">
+                  <a href="purchase-failed.html" class="flex items-center gap-2 p-2">
+                    <i class="bi bi-circle-fill group-1-hover-visible invisible flex text-[6px] text-primary-color"></i>
+                    <span class="group-1-hover-font">Purchase Failed</span>
+                  </a>
+                </li>
+                <li class="group-1">
+                  <a href="message-sent.html" class="flex items-center gap-2 p-2">
+                    <i class="bi bi-circle-fill group-1-hover-visible invisible flex text-[6px] text-primary-color"></i>
+                    <span class="group-1-hover-font">Message Sent</span>
+                  </a>
+                </li>
+                <li class="group-1">
+                  <a href="verification.html" class="flex items-center gap-2 p-2">
+                    <i class="bi bi-circle-fill group-1-hover-visible invisible flex text-[6px] text-primary-color"></i>
+                    <span class="group-1-hover-font">Verification</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="underlined-animated">
+            <a href="contact-us.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="breadcrumb-section container mx-auto my-5 px-2 sm:px-8">
+    <ul class="flex flex-wrap items-center gap-1">
+      <li class="transition-all-300 hover:text-primary-color">
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <i class="bi bi-caret-right-fill flex text-primary-color"></i>
+      </li>
+      <li class="transition-all-300 active hover:text-primary-color">
+        <a href="shopping-cart.html">Shopping Cart</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="banner-title-section container mx-auto my-5 px-2 sm:px-8">
+    <div class="liner-container my-5 flex justify-center border-b-2 border-[rgba(119,119,119,.17)]">
+      <h1 class="mb-[-2px] inline-block border-b-2 border-primary-color pb-3 text-2xl font-bold uppercase">
+        Shopping Cart
+      </h1>
+    </div>
+  </div>
+
+  <div class="shopping-cart-page container mx-auto my-5 px-2 sm:px-8">
+    <!-- If the Shopping Cart is empty (replace hidden with flex) -->
+    <div class="shopping-cart-empty hidden flex-col items-center justify-center gap-4 p-5">
+      <i class="bi bi-cart-x text-8xl text-gray-200"></i>
+      <p class="text-lg font-semibold">There are no products in the cart.</p>
+      <a class="btn-effect transition-all-300 flex items-center justify-center gap-2 rounded-lg bg-primary-color p-2"
+        href="#">
+        <span class="font-bold uppercase text-white">Go to the store</span>
+      </a>
+    </div>
+    <!-- -->
+    <form class="grid grid-cols-12 gap-5 rounded-lg bg-white p-2 xs:p-5" action="#">
+      <div class="col-span-12 lg:col-span-8">
+        <!-- Element Responsive -->
+        <div class="transition-all-300 flex w-full flex-col gap-2 p-2 hover:bg-gray-100 xs:flex-row lg:hidden">
+          <div class="content flex items-center">
+            <div class="flex items-center">
+              <div class="h-[100px] w-[100px] min-w-[100px] overflow-hidden rounded-lg border">
+                <a href="#">
+                  <img class="h-full w-full object-cover" src="images/product/prod-1.jpg" alt="product" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="flex w-full flex-col gap-2 sm:flex-row">
+            <div class="flex w-full flex-col gap-2">
+              <div class="content">
+                <div class="flex flex-col">
+                  <span class="text-xs font-light xs:hidden">Product Name</span>
+                  <a class="clamp-2 break-all font-bold" href="#">Ryzen 5 3600x</a>
+                </div>
+              </div>
+              <div class="content">
+                <div class="flex flex-col">
+                  <span class="text-xs font-light lg:hidden">Unit Price</span>
+                  <div class="flex items-center gap-2">
+                    <span class="font-bold text-primary-color">$37.00</span>
+                    <small class="text-xs text-primary-color line-through">$50.00</small>
+                  </div>
+                </div>
+              </div>
+              <div class="content">
+                <div class="flex flex-col">
+                  <span class="text-xs font-light">Subtotal</span>
+                  <span class="font-bold text-primary-color">$37.00</span>
+                </div>
+              </div>
+            </div>
+            <div class="content flex items-center">
+              <div class="flex items-center gap-x-4 gap-y-1">
+                <div class="flex flex-col">
+                  <span class="text-xs font-light">Quantity</span>
+                  <div class="quantity inline-flex rounded-lg bg-white shadow">
+                    <input
+                      class="quantity-value input-number w-12 border-none bg-transparent p-1 text-center text-lg text-gray-400 focus:border-none focus:ring-0"
+                      type="number" value="0" />
+                    <div class="flex w-5 flex-col justify-between">
+                      <button class="quantity-btn increment text-primary-color" type="button">
+                        <i class="bi bi-caret-up-fill"></i>
+                      </button>
+                      <button class="quantity-btn decrement text-primary-color" type="button">
+                        <i class="bi bi-caret-down-fill"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tippy tippy-remove transition-all-300 cursor-pointer text-slate-400 hover:text-primary-color">
+                  <i class="bi bi-trash-fill pointer-events-none inline text-xl"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="transition-all-300 flex w-full flex-col gap-2 p-2 hover:bg-gray-100 xs:flex-row lg:hidden">
+          <div class="content flex items-center">
+            <div class="flex items-center">
+              <div class="h-[100px] w-[100px] min-w-[100px] overflow-hidden rounded-lg border">
+                <a href="#">
+                  <img class="h-full w-full object-cover" src="images/cards/mousepad.jpg" alt="product" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="flex w-full flex-col gap-2 sm:flex-row">
+            <div class="flex w-full flex-col gap-2">
+              <div class="content">
+                <div class="flex flex-col">
+                  <span class="text-xs font-light xs:hidden">Product Name</span>
+                  <div>
+                    <a class="clamp-2 break-all font-bold" href="#">
+                      Mousepad Hyperx Fury S Pro Speed
+                    </a>
+                    <small class="block"><span class="font-semibold">Size:</span> XL</small>
+                    <small class="block"><span class="font-semibold">Color:</span> Black</small>
+                  </div>
+                </div>
+              </div>
+              <div class="content">
+                <div class="flex flex-col">
+                  <span class="text-xs font-light lg:hidden">Unit Price</span>
+                  <div class="flex items-center gap-2">
+                    <span class="font-bold text-primary-color">$37.00</span>
+                    <small class="text-xs text-primary-color line-through">$50.00</small>
+                  </div>
+                </div>
+              </div>
+              <div class="content">
+                <div class="flex flex-col">
+                  <span class="text-xs font-light">Subtotal</span>
+                  <span class="font-bold text-primary-color">$37.00</span>
+                </div>
+              </div>
+            </div>
+            <div class="content flex items-center">
+              <div class="flex items-center gap-x-4 gap-y-1">
+                <div class="flex flex-col">
+                  <span class="text-xs font-light">Quantity</span>
+                  <div class="quantity inline-flex rounded-lg bg-white shadow">
+                    <input
+                      class="quantity-value input-number w-12 border-none bg-transparent p-1 text-center text-lg text-gray-400 focus:border-none focus:ring-0"
+                      type="number" value="0" />
+                    <div class="flex w-5 flex-col justify-between">
+                      <button class="quantity-btn increment text-primary-color" type="button">
+                        <i class="bi bi-caret-up-fill"></i>
+                      </button>
+                      <button class="quantity-btn decrement text-primary-color" type="button">
+                        <i class="bi bi-caret-down-fill"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tippy tippy-remove transition-all-300 cursor-pointer text-slate-400 hover:text-primary-color">
+                  <i class="bi bi-trash-fill pointer-events-none inline text-xl"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Element Desktop -->
+        <div class="hidden overflow-x-auto lg:block">
+          <table class="w-full min-w-[800px] text-left">
+            <thead>
+              <tr>
+                <th></th>
+                <th class="p-2">Product Name</th>
+                <th class="p-2">Unit Price</th>
+                <th class="p-2">Quantity</th>
+                <th class="p-2">Subtotal</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="hover:bg-gray-100">
+                <td class="p-2">
+                  <div class="h-[100px] w-[100px] min-w-[100px] overflow-hidden rounded-lg border">
+                    <a href="#">
+                      <img class="h-full w-full object-cover" src="images/product/prod-1.jpg" alt="product" />
+                    </a>
+                  </div>
+                </td>
+                <td class="p-2">
+                  <a class="clamp-2 break-all font-bold" href="#">Ryzen 5 3600x</a>
+                </td>
+                <td class="p-2">
+                  <span class="font-bold text-primary-color">$37.00</span>
+                </td>
+                <td class="p-2">
+                  <div class="quantity inline-flex rounded-lg bg-white shadow">
+                    <input
+                      class="quantity-value input-number w-12 border-none bg-transparent p-1 text-center text-lg text-gray-400 focus:border-none focus:ring-0"
+                      type="number" value="0" />
+                    <div class="flex w-5 flex-col justify-between">
+                      <button class="quantity-btn increment text-primary-color" type="button">
+                        <i class="bi bi-caret-up-fill"></i>
+                      </button>
+                      <button class="quantity-btn decrement text-primary-color" type="button">
+                        <i class="bi bi-caret-down-fill"></i>
+                      </button>
+                    </div>
+                  </div>
+                </td>
+                <td class="p-2">
+                  <span class="font-bold text-primary-color">$37.00</span>
+                </td>
+                <td class="p-2">
+                  <button
+                    class="tippy tippy-remove btn-delete transition-all-300 text-slate-400 hover:text-primary-color">
+                    <i class="bi bi-trash-fill pointer-events-none inline text-xl"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-100">
+                <td class="p-2">
+                  <div class="h-[100px] w-[100px] min-w-[100px] overflow-hidden rounded-lg border">
+                    <a href="#">
+                      <img class="h-full w-full object-cover" src="images/cards/mousepad.jpg" alt="product" />
+                    </a>
+                  </div>
+                </td>
+                <td class="p-2">
+                  <div>
+                    <a class="clamp-2 break-all font-bold" href="#">
+                      Mousepad Hyperx Fury S Pro Speed
+                    </a>
+                    <small class="block"><span class="font-semibold">Size:</span> XL</small>
+                    <small class="block"><span class="font-semibold">Color:</span> Black</small>
+                  </div>
+                </td>
+                <td class="p-2">
+                  <span class="font-bold text-primary-color">$37.00</span>
+                </td>
+                <td class="p-2">
+                  <div class="quantity inline-flex rounded-lg bg-white shadow">
+                    <input
+                      class="quantity-value input-number w-12 border-none bg-transparent p-1 text-center text-lg text-gray-400 focus:border-none focus:ring-0"
+                      type="number" value="0" />
+                    <div class="flex w-5 flex-col justify-between">
+                      <button class="quantity-btn increment text-primary-color" type="button">
+                        <i class="bi bi-caret-up-fill"></i>
+                      </button>
+                      <button class="quantity-btn decrement text-primary-color" type="button">
+                        <i class="bi bi-caret-down-fill"></i>
+                      </button>
+                    </div>
+                  </div>
+                </td>
+                <td class="p-2">
+                  <span class="font-bold text-primary-color">$37.00</span>
+                </td>
+                <td class="p-2">
+                  <button
+                    class="tippy tippy-remove btn-delete transition-all-300 text-slate-400 hover:text-primary-color">
+                    <i class="bi bi-trash-fill pointer-events-none inline text-xl"></i>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="col-span-12 lg:col-span-4">
+        <div class="mb-5">
+          <span class="text-lg font-semibold">Discount Coupon</span>
+          <div class="my-3 flex">
+            <input class="input-rounded-l" type="text" placeholder="Your code here" />
+            <button
+              class="btn-view-shopping-cart btn-effect transition-all-300 flex min-w-max items-center justify-center rounded-r-lg bg-primary-color px-3"
+              type="submit">
+              <span class="font-bold uppercase text-white">Apply</span>
+            </button>
+          </div>
+        </div>
+        <div class="rounded-lg border-2 p-4">
+          <span class="mb-10 inline-block text-center text-lg font-bold">Summary of your purchase:</span>
+          <div class="py-4">
+            <div class="my-2 flex justify-between">
+              <span>Subtotal:</span>
+              <span>$37.00</span>
+            </div>
+            <div class="my-2 flex justify-between">
+              <span>Vat:</span>
+              <span>$22.72</span>
+            </div>
+            <div class="my-2 flex justify-between">
+              <span>Shipping:</span>
+              <span>$0.00</span>
+            </div>
+          </div>
+          <div class="flex justify-between border-t-2 border-gray-200 py-4 text-xl font-bold uppercase">
+            <span>Total:</span>
+            <span>$59.72</span>
+          </div>
+          <button
+            class="btn-view-shopping-cart btn-effect transition-all-300 flex w-full items-center justify-center rounded-lg bg-primary-color p-2"
+            type="submit">
+            <span class="font-bold uppercase text-white">Continue</span>
+          </button>
+        </div>
+        <a class="transition-all-300 my-5 flex items-center justify-center gap-2 hover:text-primary-color"
+          href="shopping-cart.html">
+          <i class="bi bi-arrow-repeat flex text-xl"></i>
+          <span>Update Cart</span>
+        </a>
+        <a class="transition-all-300 my-5 flex items-center justify-center gap-2 hover:text-primary-color"
+          href="shopping-cart.html">
+          <i class="bi bi-cart-plus flex text-xl"></i>
+          <span>Add more products</span>
+        </a>
+      </div>
+    </form>
+  </div>
+
+  <!-- Modals -->
+  <div class="menu-mob modal transition-all-300 invisible fixed inset-0 z-50 h-full w-full bg-overlay opacity-0">
+    <div class="flex h-full w-full">
+      <div
+        class="modal-content transition-all-300 relative left-[-999px] mr-auto flex h-full w-[288px] min-w-[250px] flex-col bg-white">
+        <div class="w-full bg-secondary-color">
+          <button class="btn-close-modal transition-all-300 absolute top-5 right-5 p-[3px] text-white">
+            <i class="bi bi-x-lg text-stroke-medium pointer-events-none flex text-xl"></i>
+          </button>
+          <div class="py-12">
+            <img src="images/logo.png" class="mx-auto h-[40px]" alt="logo" />
+          </div>
+        </div>
+        <nav class="h-full w-full overflow-auto bg-white">
+          <ul class="metismenu">
+            <li class="border-b border-gray-200">
+              <a class="flex select-none items-center p-2" href="index.html">
+                <i class="bi bi-house-door mr-3 flex text-xl text-primary-color"></i>
+                <span class="font-semibold">Home</span>
+              </a>
+            </li>
+            <li class="border-b border-gray-200">
+              <div class="metismenu-btn has-arrow flex cursor-pointer select-none items-center p-2"
+                aria-expanded="false" role="menu">
+                <i class="bi bi-person mr-3 flex text-xl text-primary-color"></i>
+                <span class="font-semibold">My Account</span>
+              </div>
+              <div class="metismenu-content">
+                <a class="btn-open-modal ml-10 block p-1" href="#" data-tab="0" data-target=".entry-modal">Login</a>
+                <a class="btn-open-modal ml-10 block p-1" href="#" data-tab="1" data-target=".entry-modal">Sign Up</a>
+              </div>
+            </li>
+            <li class="border-b border-gray-200">
+              <div class="btn-open-modal cursor-pointer p-2" data-target=".wishlist-modal">
+                <div class="pointer-events-none flex cursor-pointer select-none items-center">
+                  <i class="bi bi-heart mr-3 flex text-xl text-primary-color"></i>
+                  <span class="font-semibold">Wishlist</span>
+                  <span class="badge ml-auto h-[22px] min-w-[22px] px-[6px]">0</span>
+                </div>
+              </div>
+            </li>
+            <li class="border-b border-gray-200">
+              <div class="btn-open-modal cursor-pointer p-2" data-target=".shopping-cart-modal">
+                <div class="pointer-events-none flex cursor-pointer select-none items-center">
+                  <i class="bi bi-cart mr-3 flex text-xl text-primary-color"></i>
+                  <span class="font-semibold">Shopping Cart</span>
+                  <span class="badge ml-auto h-[22px] min-w-[22px] px-[6px]">0</span>
+                </div>
+              </div>
+            </li>
+            <li class="border-b border-gray-200">
+              <div class="metismenu-btn has-arrow flex cursor-pointer select-none items-center p-2"
+                aria-expanded="false" role="menu">
+                <i class="bi bi-motherboard mr-3 flex text-xl text-primary-color"></i>
+                <span class="font-semibold">Hardware</span>
+              </div>
+              <div class="metismenu-content">
+                <a class="btn-open-modal ml-10 block p-1" href="#">Motherboards</a>
+                <a class="btn-open-modal ml-10 block p-1" href="#">Processors</a>
+                <a class="btn-open-modal ml-10 block p-1" href="#">Rams</a>
+                <a class="btn-open-modal ml-10 block p-1" href="#">Video Cards</a>
+                <a class="btn-open-modal ml-10 block p-1" href="#">Power Supplys</a>
+                <a class="btn-open-modal ml-10 block p-1" href="#">Hard Drives</a>
+                <a class="btn-open-modal ml-10 block p-1" href="#">SSD Disk</a>
+              </div>
+            </li>
+            <li class="border-b border-gray-200">
+              <div class="metismenu-btn has-arrow flex cursor-pointer select-none items-center p-2"
+                aria-expanded="false" role="menu">
+                <i class="bi bi-mouse mr-3 flex text-xl text-primary-color"></i>
+                <span class="font-semibold">Peripherals</span>
+              </div>
+              <div class="metismenu-content">
+                <a class="btn-open-modal ml-10 block p-1" href="#">Keywords</a>
+                <a class="btn-open-modal ml-10 block p-1" href="#">Mouses</a>
+                <a class="btn-open-modal ml-10 block p-1" href="#">Mics</a>
+                <a class="btn-open-modal ml-10 block p-1" href="#">Webcam</a>
+              </div>
+            </li>
+            <li class="border-b border-gray-200">
+              <div class="metismenu-btn has-arrow flex cursor-pointer select-none items-center p-2"
+                aria-expanded="false" role="menu">
+                <i class="bi bi-pc-display mr-3 flex text-xl text-primary-color"></i>
+                <span class="font-semibold">Computers</span>
+              </div>
+              <div class="metismenu-content">
+                <a class="btn-open-modal ml-10 block p-1" href="#">Notebooks</a>
+                <a class="btn-open-modal ml-10 block p-1" href="#">Desktops</a>
+              </div>
+            </li>
+            <li class="border-b border-gray-200">
+              <a class="flex cursor-pointer select-none items-center p-2" href="#">
+                <i class="bi bi-tv mr-3 flex text-xl text-primary-color"></i>
+                <span class="font-semibold">Monitors</span>
+              </a>
+            </li>
+            <li class="border-b border-gray-200">
+              <a class="flex cursor-pointer select-none items-center p-2" href="#">
+                <i class="bi bi-printer mr-3 flex text-xl text-primary-color"></i>
+                <span class="font-semibold">Printers</span>
+              </a>
+            </li>
+            <li class="border-b border-gray-200">
+              <a class="flex cursor-pointer select-none items-center p-2" href="#">
+                <i class="bi bi-phone mr-3 flex text-xl text-primary-color"></i>
+                <span class="font-semibold">Smartphones</span>
+              </a>
+            </li>
+
+            <li class="border-b border-gray-200">
+              <a class="flex select-none items-center p-2" href="contact-us.html">
+                <i class="bi bi-telephone mr-3 flex text-xl text-primary-color"></i>
+                <span class="font-semibold">Contact Us</span>
+              </a>
+            </li>
+            <li class="border-b border-gray-200">
+              <div class="metismenu-btn has-arrow flex cursor-pointer select-none items-center p-2"
+                aria-expanded="false" role="menu">
+                <span class="font-semibold">Pages</span>
+              </div>
+              <div class="metismenu-content">
+                <a class="btn-open-modal ml-10 block p-1" href="wishlist.html">Wishlist</a>
+                <a class="btn-open-modal ml-10 block p-1" href="shopping-cart.html">Shopping Cart</a>
+                <a class="btn-open-modal ml-10 block p-1" href="product-details.html">Product Details</a>
+                <a class="btn-open-modal ml-10 block p-1" href="checkout.html">Checkout</a>
+                <a class="btn-open-modal ml-10 block p-1" href="shop-mixed.html">Shop - Mixed</a>
+
+                <a class="btn-open-modal ml-10 block p-1" href="about-us.html">About Us</a>
+                <a class="btn-open-modal ml-10 block p-1" href="my-account.html">My Account</a>
+                <a class="btn-open-modal ml-10 block p-1" href="forgot-password.html">Forgot Password</a>
+                <a class="btn-open-modal ml-10 block p-1" href="login.html">Login</a>
+                <a class="btn-open-modal ml-10 block p-1" href="sign-up.html">Sign Up</a>
+                <a class="btn-open-modal ml-10 block p-1" href="verification.html">Verification</a>
+
+                <a class="btn-open-modal ml-10 block p-1" href="error404.html">Error 404</a>
+                <a class="btn-open-modal ml-10 block p-1" href="message-sent.html">Message Sent</a>
+                <a class="btn-open-modal ml-10 block p-1" href="purchase-completed.html">Purchase Completed</a>
+                <a class="btn-open-modal ml-10 block p-1" href="purchase-failed.html">Purchase Failed</a>
+
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="shopping-cart-modal modal transition-all-300 invisible fixed inset-0 z-50 h-full w-full bg-overlay opacity-0">
+    <div class="flex h-full w-full">
+      <div
+        class="modal-content transition-all-300 relative right-[-999px] ml-auto flex h-full w-[400px] min-w-[250px] flex-col bg-white">
+        <div class="w-full">
+          <div class="border-b-2 border-gray-200 p-5">
+            <h3 class="text-xl font-bold uppercase">Shopping Cart</h3>
+          </div>
+          <button class="btn-close-modal transition-all-300 absolute top-5 right-5 p-[3px] hover:text-slate-400">
+            <i class="bi bi-x-lg text-stroke-medium pointer-events-none flex text-xl"></i>
+          </button>
+        </div>
+        <div class="h-full overflow-auto">
+          <!-- If the shopping cart is empty (replace hidden with flex) -->
+          <div class="hidden flex-col items-center justify-center gap-4 p-5">
+            <i class="bi bi-cart-x text-8xl text-gray-200"></i>
+            <p class="font-semibold">There are no products in the cart.</p>
+            <a class="btn-effect transition-all-300 flex items-center justify-center gap-2 rounded-lg bg-primary-color p-2"
+              href="#">
+              <span class="font-bold uppercase text-white">Go to the store</span>
+            </a>
+          </div>
+          <!-- -->
+          <a class="transition-all-300 flex h-[100px] w-full items-center justify-between gap-5 bg-white p-2 hover:bg-gray-100"
+            href="#">
+            <div class="h-[80px] w-[80px] min-w-[80px] overflow-hidden rounded-lg border">
+              <img class="h-full w-full object-cover" src="images/product/prod-1.jpg" alt="product" />
+            </div>
+            <div class="flex w-full flex-col">
+              <h6 class="clamp-2 break-all text-lg font-semibold">
+                Ryzen 5 3600x
+              </h6>
+              <div class="flex gap-2">
+                <div class="flex gap-1 leading-7 text-gray-400">
+                  <span>1</span>
+                  <span>X</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="font-bold text-primary-color">$37.00</span>
+                  <small class="text-xs text-primary-color line-through">$50.00</small>
+                </div>
+              </div>
+            </div>
+            <div class="transition-all-300 flex text-slate-400 hover:text-primary-color">
+              <i class="bi bi-trash-fill pointer-events-none text-2xl"></i>
+            </div>
+          </a>
+        </div>
+        <div class="mt-auto border-t-2 border-gray-200 bg-white px-1 pt-5 xs:px-5">
+          <div class="flex justify-between">
+            <span class="text-lg uppercase">Subtotal:</span>
+            <span class="text-lg font-semibold text-primary-color">$37.00</span>
+          </div>
+          <a class="btn-effect transition-all-300 my-5 flex w-full items-center justify-center rounded-lg bg-primary-color p-2"
+            href="shopping-cart.html">
+            <span class="font-bold uppercase text-white">View Shopping Cart</span>
+          </a>
+          <a class="btn-effect transition-all-300 my-5 flex w-full items-center justify-center rounded-lg bg-primary-color p-2"
+            href="checkout.html">
+            <span class="font-bold uppercase text-white">Checkout now</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wishlist-modal modal transition-all-300 invisible fixed inset-0 z-50 h-full w-full bg-overlay opacity-0">
+    <div class="flex h-full w-full">
+      <div
+        class="modal-content transition-all-300 relative right-[-999px] ml-auto flex h-full w-[400px] min-w-[250px] flex-col bg-white">
+        <div class="w-full">
+          <div class="border-b-2 border-gray-200 p-5">
+            <h3 class="text-xl font-bold uppercase">Wishlist</h3>
+          </div>
+          <button class="btn-close-modal transition-all-300 absolute top-5 right-5 p-[3px] hover:text-slate-400">
+            <i class="bi bi-x-lg text-stroke-medium pointer-events-none flex text-xl"></i>
+          </button>
+        </div>
+        <div class="h-full overflow-auto">
+          <!-- If the wishlist is empty (replace hidden with flex) -->
+          <div class="hidden flex-col items-center justify-center gap-4 p-5">
+            <i class="bi bi-heart text-8xl text-gray-200"></i>
+            <p class="font-semibold">
+              There are no products in the wishlist.
+            </p>
+            <a class="btn-effect transition-all-300 flex items-center justify-center gap-2 rounded-lg bg-primary-color p-2"
+              href="#">
+              <span class="font-bold uppercase text-white">Go to the store</span>
+            </a>
+          </div>
+          <a class="transition-all-300 flex h-[100px] w-full items-center justify-between gap-5 bg-white p-2 hover:bg-gray-100"
+            href="#">
+            <div class="h-[80px] w-[80px] min-w-[80px] overflow-hidden rounded-lg border">
+              <img class="h-full w-full object-cover" src="images/product/prod-1.jpg" alt="product" />
+            </div>
+
+            <div class="flex w-full flex-col">
+              <h6 class="clamp-2 break-all text-lg font-semibold">
+                Ryzen 5 3600x
+              </h6>
+              <div class="flex items-center gap-2">
+                <span class="font-bold text-primary-color">$37.00</span>
+                <small class="text-xs text-primary-color line-through">$50.00</small>
+              </div>
+            </div>
+
+            <div class="transition-all-300 flex text-slate-400 hover:text-primary-color">
+              <i class="bi bi-trash-fill pointer-events-none text-2xl"></i>
+            </div>
+          </a>
+        </div>
+        <div class="mt-auto border-t-2 border-gray-200 bg-white px-1 xs:px-5">
+          <a class="btn-effect transition-all-300 my-5 flex w-full items-center justify-center rounded-lg bg-primary-color p-2"
+            href="wishlist.html">
+            <span class="font-bold uppercase text-white">View Wishlist</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="entry-modal modal transition-all-300 invisible fixed inset-0 z-50 flex h-full w-full flex-col items-center justify-start overflow-auto bg-overlay opacity-0">
+    <div class="my-10 flex w-full justify-center">
+      <div
+        class="entry-content modal-content transition-all-300 relative mx-3 w-[500px] min-w-[250px] rounded-lg bg-white px-3 pb-3 pt-7 xs:px-5 xs:pb-5 md:m-5">
+        <button
+          class="btn-close-modal transition-all-300 absolute top-0 right-0 p-2 sm:top-[-10px] sm:right-[-10px] sm:rounded-lg sm:bg-primary-color sm:text-white sm:hover:bg-primary-hover">
+          <i class="bi bi-x-lg text-stroke-medium pointer-events-none flex"></i>
+        </button>
+        <div class="tabs-container entry-container">
+          <ul class="flex justify-between">
+            <li
+              class="btn-tabs tab-active-1 transition-all-300 active w-full cursor-pointer border bg-gray-200 p-2 text-center text-gray-400">
+              Login
+            </li>
+            <li
+              class="btn-tabs tab-active-1 transition-all-300 w-full cursor-pointer border bg-gray-200 p-2 text-center text-gray-400">
+              Sign Up
+            </li>
+          </ul>
+          <div class="tabs-content border border-t-transparent">
+            <div class="tab-content invisible absolute w-full p-5 opacity-0">
+              <div class="my-5">
+                <img class="mx-auto" src="images/svg/logo.svg" alt="Besnik." />
+              </div>
+              <form action="#">
+                <div class="flex flex-col gap-4">
+                  <div class="relative flex h-[40px] items-center">
+                    <i class="bi bi-person absolute ml-2 flex text-[24px] text-gray-400"></i>
+                    <input class="input pl-10" type="text" placeholder="Username or Email" required />
+                  </div>
+                  <div class="relative flex h-[40px] items-center">
+                    <i class="bi bi-lock absolute ml-2 flex text-[24px] text-gray-400"></i>
+                    <input class="input pl-10" type="password" placeholder="Password" required />
+                  </div>
+                  <button class="btn-effect transition-all-300 h-full w-full rounded-lg bg-primary-color p-2"
+                    type="submit">
+                    <span class="font-bold uppercase text-white">Login</span>
+                  </button>
+                </div>
+                <div class="my-2 flex flex-wrap items-center justify-between gap-2">
+                  <label class="flex select-none items-center gap-2">
+                    <input class="checkbox" type="checkbox" />
+                    <span class="text-gray-title">Remember</span>
+                  </label>
+                  <a class="underlined-animated text-[#3091ff] after:bottom-0" href="#">Forgot Password?</a>
+                </div>
+              </form>
+              <span class="or text-gray-title flex h-[50px] items-center py-2">
+                <span class="mx-2 text-sm uppercase">Or</span>
+              </span>
+              <div class="flex flex-col flex-wrap justify-center gap-5 sm:flex-row">
+                <button
+                  class="transition-all-300 flex h-[50px] min-w-[100px] items-center justify-center rounded-lg bg-facebook hover:scale-110">
+                  <i class="bi bi-facebook flex text-3xl text-white"></i>
+                </button>
+                <button
+                  class="transition-all-300 flex h-[50px] min-w-[100px] items-center justify-center rounded-lg bg-twitter hover:scale-110">
+                  <i class="bi bi-twitter flex text-3xl text-white"></i>
+                </button>
+                <button
+                  class="transition-all-300 flex h-[50px] min-w-[100px] items-center justify-center rounded-lg bg-google hover:scale-110">
+                  <i class="bi bi-google flex text-3xl text-white"></i>
+                </button>
+              </div>
+            </div>
+            <div class="tab-content invisible absolute w-full bg-white p-5 opacity-0">
+              <div class="my-5">
+                <img class="mx-auto" src="images/svg/logo.svg" alt="Besnik." />
+              </div>
+              <form action="#">
+                <div class="flex flex-col gap-4">
+                  <div class="relative flex h-[40px] items-center">
+                    <i class="bi bi-person absolute ml-2 flex text-[24px] text-gray-400"></i>
+                    <input class="input pl-10" type="text" placeholder="Name" required />
+                  </div>
+                  <div class="relative flex h-[40px] items-center">
+                    <i class="bi bi-envelope absolute ml-2 flex text-[24px] text-gray-400"></i>
+                    <input class="input pl-10" type="text" placeholder="Email" required />
+                  </div>
+                  <div class="relative flex h-[40px] items-center">
+                    <i class="bi bi-lock absolute ml-2 flex text-[24px] text-gray-400"></i>
+                    <input class="input pl-10" type="password" placeholder="Password" required />
+                  </div>
+                  <div class="relative flex h-[40px] items-center">
+                    <i class="bi bi-lock-fill absolute ml-2 flex text-[24px] text-gray-400"></i>
+                    <input class="input pl-10" type="password" placeholder="Confirm Password" required />
+                  </div>
+                  <button class="btn-effect transition-all-300 h-full w-full rounded-lg bg-primary-color p-2"
+                    type="submit">
+                    <span class="font-bold uppercase text-white">Sign Up</span>
+                  </button>
+                </div>
+                <div class="my-2 flex items-center justify-between">
+                  <label class="flex select-none items-center gap-2">
+                    <input class="checkbox" type="checkbox" />
+                    <span class="text-gray-title">I agree with all
+                      <a class="underlined-animated text-[#3091ff] after:bottom-0" href="#">Terms of Use</a>
+                      &
+                      <a class="underlined-animated text-[#3091ff] after:bottom-0" href="#">Privacy Policy</a>.</span>
+                  </label>
+                </div>
+              </form>
+              <span class="or text-gray-title flex h-[50px] items-center py-2">
+                <span class="mx-2 text-sm uppercase">Or</span>
+              </span>
+              <div class="flex flex-col flex-wrap justify-center gap-5 sm:flex-row">
+                <button
+                  class="transition-all-300 flex h-[50px] min-w-[100px] items-center justify-center rounded-lg bg-facebook hover:scale-110">
+                  <i class="bi bi-facebook flex text-3xl text-white"></i>
+                </button>
+                <button
+                  class="transition-all-300 flex h-[50px] min-w-[100px] items-center justify-center rounded-lg bg-twitter hover:scale-110">
+                  <i class="bi bi-twitter flex text-3xl text-white"></i>
+                </button>
+                <button
+                  class="transition-all-300 flex h-[50px] min-w-[100px] items-center justify-center rounded-lg bg-google hover:scale-110">
+                  <i class="bi bi-google flex text-3xl text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -->
+
+  <div class="btn-gotop transition-all-300 invisible fixed bottom-[-999px] right-10 z-50 opacity-0">
+    <div class="transition-all-300 cursor-pointer rounded-lg bg-[rgba(0,0,0,.3)] p-3 hover:bg-primary-color">
+      <i class="bi bi-chevron-compact-up pointer-events-none flex text-2xl text-white"></i>
+    </div>
+  </div>
+
+  <div class="loader fixed z-[999] flex h-screen w-screen items-center justify-center bg-body">
+    <div class="loader-content flex flex-col items-center gap-2">
+      <span class="text-3xl font-semibold text-gray-200">Besbik.</span>
+      <div class="flex h-1 w-40 gap-1 overflow-hidden bg-gray-200">
+        <div class="animation-loader h-full w-20 bg-primary-color"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-section mt-auto w-full bg-[#00abcc] text-gray-400">
+    <div class="container mx-auto grid grid-cols-12 px-4 sm:px-8">
+      <div class="col-span-12 py-[50px]">
+        <div class="grid grid-cols-12 gap-2">
+          <div class="col-span-12 sm:col-span-6 lg:col-span-4">
+            <div class="pb-6">
+              <img src="images/svg/logo.svg" class="h-[40px]" alt="logo" />
+            </div>
+            <div>
+              <div class="flex items-center gap-[10px] py-2">
+                <i class="bi bi-envelope-fill flex text-xl text-primary-color"></i>
+                <a class="break-all" href="#">besnik.@example.com</a>
+              </div>
+              <div class="flex items-center gap-[10px] py-2">
+                <i class="bi bi-telephone-fill flex text-xl text-primary-color"></i>
+                <a class="break-all" href="#">0987-083245</a>
+              </div>
+              <div class="flex items-center gap-[10px] py-2">
+                <i class="bi bi-geo-alt-fill flex text-xl text-primary-color"></i>
+                <span class="break-all">22/26 Dong Hung Thuan 17 - Q12 - TP HCM</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-12 py-5 sm:col-span-6 sm:py-0 lg:col-span-4">
+            <h3 class="pb-2 font-semibold text-gray-300">Useful Links</h3>
+            <div>
+              <ul class="flex flex-col flex-wrap gap-2 text-sm xs:max-h-[200px]">
+                <li class="group relative flex items-center hover:text-primary-color">
+                  <i
+                    class="bi bi-circle-fill invisible absolute -left-4 flex text-[6px] text-primary-color group-hover:visible"></i>
+                  <a href="#" class="transition-all-300 group-hover:text-white">Terms &amp; Conditions</a>
+                </li>
+                <li class="group relative flex items-center hover:text-primary-color">
+                  <i
+                    class="bi bi-circle-fill invisible absolute -left-4 flex text-[6px] text-primary-color group-hover:visible"></i>
+                  <a href="#" class="transition-all-300 group-hover:text-white">New products</a>
+                </li>
+                <li class="group relative flex items-center hover:text-primary-color">
+                  <i
+                    class="bi bi-circle-fill invisible absolute -left-4 flex text-[6px] text-primary-color group-hover:visible"></i>
+                  <a href="#" class="transition-all-300 group-hover:text-white">Best sales</a>
+                </li>
+                <li class="group relative flex items-center hover:text-primary-color">
+                  <i
+                    class="bi bi-circle-fill invisible absolute -left-4 flex text-[6px] text-primary-color group-hover:visible"></i>
+                  <a href="#" class="transition-all-300 group-hover:text-white">Secure payment</a>
+                </li>
+                <li class="group relative flex items-center hover:text-primary-color">
+                  <i
+                    class="bi bi-circle-fill invisible absolute -left-4 flex text-[6px] text-primary-color group-hover:visible"></i>
+                  <a href="#" class="transition-all-300 group-hover:text-white">Services</a>
+                </li>
+                <li class="group relative flex items-center hover:text-primary-color">
+                  <i
+                    class="bi bi-circle-fill invisible absolute -left-4 flex text-[6px] text-primary-color group-hover:visible"></i>
+                  <a href="#" class="transition-all-300 group-hover:text-white">Delivery</a>
+                </li>
+                <li class="group relative flex items-center hover:text-primary-color">
+                  <i
+                    class="bi bi-circle-fill invisible absolute -left-4 flex text-[6px] text-primary-color group-hover:visible"></i>
+                  <a href="#" class="transition-all-300 group-hover:text-white">Legal Notice</a>
+                </li>
+                <li class="group relative flex items-center hover:text-primary-color">
+                  <i
+                    class="bi bi-circle-fill invisible absolute -left-4 flex text-[6px] text-primary-color group-hover:visible"></i>
+                  <a href="#" class="transition-all-300 group-hover:text-white">About us</a>
+                </li>
+                <li class="group relative flex items-center hover:text-primary-color">
+                  <i
+                    class="bi bi-circle-fill invisible absolute -left-4 flex text-[6px] text-primary-color group-hover:visible"></i>
+                  <a href="#" class="transition-all-300 group-hover:text-white">Contact us</a>
+                </li>
+                <li class="group relative flex items-center hover:text-primary-color">
+                  <i
+                    class="bi bi-circle-fill invisible absolute -left-4 flex text-[6px] text-primary-color group-hover:visible"></i>
+                  <a href="#" class="transition-all-300 group-hover:text-white">Stores</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-span-12 lg:col-span-4">
+            <h3 class="pb-2 font-semibold text-gray-300">
+              Be the first to know it
+            </h3>
+            <span class="py-2 text-sm">Subscribe to receive updates on our store and special
+              offers</span>
+            <form class="py-2">
+              <div class="flex overflow-hidden rounded-lg bg-gray-rgba p-2">
+                <input
+                  class="w-full border-none bg-transparent pl-2 focus:border-none focus:ring-0 focus:ring-transparent"
+                  type="text" placeholder="Your email address" />
+                <button class="p-1" type="submit">
+                  <i class="bi bi-send flex text-lg text-white"></i>
+                </button>
+              </div>
+            </form>
+            <div class="flex gap-2 py-2">
+              <div class="relative h-8 w-8 overflow-hidden rounded-full">
+                <a class="instagram-before flex h-8 w-8 items-center justify-center bg-gray-rgba text-center text-white"
+                  href="#">
+                  <i class="bi bi-instagram relative z-[2] flex"></i>
+                </a>
+              </div>
+              <div class="transition-all-300 h-8 w-8 rounded-full bg-gray-rgba hover:bg-facebook">
+                <a class="flex h-8 w-8 items-center justify-center" href="#">
+                  <i class="bi bi-facebook flex text-white"></i>
+                </a>
+              </div>
+              <div class="transition-all-300 h-8 w-8 rounded-full bg-gray-rgba hover:bg-twitter">
+                <a class="flex h-8 w-8 items-center justify-center" href="#">
+                  <i class="bi bi-twitter flex text-white"></i>
+                </a>
+              </div>
+              <div class="transition-all-300 h-8 w-8 rounded-full bg-gray-rgba hover:bg-youtube">
+                <a class="flex h-8 w-8 items-center justify-center" href="#">
+                  <i class="bi bi-youtube flex text-white"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-12 pb-5">
+        <p class="text-center">
+          © <span class="current-year"></span> Example. All rights reserved
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../unpkg.com/popperjs/core.js"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <script src="../unpkg.com/metismenujs%401.4.0/dist/metismenujs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
