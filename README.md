@@ -1,5 +1,6 @@
 # electronic-shop
 #Using HTML-CSS-JS and CSS Framework - Tailwind
+#If you are a college student or have interested in software development, just feel free to use this template but don't use for commercial purposes. Thank you! 
 
 **1. Home page**
 ![image](https://github.com/HuynhNhu1510/Ecommerce-Template/assets/103118620/da9066be-e91d-46ea-941a-12f9c2319a8b)
