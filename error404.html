@@ -6,10 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="./images/svg/logo.svg" type="image/x-icon" />
-  <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/bootstrap-icons%401.7.2/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="../unpkg.com/metismenujs%401.4.0/dist/metismenujs.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <title>Besnik. - Login</title>
+  <link rel="stylesheet" href="./cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="./unpkg.com/metismenujs@1.4.0/dist/metismenujs.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Besnik. - Error 404</title>
 </head>
 
 <body class="flex min-h-screen flex-col overflow-hidden bg-body font-poppins text-txt">
@@ -455,61 +455,23 @@
       </nav>
     </div>
   </header>
-  <div class="login-section container mx-auto my-5 px-2 sm:px-8">
-    <div class="mx-auto max-w-[500px] rounded-lg bg-white p-5">
-      <div class="my-5">
-        <img class="mx-auto" src="images/svg/logo.svg" alt="logo" />
-      </div>
-      <form action="#">
-        <div class="flex flex-col gap-4">
-          <div class="relative flex h-[40px] items-center">
-            <i class="bi bi-person absolute ml-2 flex text-[24px] text-gray-400"></i>
-            <input class="input pl-10" type="text" name="email" id="email" placeholder="email" autocomplete="" required />
-          </div>
-          <div class="relative flex h-[40px] items-center">
-            <i class="bi bi-lock absolute ml-2 flex text-[24px] text-gray-400"></i>
-            <input class="input pl-10" type="password" name="password" id="password" placeholder="Password" autocomplete="" required />
-          </div>
-          <button class="btn-effect transition-all-300 h-full w-full rounded-lg bg-primary-color p-2" type="submit">
-            <span class="font-bold uppercase text-white">Login</span>
-          </button>
-        </div>
-        <div class="my-2 flex flex-wrap items-center justify-between gap-2">
-          <label class="flex select-none items-center gap-2">
-            <input class="checkbox" type="checkbox" />
-            <span class="text-gray-title">Remember</span>
-          </label>
-          <a class="underlined-animated text-[#3091ff] after:bottom-0" href="#">Forgot Password?</a>
-        </div>
-      </form>
-      <span class="or text-gray-title flex h-[50px] items-center py-2">
-        <span class="mx-2 text-sm uppercase">Or</span>
-      </span>
-      <div class="flex flex-col flex-wrap justify-center gap-5 sm:flex-row">
-        <button
-          class="transition-all-300 flex h-[50px] min-w-[100px] items-center justify-center rounded-lg bg-facebook hover:scale-110">
-          <i class="bi bi-facebook flex text-3xl text-white"></i>
-        </button>
-        <button
-          class="transition-all-300 flex h-[50px] min-w-[100px] items-center justify-center rounded-lg bg-twitter hover:scale-110">
-          <i class="bi bi-twitter flex text-3xl text-white"></i>
-        </button>
-        <button
-          class="transition-all-300 flex h-[50px] min-w-[100px] items-center justify-center rounded-lg bg-google hover:scale-110">
-          <i class="bi bi-google flex text-3xl text-white"></i>
-        </button>
-      </div>
-      <div class="mt-5 flex flex-col items-center justify-center border-t border-t-gray-400 pt-5">
-        <span>Don't have a account?</span>
-        <a class="btn-effect rounded-lg bg-primary-color p-2 text-white" href="sign-up.html">
-          <span>Create one</span>
-        </a>
-      </div>
+
+  <div class="error-section container m-auto my-20 px-2">
+    <div class="flex flex-col items-center gap-2 text-center">
+      <span class="text-8xl text-gray-400">404</span>
+      <h1 class="text-4xl uppercase text-primary-color">Page not found</h1>
+      <p class="text-lg">
+        The page your are looking for does not exist. It might have been moved
+        or delete.
+      </p>
+      <a class="btn-effect rounded-lg bg-primary-color p-2 font-bold uppercase text-white" href="index.html">
+        <span>Go Back Home</span>
+      </a>
     </div>
   </div>
 
   <!-- Modals -->
-  <div class="menu-mob modal transition-all-300 invisible fixed inset-0 z-50 h-full w-full bg-overlay opacity-1">
+  <div class="menu-mob modal transition-all-300 invisible fixed inset-0 z-50 h-full w-full bg-overlay opacity-0">
     <div class="flex h-full w-full">
       <div
         class="modal-content transition-all-300 relative left-[-999px] mr-auto flex h-full w-[288px] min-w-[250px] flex-col bg-white">
@@ -518,7 +480,7 @@
             <i class="bi bi-x-lg text-stroke-medium pointer-events-none flex text-xl"></i>
           </button>
           <div class="py-12">
-            <img src="images/svg/logo.svg" class="mx-auto h-[40px]" alt="logo" />
+            <img src="images/svg/logo.svg" class="mx-auto h-[40px]" alt="Besnik." />
           </div>
         </div>
         <nav class="h-full w-full overflow-auto bg-white">
@@ -616,7 +578,7 @@
                 <span class="font-semibold">Smartphones</span>
               </a>
             </li>
-            
+
             <li class="border-b border-gray-200">
               <a class="flex select-none items-center p-2" href="contact-us.html">
                 <i class="bi bi-telephone mr-3 flex text-xl text-primary-color"></i>
@@ -641,7 +603,6 @@
                 <a class="btn-open-modal ml-10 block p-1" href="login.html">Login</a>
                 <a class="btn-open-modal ml-10 block p-1" href="sign-up.html">Sign Up</a>
                 <a class="btn-open-modal ml-10 block p-1" href="verification.html">Verification</a>
-
                 <a class="btn-open-modal ml-10 block p-1" href="error404.html">Error 404</a>
                 <a class="btn-open-modal ml-10 block p-1" href="message-sent.html">Message Sent</a>
                 <a class="btn-open-modal ml-10 block p-1" href="purchase-completed.html">Purchase Completed</a>
@@ -669,9 +630,7 @@
           </button>
         </div>
         <div class="h-full overflow-auto">
-
           <!-- If the shopping cart is empty (replace hidden with flex) -->
-
           <div class="hidden flex-col items-center justify-center gap-4 p-5">
             <i class="bi bi-cart-x text-8xl text-gray-200"></i>
             <p class="font-semibold">There are no products in the cart.</p>
@@ -737,9 +696,7 @@
           </button>
         </div>
         <div class="h-full overflow-auto">
-
           <!-- If the wishlist is empty (replace hidden with flex) -->
-
           <div class="hidden flex-col items-center justify-center gap-4 p-5">
             <i class="bi bi-heart text-8xl text-gray-200"></i>
             <p class="font-semibold">
@@ -804,7 +761,7 @@
           <div class="tabs-content border border-t-transparent">
             <div class="tab-content invisible absolute w-full p-5 opacity-0">
               <div class="my-5">
-                <img class="mx-auto" src="images/svg/logo.svg" alt="Besnik." />
+                <img class="mx-auto" src="images/svg/logo.svg" alt="Besbik." />
               </div>
               <form action="#">
                 <div class="flex flex-col gap-4">
@@ -849,7 +806,7 @@
             </div>
             <div class="tab-content invisible absolute w-full bg-white p-5 opacity-0">
               <div class="my-5">
-                <img class="mx-auto" src="images/svg/logo.svg" alt="Besnik." />
+                <img class="mx-auto" src="images/svg/logo.svg" alt="Besbik." />
               </div>
               <form action="#">
                 <div class="flex flex-col gap-4">
@@ -939,11 +896,11 @@
               </div>
               <div class="flex items-center gap-[10px] py-2">
                 <i class="bi bi-telephone-fill flex text-xl text-primary-color"></i>
-                <a class="break-all" href="#">0987-083245</a>
+                <a class="break-all" href="#">0123456789</a>
               </div>
               <div class="flex items-center gap-[10px] py-2">
                 <i class="bi bi-geo-alt-fill flex text-xl text-primary-color"></i>
-                <span class="break-all">22/26 Dong Hung Thuan 17 - Q12 - TP HCM</span>
+                <span class="break-all">22/26 - TP HCM</span>
               </div>
             </div>
           </div>
@@ -1054,8 +1011,8 @@
     </div>
   </footer>
 
-  <script src="../unpkg.com/metismenujs%401.4.0/dist/metismenujs.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="./unpkg.com/metismenujs@1.4.0/dist/metismenujs.min.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

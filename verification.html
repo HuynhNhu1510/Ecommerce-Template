@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="./images/svg/logo.svg" type="image/x-icon" />
-  <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/bootstrap-icons%401.7.2/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="../unpkg.com/metismenujs%401.4.0/dist/metismenujs.min.css" />
-  <link rel="stylesheet" href="libraries/nice-select2/nice-select2.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <title>Besnik. - Checkout</title>
+  <link rel="stylesheet" href="./cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="./unpkg.com/metismenujs@1.4.0/dist/metismenujs.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Besnik. - Verification</title>
 </head>
 
 <body class="flex min-h-screen flex-col overflow-hidden bg-body font-poppins text-txt">
@@ -457,175 +456,41 @@
     </div>
   </header>
 
-  <div class="breadcrumb-section container mx-auto my-5 px-2 sm:px-8">
-    <ul class="flex flex-wrap items-center gap-1">
-      <li class="transition-all-300 hover:text-primary-color">
-        <a href="index.html">Home</a>
-      </li>
-      <li>
-        <i class="bi bi-caret-right-fill flex text-primary-color"></i>
-      </li>
-      <li class="transition-all-300 hover:text-primary-color">
-        <a href="shopping-cart.html">Shopping Cart</a>
-      </li>
-      <li>
-        <i class="bi bi-caret-right-fill flex text-primary-color"></i>
-      </li>
-      <li class="transition-all-300 active hover:text-primary-color">
-        <a href="checkout.html">Checkout</a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="banner-title-section container mx-auto my-5 px-2 sm:px-8">
-    <div class="liner-container my-5 flex justify-center border-b-2 border-[rgba(119,119,119,.17)]">
-      <h1 class="mb-[-2px] inline-block border-b-2 border-primary-color pb-3 text-2xl font-bold uppercase">
-        Checkout
-      </h1>
+  <div class="container mx-auto my-5 px-2 sm:px-8">
+    <div class="mx-auto w-3/4 rounded-lg bg-white p-10">
+      <div class="flex flex-col items-center gap-2">
+        <span class="text-2xl font-bold">Verify your number</span>
+        <span class="text-sm">Enter the 4-digit code we sent to you</span>
+        <span class="text-sm">15****68</span>
+        <div class="my-3 flex flex-wrap gap-3">
+          <input
+            class="transition-all-300 h-10 w-16 rounded-lg border-2 border-gray-200 text-center uppercase outline-none focus:border-primary-color focus:ring-0"
+            type="text" tabindex="1" maxlength="1" placeholder="0" />
+          <input
+            class="transition-all-300 h-10 w-16 rounded-lg border-2 border-gray-200 text-center uppercase outline-none focus:border-primary-color focus:ring-0"
+            type="text" tabindex="2" maxlength="1" placeholder="0" />
+          <input
+            class="transition-all-300 h-10 w-16 rounded-lg border-2 border-gray-200 text-center uppercase outline-none focus:border-primary-color focus:ring-0"
+            type="text" tabindex="3" maxlength="1" placeholder="0" />
+          <input
+            class="transition-all-300 h-10 w-16 rounded-lg border-2 border-gray-200 text-center uppercase outline-none focus:border-primary-color focus:ring-0"
+            type="text" tabindex="4" maxlength="1" placeholder="0" />
+        </div>
+        <div class="text-center">
+          <a class="text-primary-color" href="#">Resend Code</a>
+        </div>
+        <div class="text-center">
+          <a class="btn-prev-step transition-all-300 hover:text-primary-hover" href="javascript:void(0)">Try another
+            method</a>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="checkout-section container mx-auto my-5 px-2 sm:px-8">
-    <form class="grid grid-cols-12 gap-5 rounded-lg bg-white p-2 xs:p-8" action="#">
-      <div class="col-span-12 lg:col-span-8">
-        <span class="text-lg font-semibold">Billing Details</span>
-        <div class="grid grid-cols-12 gap-5 pt-5">
-          <div class="col-span-12 xs:col-span-6">
-            <label class="flex flex-col">
-              <span class="text-sm">First Name</span>
-              <input class="input" type="text" required />
-            </label>
-          </div>
-          <div class="col-span-12 xs:col-span-6">
-            <label class="flex flex-col">
-              <span class="text-sm">Last Name</span>
-              <input class="input" type="text" required />
-            </label>
-          </div>
-          <div class="col-span-12">
-            <label class="flex flex-col">
-              <span class="text-sm">Email</span>
-              <input class="input" type="text" required />
-            </label>
-          </div>
-          <div class="col-span-12">
-            <label class="flex flex-col">
-              <span class="text-sm">Company (Optional)</span>
-              <input class="input" type="text" />
-            </label>
-          </div>
-          <div class="col-span-12 xs:col-span-8">
-            <label class="flex flex-col">
-              <span class="text-sm">Address</span>
-              <input class="input" type="text" required />
-            </label>
-          </div>
-          <div class="col-span-12 xs:col-span-4">
-            <label class="flex flex-col">
-              <span class="text-sm">Apt, Suite, etc (Optional)</span>
-              <input class="input" type="text" />
-            </label>
-          </div>
-          <div class="col-span-12 xs:col-span-6">
-            <label class="flex flex-col">
-              <span class="text-sm">City</span>
-              <input class="input" type="text" required />
-            </label>
-          </div>
-          <div class="col-span-12 xs:col-span-6">
-            <div class="flex h-full flex-col">
-              <label class="flex" for="form-country">
-                <span class="text-sm">Country</span>
-              </label>
-              <select class="nice-select country select flex h-full w-full items-center" id="form-country">
-                <option value="1">Country 1</option>
-                <option value="2">Country 2</option>
-                <option value="3">Country 3</option>
-                <option value="4">Country 4</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-span-12 xs:col-span-6">
-            <label class="flex flex-col">
-              <span class="text-sm">Postal Code</span>
-              <input class="input input-number" type="number" required />
-            </label>
-          </div>
-          <div class="col-span-12 xs:col-span-6">
-            <label class="flex flex-col">
-              <span class="text-sm">Telephone</span>
-              <input class="input input-number" type="number" required />
-            </label>
-          </div>
-          <div class="col-span-12 flex flex-wrap justify-between gap-5">
-            <a class="transition-all-300 flex items-center gap-2 hover:text-primary-color" href="shopping-cart.html">
-              <i class="bi bi-arrow-return-left flex text-xl"></i>
-              <span>Return to Shopping Cart</span>
-            </a>
-            <button class="btn-effect rounded-lg bg-primary-color p-4 font-bold uppercase text-white" type="submit">
-              <span>Continue</span>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col-span-12 lg:col-span-4">
-        <div class="max-h-60 overflow-auto">
-          <span class="text-lg font-semibold">Your Cart</span>
-          <a class="transition-all-300 flex h-[100px] w-full items-center justify-between gap-5 bg-white p-2 hover:bg-gray-100"
-            href="#">
-            <div class="h-[80px] w-[80px] min-w-[80px] overflow-hidden rounded-lg border">
-              <img class="h-full w-full object-cover" src="images/product/prod-1.jpg" alt="product" />
-            </div>
-            <div class="flex w-full flex-col">
-              <h6 class="clamp-2 break-all text-lg font-semibold">
-                Ryzen 5 3600x
-              </h6>
-              <div class="flex gap-2">
-                <div class="flex gap-1 leading-7 text-gray-400">
-                  <span>1</span>
-                  <span>X</span>
-                </div>
-                <div class="flex items-center">
-                  <span class="font-bold text-primary-color">$37.00</span>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="mb-5">
-          <span class="text-lg font-semibold">Discount Coupon</span>
-          <div class="my-3 flex">
-            <input class="input-rounded-l" type="text" placeholder="Your code here" />
-            <button
-              class="btn-view-shopping-cart btn-effect transition-all-300 flex min-w-max items-center justify-center rounded-r-lg bg-primary-color px-3"
-              type="submit">
-              <span class="font-bold uppercase text-white">Apply</span>
-            </button>
-          </div>
-        </div>
-        <div class="rounded-lg border-2 p-4">
-          <span class="mb-10 inline-block text-center text-lg font-bold">Summary of your purchase:</span>
-          <div class="py-4">
-            <div class="my-2 flex justify-between">
-              <span>Subtotal:</span>
-              <span>$37.00</span>
-            </div>
-            <div class="my-2 flex justify-between">
-              <span>Vat:</span>
-              <span>$22.72</span>
-            </div>
-            <div class="my-2 flex justify-between">
-              <span>Shipping:</span>
-              <span>$0.00</span>
-            </div>
-          </div>
-          <div class="flex justify-between border-t-2 border-gray-200 pt-4 text-xl font-bold uppercase">
-            <span>Total:</span>
-            <span>$59.72</span>
-          </div>
-        </div>
-      </div>
-    </form>
+  <div class="btn-gotop transition-all-300 invisible fixed bottom-[-999px] right-10 z-50 opacity-0">
+    <div class="transition-all-300 cursor-pointer rounded-lg bg-[rgba(0,0,0,.3)] p-3 hover:bg-primary-color">
+      <i class="bi bi-chevron-compact-up pointer-events-none flex text-2xl text-white"></i>
+    </div>
   </div>
 
   <!-- Modals -->
@@ -761,7 +626,6 @@
                 <a class="btn-open-modal ml-10 block p-1" href="login.html">Login</a>
                 <a class="btn-open-modal ml-10 block p-1" href="sign-up.html">Sign Up</a>
                 <a class="btn-open-modal ml-10 block p-1" href="verification.html">Verification</a>
-
 
                 <a class="btn-open-modal ml-10 block p-1" href="error404.html">Error 404</a>
                 <a class="btn-open-modal ml-10 block p-1" href="message-sent.html">Message Sent</a>
@@ -921,7 +785,7 @@
           <div class="tabs-content border border-t-transparent">
             <div class="tab-content invisible absolute w-full p-5 opacity-0">
               <div class="my-5">
-                <img class="mx-auto" src="images/svg/logo.svg" alt="Besbik." />
+                <img class="mx-auto" src="images/svg/logo.svg" alt="Besnik." />
               </div>
               <form action="#">
                 <div class="flex flex-col gap-4">
@@ -966,7 +830,7 @@
             </div>
             <div class="tab-content invisible absolute w-full bg-white p-5 opacity-0">
               <div class="my-5">
-                <img class="mx-auto" src="images/svg/logo.svg" alt="Besbik." />
+                <img class="mx-auto" src="images/svg/logo.svg" alt="Besnik." />
               </div>
               <form action="#">
                 <div class="flex flex-col gap-4">
@@ -1026,12 +890,6 @@
   </div>
   <!-- -->
 
-  <div class="btn-gotop transition-all-300 invisible fixed bottom-[-999px] right-10 z-50 opacity-0">
-    <div class="transition-all-300 cursor-pointer rounded-lg bg-[rgba(0,0,0,.3)] p-3 hover:bg-primary-color">
-      <i class="bi bi-chevron-compact-up pointer-events-none flex text-2xl text-white"></i>
-    </div>
-  </div>
-
   <div class="loader fixed z-[999] flex h-screen w-screen items-center justify-center bg-body">
     <div class="loader-content flex flex-col items-center gap-2">
       <span class="text-3xl font-semibold text-gray-200">Megabyte</span>
@@ -1056,11 +914,11 @@
               </div>
               <div class="flex items-center gap-[10px] py-2">
                 <i class="bi bi-telephone-fill flex text-xl text-primary-color"></i>
-                <a class="break-all" href="#">0987-083245</a>
+                <a class="break-all" href="#">0123456789</a>
               </div>
               <div class="flex items-center gap-[10px] py-2">
                 <i class="bi bi-geo-alt-fill flex text-xl text-primary-color"></i>
-                <span class="break-all">22/26 Dong Hung Thuan 17 - Q12 - TP HCM</span>
+                <span class="break-all">22/26 - TP HCM</span>
               </div>
             </div>
           </div>
@@ -1171,9 +1029,8 @@
     </div>
   </footer>
 
-  <script src="../unpkg.com/metismenujs%401.4.0/dist/metismenujs.min.js"></script>
-  <script src="libraries/nice-select2/nice-select2.js"></script>
-  <script src="js/main.js"></script>
+  <script src="./unpkg.com/metismenujs@1.4.0/dist/metismenujs.min.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

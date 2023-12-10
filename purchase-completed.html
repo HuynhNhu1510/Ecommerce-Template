@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="./images/svg/logo.svg" type="image/x-icon" />
-  <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/bootstrap-icons%401.7.2/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="../unpkg.com/metismenujs%401.4.0/dist/metismenujs.min.css" />
-  <link rel="stylesheet" href="libraries/iziToast/iziToast.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <title>Besnik. - Forgot Password</title>
+  <link rel="stylesheet" href="./cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="./unpkg.com/metismenujs@1.4.0/dist/metismenujs.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Besnik. - Purchase Completed</title>
 </head>
 
 <body class="flex min-h-screen flex-col overflow-hidden bg-body font-poppins text-txt">
@@ -457,156 +456,25 @@
     </div>
   </header>
 
-  <div class="banner-title-section container mx-auto my-5 px-2 sm:px-8">
-    <div class="liner-container my-5 flex justify-center border-b-2 border-[rgba(119,119,119,.17)]">
-      <h1 class="mb-[-2px] inline-block border-b-2 border-primary-color pb-3 text-2xl font-bold uppercase">
-        Forgot Password
+  <div class="purchase-completed-section container mx-auto my-5 px-2 sm:px-8">
+    <div class="flex flex-col items-center gap-2 text-center">
+      <div class="max-h-[300px] max-w-[300px]">
+        <img class="h-full w-full" src="images/svg/purchase-done.svg" alt="purchase completed" />
+      </div>
+      <h1 class="text-4xl uppercase text-primary-color">
+        Purchase Completed
       </h1>
-    </div>
-  </div>
-
-  <div class="container mx-auto my-5 w-2/4 px-2 sm:px-8">
-    <form class="step-container m-3 rounded-lg bg-white p-5" action="javascript:void(0)">
-      <div class="progressbar-container mb-4 flex flex-row items-center justify-between gap-2">
-        <div class="step-number">
-          <div
-            class="transition-all-300 active flex h-10 w-10 items-center justify-center rounded-full bg-gray-200 text-current">
-            <span class="text-lg font-bold">1</span>
-          </div>
-        </div>
-        <div class="progressbar relative h-2 w-full overflow-hidden rounded-full bg-gray-200">
-          <div class="transition-all-300 absolute h-full w-0 rounded-full bg-primary-color"></div>
-        </div>
-        <div class="step-number">
-          <div
-            class="transition-all-300 flex h-10 w-10 items-center justify-center rounded-full bg-gray-200 text-current">
-            <span class="text-lg font-bold">2</span>
-          </div>
-        </div>
-        <div class="progressbar relative h-2 w-full overflow-hidden rounded-full bg-gray-200">
-          <div class="transition-all-300 absolute h-full w-0 rounded-full bg-primary-color"></div>
-        </div>
-        <div class="step-number">
-          <div
-            class="transition-all-300 flex h-10 w-10 items-center justify-center rounded-full bg-gray-200 text-current">
-            <span class="text-lg font-bold">3</span>
-          </div>
-        </div>
-        <div class="progressbar relative h-2 w-full overflow-hidden rounded-full bg-gray-200">
-          <div class="transition-all-300 absolute h-full w-0 rounded-full bg-primary-color"></div>
-        </div>
-        <div class="step-number">
-          <div
-            class="transition-all-300 flex h-10 w-10 items-center justify-center rounded-full bg-gray-200 text-current">
-            <span class="text-lg font-bold">4</span>
-          </div>
-        </div>
-      </div>
-      <div class="step-content active hidden flex-col gap-4">
-        <span class="my-2">Enter the email or phone number of the associated account.</span>
-        <label class="flex flex-col">
-          <span class="text-sm">Email or Telephone Number</span>
-          <input class="input" type="text" />
-        </label>
-        <a class="btn-next-step btn-effect ml-auto w-max rounded-lg bg-primary-color p-2 px-3 font-bold uppercase text-white"
-          href="javascript:void(0)">
-          <span class="text-center">Next</span>
-        </a>
-      </div>
-      <div class="step-content hidden flex-col gap-4">
-        <span class="my-2">We found an account associated with "johndoe@example.com".</span>
-        <div class="flex flex-col gap-2">
-          <a class="btn-next-step transition-all-300 rounded-lg border bg-slate-100 p-2 hover:bg-slate-200"
-            href="javascript:void(0)">
-            <div class="pointer-events-none flex items-center justify-between gap-2">
-              <div class="flex items-center gap-2">
-                <i class="bi bi-envelope flex text-xl text-primary-color"></i>
-                <span>Send account verification code to
-                  <b>johndoe@example.com</b></span>
-              </div>
-              <i class="bi bi-arrow-right-short flex text-2xl text-primary-color"></i>
-            </div>
-          </a>
-          <a class="btn-next-step transition-all-300 rounded-lg border bg-slate-100 p-2 hover:bg-slate-200"
-            href="javascript:void(0)">
-            <div class="pointer-events-none flex items-center justify-between gap-2">
-              <div class="flex items-center gap-2">
-                <i class="bi bi-phone flex text-xl text-primary-color"></i>
-                <span>Send account verification code to <b>15****68</b></span>
-              </div>
-              <i class="bi bi-arrow-right-short flex text-2xl text-primary-color"></i>
-            </div>
-          </a>
-        </div>
-        <div class="flex justify-start">
-          <a class="btn-prev-step btn-effect rounded-lg bg-primary-color p-2 px-3 font-bold uppercase text-white"
-            href="javascript:void(0)">
-            <span class="text-center">Previous</span>
-          </a>
-        </div>
-      </div>
-      <div class="step-content hidden flex-col gap-2">
-        <div class="flex flex-col items-center gap-2">
-          <span class="text-2xl font-bold">Verify your number</span>
-          <span class="text-sm">Enter the 4-digit code we sent to you</span>
-          <span class="text-sm">15****68</span>
-          <div class="my-3 flex flex-wrap gap-3">
-            <input
-              class="transition-all-300 h-10 w-16 rounded-lg border-2 border-gray-200 text-center uppercase outline-none focus:border-primary-color focus:ring-0"
-              type="text" tabindex="1" maxlength="1" placeholder="0" />
-            <input
-              class="transition-all-300 h-10 w-16 rounded-lg border-2 border-gray-200 text-center uppercase outline-none focus:border-primary-color focus:ring-0"
-              type="text" tabindex="2" maxlength="1" placeholder="0" />
-            <input
-              class="transition-all-300 h-10 w-16 rounded-lg border-2 border-gray-200 text-center uppercase outline-none focus:border-primary-color focus:ring-0"
-              type="text" tabindex="3" maxlength="1" placeholder="0" />
-            <input
-              class="transition-all-300 h-10 w-16 rounded-lg border-2 border-gray-200 text-center uppercase outline-none focus:border-primary-color focus:ring-0"
-              type="text" tabindex="4" maxlength="1" placeholder="0" />
-          </div>
-          <div class="text-center">
-            <a class="resend-code text-primary-color" href="javascript:void(0)">Resend Code</a>
-          </div>
-          <div class="text-center">
-            <a class="btn-prev-step transition-all-300 hover:text-primary-hover" href="javascript:void(0)">Try another
-              method</a>
-          </div>
-        </div>
-        <div class="flex justify-between">
-          <a class="btn-prev-step btn-effect rounded-lg bg-primary-color p-2 px-3 font-bold uppercase text-white"
-            href="javascript:void(0)">
-            <span class="text-center">Previous</span>
-          </a>
-          <button class="btn-next-step btn-effect rounded-lg bg-primary-color p-2 px-3 font-bold uppercase text-white"
-            type="submit">
-            <span class="text-center">Complete</span>
-          </button>
-        </div>
-      </div>
-      <div class="step-content hidden flex-col gap-2">
-        <div class="flex flex-col items-center gap-2 text-center">
-          <div class="max-h-[200px] max-w-[200px]">
-            <img class="h-full w-full" src="images/svg/password-successfull.svg" alt="password-successfull" />
-          </div>
-          <h1 class="text-2xl uppercase text-primary-color">
-            Password Changed Successfully
-          </h1>
-          <p>
-            Your password has been changed successfully, you can now log in
-            again with your new password.
-          </p>
-        </div>
-        <a class="btn-effect ml-auto w-max rounded-lg bg-primary-color p-2 px-3 font-bold uppercase text-white"
-          href="index.html">
-          <span class="text-center">Close</span>
-        </a>
-      </div>
-    </form>
-  </div>
-
-  <div class="btn-gotop transition-all-300 invisible fixed bottom-[-999px] right-10 z-50 opacity-0">
-    <div class="transition-all-300 cursor-pointer rounded-lg bg-[rgba(0,0,0,.3)] p-3 hover:bg-primary-color">
-      <i class="bi bi-chevron-compact-up pointer-events-none flex text-2xl text-white"></i>
+      <p class="text-lg">
+        Your purchase has been successful, you can see the
+        <a class="underlined-animated text-primary-color after:bottom-0" href="#">details of your purchase here</a>.
+      </p>
+      <p class="text-lg">
+        We have sent the confirmation of your purchase to the email registered
+        in your account.
+      </p>
+      <a class="btn-effect rounded-lg bg-primary-color p-2 font-bold uppercase text-white" href="index.html">
+        <span>Go Back Home</span>
+      </a>
     </div>
   </div>
 
@@ -620,7 +488,7 @@
             <i class="bi bi-x-lg text-stroke-medium pointer-events-none flex text-xl"></i>
           </button>
           <div class="py-12">
-            <img src="images/svg/logo.svg" alt="Besbik." class="mx-auto h-[40px]" />
+            <img src="images/logo.png" class="mx-auto h-[40px]" alt="logo" />
           </div>
         </div>
         <nav class="h-full w-full overflow-auto bg-white">
@@ -717,7 +585,8 @@
                 <i class="bi bi-phone mr-3 flex text-xl text-primary-color"></i>
                 <span class="font-semibold">Smartphones</span>
               </a>
-            </li>       
+            </li>
+
             <li class="border-b border-gray-200">
               <a class="flex select-none items-center p-2" href="contact-us.html">
                 <i class="bi bi-telephone mr-3 flex text-xl text-primary-color"></i>
@@ -735,7 +604,6 @@
                 <a class="btn-open-modal ml-10 block p-1" href="product-details.html">Product Details</a>
                 <a class="btn-open-modal ml-10 block p-1" href="checkout.html">Checkout</a>
                 <a class="btn-open-modal ml-10 block p-1" href="shop-mixed.html">Shop - Mixed</a>
-
                 <a class="btn-open-modal ml-10 block p-1" href="about-us.html">About Us</a>
                 <a class="btn-open-modal ml-10 block p-1" href="my-account.html">My Account</a>
                 <a class="btn-open-modal ml-10 block p-1" href="forgot-password.html">Forgot Password</a>
@@ -1002,7 +870,235 @@
       </div>
     </div>
   </div>
+
+  <div
+    class="quick-view-modal modal transition-all-300 invisible fixed inset-0 z-50 flex h-full w-full flex-col items-center justify-start overflow-auto bg-overlay opacity-0">
+    <div class="my-10 flex w-full justify-center">
+      <div
+        class="modal-content relative mx-3 w-[900px] min-w-[250px] scale-0 rounded-lg bg-body px-3 pb-3 pt-7 xs:px-5 xs:pb-5 md:m-5">
+        <button
+          class="btn-close-modal transition-all-300 absolute top-0 right-0 p-2 sm:top-[-10px] sm:right-[-10px] sm:rounded-lg sm:bg-primary-color sm:text-white sm:hover:bg-primary-hover">
+          <i class="bi bi-x-lg text-stroke-medium pointer-events-none flex"></i>
+        </button>
+        <div class="grid grid-cols-12 gap-5">
+          <div class="col-span-12 max-h-[500px] md:col-span-7">
+            <div class="swiper swiper-top group relative flex items-center rounded-lg">
+              <div class="swiper-wrapper z-[5]">
+                <div class="swiper-slide">
+                  <div class="swiper-zoom-container">
+                    <img src="images/product/prod-1.jpg" alt="product" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-zoom-container">
+                    <img src="images/product/prod-2.jpg" alt="product" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-zoom-container">
+                    <img src="images/product/prod-3.jpg" alt="product" />
+                  </div>
+                </div>
+              </div>
+              <div class="button-next btn-slider-1 transition-all-300 -right-16 group-hover:right-4">
+                &#10095;
+              </div>
+              <div class="button-prev btn-slider-1 transition-all-300 -left-16 group-hover:left-4">
+                &#10094;
+              </div>
+            </div>
+            <div class="swiper swiper-thumbs">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide cursor-pointer rounded-lg">
+                  <img src="images/product/prod-1.jpg" alt="product" />
+                </div>
+                <div class="swiper-slide cursor-pointer rounded-lg">
+                  <img src="images/product/prod-2.jpg" alt="product" />
+                </div>
+                <div class="swiper-slide cursor-pointer rounded-lg">
+                  <img src="images/product/prod-3.jpg" alt="product" />
+                </div>
+              </div>
+              <div class="button-next btn-slider-1 transition-all-300 -right-16 group-hover:right-4">
+                &#10095;
+              </div>
+              <div class="button-prev btn-slider-1 transition-all-300 -left-16 group-hover:left-4">
+                &#10094;
+              </div>
+            </div>
+          </div>
+          <div class="col-span-12 md:col-span-5">
+            <div class="my-1">
+              <a class="clamp-2 transition-all-300 break-all text-2xl font-medium hover:text-primary-color" href="#">
+                Ryzen 5 3600x
+              </a>
+            </div>
+            <div class="my-2 flex justify-between">
+              <div class="flex">
+                <i class="bi bi-star-fill flex text-base text-star"></i>
+                <i class="bi bi-star-fill flex text-base text-star"></i>
+                <i class="bi bi-star-fill flex text-base text-star"></i>
+                <i class="bi bi-star-fill flex text-base text-star"></i>
+                <i class="bi bi-star-fill flex text-base text-gray-200"></i>
+              </div>
+              <div class="ml-auto">
+                <span class="rounded-md bg-green-300 py-1 px-2 text-xs font-bold uppercase text-white">instock</span>
+              </div>
+            </div>
+            <div class="my-5 flex items-center gap-5">
+              <div class="flex rounded-lg bg-white py-2 px-3 text-primary-color">
+                <span class="text-sm">$</span>
+                <span class="text-2xl font-semibold leading-7">37.00</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-md font-semibold uppercase text-green-400">
+                  25% Off</span>
+                <span class="prev-price text-sm text-primary-color line-through">$50.00</span>
+              </div>
+            </div>
+            <div class="my-4">
+              <p class="clamp-5 break-all">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+                cupiditate repellat magni exercitationem non, quaerat
+                consequatur. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Earum cupiditate.
+              </p>
+            </div>
+            <div class="flex gap-1">
+              <form action="javascript:void(0)">
+                <div class="block">
+                  <div class="my-3 flex flex-col gap-1">
+                    <span class="font-bold">Size:</span>
+                    <ul class="flex flex-wrap gap-3">
+                      <li class="relative">
+                        <input class="peer sr-only" type="radio" value="" name="size" id="size-1" checked="" />
+                        <label
+                          class="flex h-8 w-10 cursor-pointer items-center justify-center rounded-lg border border-gray-300 bg-white hover:bg-gray-50 focus:outline-none peer-checked:border-transparent peer-checked:ring-2 peer-checked:ring-primary-color"
+                          for="size-1">
+                          S
+                        </label>
+                      </li>
+                      <li class="relative">
+                        <input class="peer sr-only" type="radio" value="" name="size" id="size-2" />
+                        <label
+                          class="flex h-8 w-10 cursor-pointer items-center justify-center rounded-lg border border-gray-300 bg-white hover:bg-gray-50 focus:outline-none peer-checked:border-transparent peer-checked:ring-2 peer-checked:ring-primary-color"
+                          for="size-2">
+                          M
+                        </label>
+                      </li>
+                      <li class="relative">
+                        <input class="peer sr-only" type="radio" value="" name="size" id="size-3" />
+                        <label
+                          class="flex h-8 w-10 cursor-pointer items-center justify-center rounded-lg border border-gray-300 bg-white hover:bg-gray-50 focus:outline-none peer-checked:border-transparent peer-checked:ring-2 peer-checked:ring-primary-color"
+                          for="size-3">
+                          L
+                        </label>
+                      </li>
+                      <li class="relative">
+                        <input class="peer sr-only" type="radio" value="" name="size" id="size-4" />
+                        <label
+                          class="flex h-8 w-10 cursor-pointer items-center justify-center rounded-lg border border-gray-300 bg-white hover:bg-gray-50 focus:outline-none peer-checked:border-transparent peer-checked:ring-2 peer-checked:ring-primary-color"
+                          for="size-4">
+                          XL
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="my-3 flex gap-2">
+                    <div>
+                      <label class="inline-flex items-center">
+                        <input type="radio"
+                          class="radio bg-blue-600 text-blue-600 checked:ring-blue-300 focus:ring-blue-300"
+                          name="radio-colors" value="0" checked />
+                      </label>
+                    </div>
+                    <div>
+                      <label class="inline-flex items-center">
+                        <input type="radio"
+                          class="radio bg-red-600 text-red-600 checked:ring-red-300 focus:ring-red-300"
+                          name="radio-colors" value="1" />
+                      </label>
+                    </div>
+                    <div>
+                      <label class="inline-flex items-center">
+                        <input type="radio"
+                          class="radio bg-yellow-600 text-yellow-600 checked:ring-yellow-300 focus:ring-yellow-300"
+                          name="radio-colors" value="2" />
+                      </label>
+                    </div>
+                    <div>
+                      <label class="inline-flex items-center">
+                        <input type="radio" class="radio bg-black text-black checked:ring-gray-400 focus:ring-gray-400"
+                          name="radio-colors" value="3" />
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-wrap justify-start gap-5">
+                  <div class="quantity inline-flex rounded-lg bg-white">
+                    <input
+                      class="quantity-value input-number w-12 border-none bg-transparent p-1 text-center text-lg text-gray-400 focus:border-none focus:ring-0"
+                      type="number" value="0" />
+                    <div class="flex w-5 flex-col justify-between">
+                      <button class="quantity-btn increment text-primary-color" type="button">
+                        <i class="bi bi-caret-up-fill"></i>
+                      </button>
+                      <button class="quantity-btn decrement text-primary-color" type="button">
+                        <i class="bi bi-caret-down-fill"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="flex gap-2">
+                    <button
+                      class="btn-effect transition-all-300 flex h-full w-full items-center justify-center gap-2 rounded-lg bg-primary-color p-2"
+                      type="submit">
+                      <i class="bi bi-cart-fill flex text-xl text-white"></i>
+                      <span class="font-bold uppercase text-white">Add to cart</span>
+                    </button>
+                    <a class="tippy tippy-wishlist btn-wishlist transition-all-300 flex min-h-[40px] min-w-[40px] cursor-pointer items-center justify-center gap-2 rounded-lg bg-primary-color p-2 hover:bg-primary-hover"
+                      href="javascript:void(0)">
+                      <i class="bi bi-heart pointer-events-none flex text-white"></i>
+                    </a>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="mt-5 border-t border-gray-200 pt-5">
+              <div>
+                <b>Categories: </b>
+                <span><a href="#" class="text-zinc-500">Hardware</a>,
+                  <a href="#" class="text-zinc-500">Processors</a></span>
+              </div>
+              <div class="flex gap-2">
+                <b>Share:</b>
+                <div class="flex items-center gap-[10px]">
+                  <a href="#">
+                    <i class="bi bi-facebook transition-all-300 flex text-zinc-500 hover:text-primary-color"></i>
+                  </a>
+                  <a href="#">
+                    <i class="bi bi-twitter transition-all-300 flex text-zinc-500 hover:text-primary-color"></i>
+                  </a>
+                  <a href="#">
+                    <i class="bi bi-whatsapp transition-all-300 flex text-zinc-500 hover:text-primary-color"></i>
+                  </a>
+                  <a href="#">
+                    <i class="bi bi-link-45deg transition-all-300 flex text-zinc-500 hover:text-primary-color"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- -->
+
+  <div class="btn-gotop transition-all-300 invisible fixed bottom-[-999px] right-10 z-50 opacity-0">
+    <div class="transition-all-300 cursor-pointer rounded-lg bg-[rgba(0,0,0,.3)] p-3 hover:bg-primary-color">
+      <i class="bi bi-chevron-compact-up pointer-events-none flex text-2xl text-white"></i>
+    </div>
+  </div>
 
   <div class="loader fixed z-[999] flex h-screen w-screen items-center justify-center bg-body">
     <div class="loader-content flex flex-col items-center gap-2">
@@ -1019,7 +1115,7 @@
         <div class="grid grid-cols-12 gap-2">
           <div class="col-span-12 sm:col-span-6 lg:col-span-4">
             <div class="pb-6">
-              <img src="images/svg/logo.svg" class="h-[40px]" alt="Besnik." />
+              <img src="images/svg/logo.svg" class="h-[40px]" alt="logo" />
             </div>
             <div>
               <div class="flex items-center gap-[10px] py-2">
@@ -1028,11 +1124,11 @@
               </div>
               <div class="flex items-center gap-[10px] py-2">
                 <i class="bi bi-telephone-fill flex text-xl text-primary-color"></i>
-                <a class="break-all" href="#">0987-083245</a>
+                <a class="break-all" href="#">0123456789</a>
               </div>
               <div class="flex items-center gap-[10px] py-2">
                 <i class="bi bi-geo-alt-fill flex text-xl text-primary-color"></i>
-                <span class="break-all">22/26 Dong Hung Thuan 17 - Q12 - TP HCM</span>
+                <span class="break-all">22/26 - TP HCM</span>
               </div>
             </div>
           </div>
@@ -1142,9 +1238,8 @@
       </div>
     </div>
   </footer>
-  <script src="../unpkg.com/metismenujs%401.4.0/dist/metismenujs.min.js"></script>
-  <script src="libraries/iziToast/iziToast.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="./unpkg.com/metismenujs@1.4.0/dist/metismenujs.min.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

@@ -6,10 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="./images/svg/logo.svg" type="image/x-icon" />
-  <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/bootstrap-icons%401.7.2/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="../unpkg.com/metismenujs%401.4.0/dist/metismenujs.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <title>Besnik. - Message Sent</title>
+  <link rel="stylesheet" href="./cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="./unpkg.com/swiper@11.0.4/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./unpkg.com/metismenujs@1.4.0/dist/metismenujs.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Besnik. - Wishlist</title>
 </head>
 
 <body class="flex min-h-screen flex-col overflow-hidden bg-body font-poppins text-txt">
@@ -455,18 +456,270 @@
       </nav>
     </div>
   </header>
-  <div class="container mx-auto my-5 px-2 sm:px-8">
-    <div class="flex flex-col items-center gap-2 text-center">
-      <div class="max-h-[300px] max-w-[300px]">
-        <img class="h-full w-full" src="images/svg/message-sent.svg" alt="message sent" />
-      </div>
-      <h1 class="text-4xl uppercase text-primary-color">Message Sent</h1>
-      <p class="text-lg">Your message has been sent successfully.</p>
-      <p class="text-lg">You will receive our answer shortly.</p>
-      <a class="btn-effect rounded-lg bg-primary-color p-2 font-bold uppercase text-white" href="index.html">
-        <span>Go Back Home</span>
+
+  <div class="breadcrumb-section container mx-auto my-5 px-2 sm:px-8">
+    <ul class="flex flex-wrap items-center gap-1">
+      <li class="transition-all-300 hover:text-primary-color">
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <i class="bi bi-caret-right-fill flex text-primary-color"></i>
+      </li>
+      <li class="transition-all-300 active hover:text-primary-color">
+        <a href="wishlist.html">Wishlist</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="banner-title-section container mx-auto my-5 px-2 sm:px-8">
+    <div class="liner-container my-5 flex justify-center border-b-2 border-[rgba(119,119,119,.17)]">
+      <h1 class="mb-[-2px] inline-block border-b-2 border-primary-color pb-3 text-2xl font-bold uppercase">
+        Wishlist
+      </h1>
+    </div>
+  </div>
+
+  <div class="wishlist-page container mx-auto my-5 px-2 sm:px-8">
+    <!-- If the wishlist is empty (replace hidden with flex) -->
+    <div class="wishlist-empty hidden flex-col items-center justify-center gap-4 p-5">
+      <i class="bi bi-heart text-8xl text-gray-200"></i>
+      <p class="text-lg font-semibold">
+        There are no products in the wishlist.
+      </p>
+      <a class="btn-effect flex items-center justify-center gap-2 rounded-lg bg-primary-color p-2 transition-all duration-300"
+        href="#">
+        <span class="font-bold uppercase text-white">Go to the store</span>
       </a>
     </div>
+    <!-- -->
+    <form class="wishlist-content rounded-lg bg-white p-5">
+      <div class="mb-5 flex flex-col items-center justify-between border-b-2 border-gray-200 pb-5 sm:flex-row">
+        <div class="flex gap-5 pb-4 sm:pb-0">
+          <label class="flex cursor-pointer select-none items-center gap-2" for="check-all">
+            <input class="checkbox" type="checkbox" id="check-all" />
+            <span>Select All</span>
+          </label>
+          <button
+            class="btn-effect flex items-center gap-1 rounded-lg bg-primary-color p-2 font-semibold uppercase text-white"
+            type="submit">
+            <i class="bi bi-trash-fill pointer-events-none flex text-xl"></i>
+            <span>Delete</span>
+          </button>
+        </div>
+        <ul class="pagination flex items-center">
+          <li class="pointer-events-none py-2 px-3 text-gray-200">
+            <i class="bi bi-arrow-left-short flex"></i>
+          </li>
+          <li class="active cursor-pointer py-2 px-3">1</li>
+          <li class="cursor-pointer py-2 px-3">2</li>
+          <li class="cursor-pointer py-2 px-3">3</li>
+          <li class="hidden cursor-pointer py-2 px-3 tracking-wide sm:block">
+            ...
+          </li>
+          <li class="hidden cursor-pointer py-2 px-3 sm:block">10</li>
+          <li class="hidden cursor-pointer py-2 px-3 sm:block">11</li>
+          <li class="cursor-pointer py-2 px-3 text-primary-color">
+            <i class="bi bi-arrow-right-short flex"></i>
+          </li>
+        </ul>
+      </div>
+      <!-- Product Responsive -->
+      <div class="transition-all-300 flex gap-2 p-2 hover:bg-gray-100 lg:hidden">
+        <div class="content flex items-center">
+          <input class="checkbox check-product" type="checkbox" id="product-mobile-1" />
+        </div>
+        <div class="flex w-full flex-col gap-2 xs:flex-row">
+          <div class="content flex items-center">
+            <div class="flex items-center">
+              <div class="h-[100px] w-[100px] min-w-[100px] overflow-hidden rounded-lg border">
+                <a href="#">
+                  <img class="h-full w-full object-cover" src="images/product/prod-1.jpg" alt="product" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="flex w-full flex-col gap-2 sm:flex-row">
+            <div class="flex w-full flex-col gap-2">
+              <div class="content">
+                <div class="flex flex-col">
+                  <span class="text-xs font-light xs:hidden">Product Name</span>
+                  <a class="clamp-2 break-all font-bold" href="#">Ryzen 5 3600x</a>
+                </div>
+              </div>
+              <div class="content">
+                <div class="flex flex-col">
+                  <span class="text-xs font-light xs:hidden">Unit Price</span>
+                  <div class="flex items-center gap-2">
+                    <span class="font-bold text-primary-color">$37.00</span>
+                    <small class="text-xs text-primary-color line-through">$50.00</small>
+                  </div>
+                </div>
+              </div>
+              <div class="content">
+                <div class="flex flex-col">
+                  <span class="text-xs font-light xs:hidden">Stock Status</span>
+                  <span class="text-sm font-bold uppercase text-green-400">In Stock</span>
+                </div>
+              </div>
+            </div>
+            <div class="content flex items-center">
+              <div class="flex flex-wrap justify-center gap-x-4 gap-y-1 md:hidden">
+                <a href="#" class="flex text-primary-color hover:text-primary-hover">View Details</a>
+                <a href="#" class="flex text-primary-color hover:text-primary-hover">Remove</a>
+              </div>
+              <div class="hidden items-center gap-2 md:flex">
+                <a href="#" class="btn-effect transition-all-300 w-max rounded-lg bg-primary-color p-2 px-3">
+                  <span class="font-bold uppercase text-white">View Details</span>
+                </a>
+                <div
+                  class="tippy tippy-remove transition-all-300 hidden cursor-pointer text-slate-400 hover:text-primary-color sm:inline">
+                  <i class="bi bi-trash-fill pointer-events-none inline text-xl"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="transition-all-300 flex gap-2 p-2 hover:bg-gray-100 lg:hidden">
+        <div class="content flex items-center">
+          <input class="checkbox check-product" type="checkbox" id="product-mobile-2" />
+        </div>
+        <div class="flex w-full flex-col gap-2 xs:flex-row">
+          <div class="content flex items-center">
+            <div class="flex items-center">
+              <div class="h-[100px] w-[100px] min-w-[100px] overflow-hidden rounded-lg border">
+                <a href="#">
+                  <img class="h-full w-full object-cover" src="images/categories/peripherals/mouse.jpg" alt="product" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="flex w-full flex-col gap-2 sm:flex-row">
+            <div class="flex w-full flex-col gap-2">
+              <div class="content">
+                <div class="flex flex-col">
+                  <span class="text-xs font-light xs:hidden">Product Name</span>
+                  <a class="clamp-2 break-all font-bold" href="#">Mouse Logitech g403</a>
+                </div>
+              </div>
+              <div class="content">
+                <div class="flex flex-col">
+                  <span class="text-xs font-light xs:hidden">Unit Price</span>
+                  <span class="font-bold text-primary-color">$37.00</span>
+                </div>
+              </div>
+              <div class="content">
+                <div class="flex flex-col">
+                  <span class="text-xs font-light xs:hidden">Stock Status</span>
+                  <span class="text-sm font-bold uppercase text-green-400">In Stock</span>
+                </div>
+              </div>
+            </div>
+            <div class="content flex items-center">
+              <div class="flex flex-wrap justify-center gap-x-4 gap-y-1 md:hidden">
+                <a href="#" class="flex text-primary-color hover:text-primary-hover">View Details</a>
+                <a href="#" class="flex text-primary-color hover:text-primary-hover">Remove</a>
+              </div>
+              <div class="hidden items-center gap-2 md:flex">
+                <a href="#" class="btn-effect transition-all-300 w-max rounded-lg bg-primary-color p-2 px-3">
+                  <span class="font-bold uppercase text-white">View Details</span>
+                </a>
+                <div
+                  class="tippy tippy-remove transition-all-300 hidden cursor-pointer text-slate-400 hover:text-primary-color sm:inline">
+                  <i class="bi bi-trash-fill pointer-events-none inline text-xl"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Product Desktop -->
+      <div class="hidden overflow-x-auto lg:block">
+        <table class="w-full min-w-[800px] text-left">
+          <thead>
+            <tr>
+              <th></th>
+              <th class="p-2">Product Name</th>
+              <th class="p-2">Unit Price</th>
+              <th class="p-2">Stock Status</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="transition-all-300 hover:bg-gray-50">
+              <td class="p-2">
+                <div class="flex items-center gap-5">
+                  <input class="checkbox check-product" type="checkbox" id="product-desktop-1" />
+                  <div class="h-[100px] w-[100px] min-w-[100px] overflow-hidden rounded-lg border">
+                    <a href="#">
+                      <img class="h-full w-full object-cover" src="images/product/prod-1.jpg" alt="product" />
+                    </a>
+                  </div>
+                </div>
+              </td>
+              <td class="p-2">
+                <a class="clamp-2 break-all font-bold" href="#">Ryzen 5 3600x</a>
+              </td>
+              <td class="p-2">
+                <div class="flex items-center gap-2">
+                  <span class="font-bold text-primary-color">$37.00</span>
+                  <small class="text-xs text-primary-color line-through">$50.00</small>
+                </div>
+              </td>
+              <td class="p-2">
+                <span class="text-sm font-bold uppercase text-green-400">In Stock</span>
+              </td>
+              <td class="p-2">
+                <div class="flex items-center gap-4">
+                  <a class="btn-effect rounded-lg bg-primary-color p-2 text-white" href="#">
+                    <span class="font-bold uppercase">View Details</span>
+                  </a>
+                  <div
+                    class="tippy tippy-remove transition-all-300 hidden cursor-pointer text-slate-400 hover:text-primary-color sm:inline">
+                    <i class="bi bi-trash-fill pointer-events-none inline text-xl"></i>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr class="transition-all-300 hover:bg-gray-50">
+              <td class="p-2">
+                <div class="flex items-center gap-5">
+                  <input class="checkbox check-product" type="checkbox" id="product-desktop-2" />
+                  <div class="h-[100px] w-[100px] min-w-[100px] overflow-hidden rounded-lg border">
+                    <a href="#">
+                      <img class="h-full w-full object-cover" src="images/categories/peripherals/mouse.jpg"
+                        alt="product" />
+                    </a>
+                  </div>
+                </div>
+              </td>
+              <td class="p-2">
+                <a class="clamp-2 break-all font-bold" href="#">
+                  Mouse Logitech g403
+                </a>
+              </td>
+              <td class="p-2">
+                <span class="font-bold text-primary-color">$37.00</span>
+              </td>
+              <td class="p-2">
+                <span class="text-sm font-bold uppercase text-green-400">In Stock</span>
+              </td>
+              <td class="p-2">
+                <div class="flex items-center gap-4">
+                  <a class="btn-effect rounded-lg bg-primary-color p-2 text-white" href="#">
+                    <span class="font-bold uppercase">View Details</span>
+                  </a>
+                  <div
+                    class="tippy tippy-remove transition-all-300 hidden cursor-pointer text-slate-400 hover:text-primary-color sm:inline">
+                    <i class="bi bi-trash-fill pointer-events-none inline text-xl"></i>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </form>
   </div>
 
   <!-- Modals -->
@@ -595,17 +848,19 @@
                 <a class="btn-open-modal ml-10 block p-1" href="product-details.html">Product Details</a>
                 <a class="btn-open-modal ml-10 block p-1" href="checkout.html">Checkout</a>
                 <a class="btn-open-modal ml-10 block p-1" href="shop-mixed.html">Shop - Mixed</a>
+
                 <a class="btn-open-modal ml-10 block p-1" href="about-us.html">About Us</a>
                 <a class="btn-open-modal ml-10 block p-1" href="my-account.html">My Account</a>
                 <a class="btn-open-modal ml-10 block p-1" href="forgot-password.html">Forgot Password</a>
                 <a class="btn-open-modal ml-10 block p-1" href="login.html">Login</a>
                 <a class="btn-open-modal ml-10 block p-1" href="sign-up.html">Sign Up</a>
                 <a class="btn-open-modal ml-10 block p-1" href="verification.html">Verification</a>
+
                 <a class="btn-open-modal ml-10 block p-1" href="error404.html">Error 404</a>
                 <a class="btn-open-modal ml-10 block p-1" href="message-sent.html">Message Sent</a>
                 <a class="btn-open-modal ml-10 block p-1" href="purchase-completed.html">Purchase Completed</a>
                 <a class="btn-open-modal ml-10 block p-1" href="purchase-failed.html">Purchase Failed</a>
-                
+
               </div>
             </li>
           </ul>
@@ -759,7 +1014,7 @@
           <div class="tabs-content border border-t-transparent">
             <div class="tab-content invisible absolute w-full p-5 opacity-0">
               <div class="my-5">
-                <img class="mx-auto" src="images/svg/logo.svg" alt="Besbik." />
+                <img class="mx-auto" src="images/svg/logo.svg" alt="Besnik." />
               </div>
               <form action="#">
                 <div class="flex flex-col gap-4">
@@ -804,7 +1059,7 @@
             </div>
             <div class="tab-content invisible absolute w-full bg-white p-5 opacity-0">
               <div class="my-5">
-                <img class="mx-auto" src="images/svg/logo.svg" alt="Besbik." />
+                <img class="mx-auto" src="images/svg/logo.svg" alt="Besnik." />
               </div>
               <form action="#">
                 <div class="flex flex-col gap-4">
@@ -894,11 +1149,11 @@
               </div>
               <div class="flex items-center gap-[10px] py-2">
                 <i class="bi bi-telephone-fill flex text-xl text-primary-color"></i>
-                <a class="break-all" href="#">0987-083245</a>
+                <a class="break-all" href="#">0123456789</a>
               </div>
               <div class="flex items-center gap-[10px] py-2">
                 <i class="bi bi-geo-alt-fill flex text-xl text-primary-color"></i>
-                <span class="break-all">22/26 Dong Hung Thuan 17 - Q12 - TP HCM</span>
+                <span class="break-all">22/26 - TP HCM</span>
               </div>
             </div>
           </div>
@@ -1009,6 +1264,8 @@
     </div>
   </footer>
 
+  <script src="../unpkg.com/popperjs/core.js"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
   <script src="../unpkg.com/metismenujs%401.4.0/dist/metismenujs.min.js"></script>
   <script src="js/main.js"></script>
 </body>

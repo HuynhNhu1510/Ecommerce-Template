@@ -6,10 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="./images/svg/logo.svg" type="image/x-icon" />
-  <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/bootstrap-icons%401.7.2/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="../unpkg.com/metismenujs%401.4.0/dist/metismenujs.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <title>Besnik. - Purchase Completed</title>
+  <link rel="stylesheet" href="./cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="./unpkg.com/metismenujs@1.4.0/dist/metismenujs.min.css" />
+  <link rel="stylesheet" href="./libraries/iziToast/iziToast.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Besnik. - Contact us</title>
 </head>
 
 <body class="flex min-h-screen flex-col overflow-hidden bg-body font-poppins text-txt">
@@ -456,25 +457,117 @@
     </div>
   </header>
 
-  <div class="purchase-completed-section container mx-auto my-5 px-2 sm:px-8">
-    <div class="flex flex-col items-center gap-2 text-center">
-      <div class="max-h-[300px] max-w-[300px]">
-        <img class="h-full w-full" src="images/svg/purchase-done.svg" alt="purchase completed" />
-      </div>
-      <h1 class="text-4xl uppercase text-primary-color">
-        Purchase Completed
+  <div class="breadcrumb-section container mx-auto my-5 px-2 sm:px-8">
+    <ul class="flex flex-wrap items-center gap-1">
+      <li class="transition-all-300 hover:text-primary-color">
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <i class="bi bi-caret-right-fill flex text-primary-color"></i>
+      </li>
+      <li class="transition-all-300 active hover:text-primary-color">
+        <a href="contact-us.html">Contact us</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="banner-title-section container mx-auto my-5 px-2 sm:px-8">
+    <div class="liner-container my-5 flex justify-center border-b-2 border-[rgba(119,119,119,.17)]">
+      <h1 class="mb-[-2px] inline-block border-b-2 border-primary-color pb-3 text-2xl font-bold uppercase">
+        Contact Us
       </h1>
-      <p class="text-lg">
-        Your purchase has been successful, you can see the
-        <a class="underlined-animated text-primary-color after:bottom-0" href="#">details of your purchase here</a>.
-      </p>
-      <p class="text-lg">
-        We have sent the confirmation of your purchase to the email registered
-        in your account.
-      </p>
-      <a class="btn-effect rounded-lg bg-primary-color p-2 font-bold uppercase text-white" href="index.html">
-        <span>Go Back Home</span>
-      </a>
+    </div>
+  </div>
+
+  <div class="information-section container mx-auto my-5 px-2 sm:px-8">
+    <div class="grid grid-cols-12 gap-5">
+      <div class="col-span-12 flex sm:col-span-6 lg:col-span-3">
+        <div
+          class="transition-all-300 flex w-full items-center gap-4 rounded-lg bg-white p-5 hover:shadow-lg xs:pl-[20%] sm:pl-5">
+          <div class="rounded-full border-2">
+            <i class="bi bi-telephone flex p-3 text-[40px] text-primary-color"></i>
+          </div>
+          <div>
+            <h6 class="font-bold capitalize">Phone</h6>
+            <p class="break-all text-sm text-gray-400">2284 - 010101</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-12 flex sm:col-span-6 lg:col-span-3">
+        <div
+          class="transition-all-300 flex w-full items-center gap-4 rounded-lg bg-white p-5 hover:shadow-lg xs:pl-[20%] sm:pl-5">
+          <div class="rounded-full border-2">
+            <i class="bi bi-envelope flex p-3 text-[40px] text-primary-color"></i>
+          </div>
+          <div>
+            <h6 class="font-bold capitalize">E-mail</h6>
+            <p class="break-all text-sm text-gray-400">
+              megabyte@example.com
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-12 flex sm:col-span-6 lg:col-span-3">
+        <div
+          class="transition-all-300 flex w-full items-center gap-4 rounded-lg bg-white p-5 hover:shadow-lg xs:pl-[20%] sm:pl-5">
+          <div class="rounded-full border-2">
+            <i class="bi bi-geo-alt flex p-3 text-[40px] text-primary-color"></i>
+          </div>
+          <div>
+            <h6 class="font-bold capitalize">Ubication</h6>
+            <p class="break-all text-sm text-gray-400">
+              Colón 0101, Olavarría
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-12 flex sm:col-span-6 lg:col-span-3">
+        <div
+          class="transition-all-300 flex w-full items-center gap-4 rounded-lg bg-white p-5 hover:shadow-lg xs:pl-[20%] sm:pl-5">
+          <div class="rounded-full border-2">
+            <i class="bi bi-clock flex p-3 text-[40px] text-primary-color"></i>
+          </div>
+          <div>
+            <h6 class="font-bold capitalize">Hours</h6>
+            <p class="break-all text-sm text-gray-400">
+              Monday to Friday 10:00 to 23:00
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="leave-message-section container mx-auto my-5 px-2 sm:px-8">
+    <div class="grid grid-cols-12 overflow-hidden rounded-lg">
+      <div class="col-span-12 h-60 sm:col-span-6 sm:h-full">
+        <iframe class="h-full w-full"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25525.690009671285!2d-60.3206370790762!3d-36.88856868458139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959445daae9e90a3%3A0xd11aadb313dbf072!2sOlavarr%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1643148990997!5m2!1ses!2sar"
+          width="700" height="500" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="col-span-12 bg-white p-5 sm:col-span-6">
+        <h1 class="inline-block pb-3 text-xl font-bold uppercase">
+          Leave a Message
+        </h1>
+        <form class="form-leave-message flex flex-col gap-5" action="javascript:void(0)">
+          <div>
+            <input class="input" type="text" placeholder="Your Name" required />
+          </div>
+          <div>
+            <input class="input" type="email" placeholder="Your E-mail" required />
+          </div>
+          <div class="h-32">
+            <textarea class="input h-full resize-none" placeholder="Write your message here..." required></textarea>
+          </div>
+          <div>
+            <button
+              class="btn-view-shopping-cart btn-effect transition-all-300 flex items-center justify-center rounded-lg bg-primary-color p-4"
+              type="submit">
+              <span class="font-bold uppercase text-white">Send Message</span>
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 
@@ -587,6 +680,7 @@
               </a>
             </li>
 
+            </li>
             <li class="border-b border-gray-200">
               <a class="flex select-none items-center p-2" href="contact-us.html">
                 <i class="bi bi-telephone mr-3 flex text-xl text-primary-color"></i>
@@ -604,12 +698,12 @@
                 <a class="btn-open-modal ml-10 block p-1" href="product-details.html">Product Details</a>
                 <a class="btn-open-modal ml-10 block p-1" href="checkout.html">Checkout</a>
                 <a class="btn-open-modal ml-10 block p-1" href="shop-mixed.html">Shop - Mixed</a>
-                <a class="btn-open-modal ml-10 block p-1" href="about-us.html">About Us</a>
                 <a class="btn-open-modal ml-10 block p-1" href="my-account.html">My Account</a>
                 <a class="btn-open-modal ml-10 block p-1" href="forgot-password.html">Forgot Password</a>
                 <a class="btn-open-modal ml-10 block p-1" href="login.html">Login</a>
                 <a class="btn-open-modal ml-10 block p-1" href="sign-up.html">Sign Up</a>
                 <a class="btn-open-modal ml-10 block p-1" href="verification.html">Verification</a>
+
                 <a class="btn-open-modal ml-10 block p-1" href="error404.html">Error 404</a>
                 <a class="btn-open-modal ml-10 block p-1" href="message-sent.html">Message Sent</a>
                 <a class="btn-open-modal ml-10 block p-1" href="purchase-completed.html">Purchase Completed</a>
@@ -767,7 +861,7 @@
           <div class="tabs-content border border-t-transparent">
             <div class="tab-content invisible absolute w-full p-5 opacity-0">
               <div class="my-5">
-                <img class="mx-auto" src="images/svg/logo.svg" alt="Besbik." />
+                <img class="mx-auto" src="images/svg/logo.svg" alt="Besnik." />
               </div>
               <form action="#">
                 <div class="flex flex-col gap-4">
@@ -812,7 +906,7 @@
             </div>
             <div class="tab-content invisible absolute w-full bg-white p-5 opacity-0">
               <div class="my-5">
-                <img class="mx-auto" src="images/svg/logo.svg" alt="Besbik." />
+                <img class="mx-auto" src="images/svg/logo.svg" alt="Besnik." />
               </div>
               <form action="#">
                 <div class="flex flex-col gap-4">
@@ -870,228 +964,6 @@
       </div>
     </div>
   </div>
-
-  <div
-    class="quick-view-modal modal transition-all-300 invisible fixed inset-0 z-50 flex h-full w-full flex-col items-center justify-start overflow-auto bg-overlay opacity-0">
-    <div class="my-10 flex w-full justify-center">
-      <div
-        class="modal-content relative mx-3 w-[900px] min-w-[250px] scale-0 rounded-lg bg-body px-3 pb-3 pt-7 xs:px-5 xs:pb-5 md:m-5">
-        <button
-          class="btn-close-modal transition-all-300 absolute top-0 right-0 p-2 sm:top-[-10px] sm:right-[-10px] sm:rounded-lg sm:bg-primary-color sm:text-white sm:hover:bg-primary-hover">
-          <i class="bi bi-x-lg text-stroke-medium pointer-events-none flex"></i>
-        </button>
-        <div class="grid grid-cols-12 gap-5">
-          <div class="col-span-12 max-h-[500px] md:col-span-7">
-            <div class="swiper swiper-top group relative flex items-center rounded-lg">
-              <div class="swiper-wrapper z-[5]">
-                <div class="swiper-slide">
-                  <div class="swiper-zoom-container">
-                    <img src="images/product/prod-1.jpg" alt="product" />
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="swiper-zoom-container">
-                    <img src="images/product/prod-2.jpg" alt="product" />
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="swiper-zoom-container">
-                    <img src="images/product/prod-3.jpg" alt="product" />
-                  </div>
-                </div>
-              </div>
-              <div class="button-next btn-slider-1 transition-all-300 -right-16 group-hover:right-4">
-                &#10095;
-              </div>
-              <div class="button-prev btn-slider-1 transition-all-300 -left-16 group-hover:left-4">
-                &#10094;
-              </div>
-            </div>
-            <div class="swiper swiper-thumbs">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide cursor-pointer rounded-lg">
-                  <img src="images/product/prod-1.jpg" alt="product" />
-                </div>
-                <div class="swiper-slide cursor-pointer rounded-lg">
-                  <img src="images/product/prod-2.jpg" alt="product" />
-                </div>
-                <div class="swiper-slide cursor-pointer rounded-lg">
-                  <img src="images/product/prod-3.jpg" alt="product" />
-                </div>
-              </div>
-              <div class="button-next btn-slider-1 transition-all-300 -right-16 group-hover:right-4">
-                &#10095;
-              </div>
-              <div class="button-prev btn-slider-1 transition-all-300 -left-16 group-hover:left-4">
-                &#10094;
-              </div>
-            </div>
-          </div>
-          <div class="col-span-12 md:col-span-5">
-            <div class="my-1">
-              <a class="clamp-2 transition-all-300 break-all text-2xl font-medium hover:text-primary-color" href="#">
-                Ryzen 5 3600x
-              </a>
-            </div>
-            <div class="my-2 flex justify-between">
-              <div class="flex">
-                <i class="bi bi-star-fill flex text-base text-star"></i>
-                <i class="bi bi-star-fill flex text-base text-star"></i>
-                <i class="bi bi-star-fill flex text-base text-star"></i>
-                <i class="bi bi-star-fill flex text-base text-star"></i>
-                <i class="bi bi-star-fill flex text-base text-gray-200"></i>
-              </div>
-              <div class="ml-auto">
-                <span class="rounded-md bg-green-300 py-1 px-2 text-xs font-bold uppercase text-white">instock</span>
-              </div>
-            </div>
-            <div class="my-5 flex items-center gap-5">
-              <div class="flex rounded-lg bg-white py-2 px-3 text-primary-color">
-                <span class="text-sm">$</span>
-                <span class="text-2xl font-semibold leading-7">37.00</span>
-              </div>
-              <div class="flex flex-col">
-                <span class="text-md font-semibold uppercase text-green-400">
-                  25% Off</span>
-                <span class="prev-price text-sm text-primary-color line-through">$50.00</span>
-              </div>
-            </div>
-            <div class="my-4">
-              <p class="clamp-5 break-all">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-                cupiditate repellat magni exercitationem non, quaerat
-                consequatur. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Earum cupiditate.
-              </p>
-            </div>
-            <div class="flex gap-1">
-              <form action="javascript:void(0)">
-                <div class="block">
-                  <div class="my-3 flex flex-col gap-1">
-                    <span class="font-bold">Size:</span>
-                    <ul class="flex flex-wrap gap-3">
-                      <li class="relative">
-                        <input class="peer sr-only" type="radio" value="" name="size" id="size-1" checked="" />
-                        <label
-                          class="flex h-8 w-10 cursor-pointer items-center justify-center rounded-lg border border-gray-300 bg-white hover:bg-gray-50 focus:outline-none peer-checked:border-transparent peer-checked:ring-2 peer-checked:ring-primary-color"
-                          for="size-1">
-                          S
-                        </label>
-                      </li>
-                      <li class="relative">
-                        <input class="peer sr-only" type="radio" value="" name="size" id="size-2" />
-                        <label
-                          class="flex h-8 w-10 cursor-pointer items-center justify-center rounded-lg border border-gray-300 bg-white hover:bg-gray-50 focus:outline-none peer-checked:border-transparent peer-checked:ring-2 peer-checked:ring-primary-color"
-                          for="size-2">
-                          M
-                        </label>
-                      </li>
-                      <li class="relative">
-                        <input class="peer sr-only" type="radio" value="" name="size" id="size-3" />
-                        <label
-                          class="flex h-8 w-10 cursor-pointer items-center justify-center rounded-lg border border-gray-300 bg-white hover:bg-gray-50 focus:outline-none peer-checked:border-transparent peer-checked:ring-2 peer-checked:ring-primary-color"
-                          for="size-3">
-                          L
-                        </label>
-                      </li>
-                      <li class="relative">
-                        <input class="peer sr-only" type="radio" value="" name="size" id="size-4" />
-                        <label
-                          class="flex h-8 w-10 cursor-pointer items-center justify-center rounded-lg border border-gray-300 bg-white hover:bg-gray-50 focus:outline-none peer-checked:border-transparent peer-checked:ring-2 peer-checked:ring-primary-color"
-                          for="size-4">
-                          XL
-                        </label>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="my-3 flex gap-2">
-                    <div>
-                      <label class="inline-flex items-center">
-                        <input type="radio"
-                          class="radio bg-blue-600 text-blue-600 checked:ring-blue-300 focus:ring-blue-300"
-                          name="radio-colors" value="0" checked />
-                      </label>
-                    </div>
-                    <div>
-                      <label class="inline-flex items-center">
-                        <input type="radio"
-                          class="radio bg-red-600 text-red-600 checked:ring-red-300 focus:ring-red-300"
-                          name="radio-colors" value="1" />
-                      </label>
-                    </div>
-                    <div>
-                      <label class="inline-flex items-center">
-                        <input type="radio"
-                          class="radio bg-yellow-600 text-yellow-600 checked:ring-yellow-300 focus:ring-yellow-300"
-                          name="radio-colors" value="2" />
-                      </label>
-                    </div>
-                    <div>
-                      <label class="inline-flex items-center">
-                        <input type="radio" class="radio bg-black text-black checked:ring-gray-400 focus:ring-gray-400"
-                          name="radio-colors" value="3" />
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex flex-wrap justify-start gap-5">
-                  <div class="quantity inline-flex rounded-lg bg-white">
-                    <input
-                      class="quantity-value input-number w-12 border-none bg-transparent p-1 text-center text-lg text-gray-400 focus:border-none focus:ring-0"
-                      type="number" value="0" />
-                    <div class="flex w-5 flex-col justify-between">
-                      <button class="quantity-btn increment text-primary-color" type="button">
-                        <i class="bi bi-caret-up-fill"></i>
-                      </button>
-                      <button class="quantity-btn decrement text-primary-color" type="button">
-                        <i class="bi bi-caret-down-fill"></i>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="flex gap-2">
-                    <button
-                      class="btn-effect transition-all-300 flex h-full w-full items-center justify-center gap-2 rounded-lg bg-primary-color p-2"
-                      type="submit">
-                      <i class="bi bi-cart-fill flex text-xl text-white"></i>
-                      <span class="font-bold uppercase text-white">Add to cart</span>
-                    </button>
-                    <a class="tippy tippy-wishlist btn-wishlist transition-all-300 flex min-h-[40px] min-w-[40px] cursor-pointer items-center justify-center gap-2 rounded-lg bg-primary-color p-2 hover:bg-primary-hover"
-                      href="javascript:void(0)">
-                      <i class="bi bi-heart pointer-events-none flex text-white"></i>
-                    </a>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div class="mt-5 border-t border-gray-200 pt-5">
-              <div>
-                <b>Categories: </b>
-                <span><a href="#" class="text-zinc-500">Hardware</a>,
-                  <a href="#" class="text-zinc-500">Processors</a></span>
-              </div>
-              <div class="flex gap-2">
-                <b>Share:</b>
-                <div class="flex items-center gap-[10px]">
-                  <a href="#">
-                    <i class="bi bi-facebook transition-all-300 flex text-zinc-500 hover:text-primary-color"></i>
-                  </a>
-                  <a href="#">
-                    <i class="bi bi-twitter transition-all-300 flex text-zinc-500 hover:text-primary-color"></i>
-                  </a>
-                  <a href="#">
-                    <i class="bi bi-whatsapp transition-all-300 flex text-zinc-500 hover:text-primary-color"></i>
-                  </a>
-                  <a href="#">
-                    <i class="bi bi-link-45deg transition-all-300 flex text-zinc-500 hover:text-primary-color"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
   <!-- -->
 
   <div class="btn-gotop transition-all-300 invisible fixed bottom-[-999px] right-10 z-50 opacity-0">
@@ -1124,11 +996,11 @@
               </div>
               <div class="flex items-center gap-[10px] py-2">
                 <i class="bi bi-telephone-fill flex text-xl text-primary-color"></i>
-                <a class="break-all" href="#">0987-083245</a>
+                <a class="break-all" href="#">0123456789</a>
               </div>
               <div class="flex items-center gap-[10px] py-2">
                 <i class="bi bi-geo-alt-fill flex text-xl text-primary-color"></i>
-                <span class="break-all">22/26 Dong Hung Thuan 17 - Q12 - TP HCM</span>
+                <span class="break-all">22/26 - TP HCM</span>
               </div>
             </div>
           </div>
@@ -1238,9 +1110,9 @@
       </div>
     </div>
   </footer>
-
-  <script src="../unpkg.com/metismenujs%401.4.0/dist/metismenujs.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="./unpkg.com/metismenujs@1.4.0/dist/metismenujs.min.js"></script>
+  <script src="./libraries/iziToast/iziToast.min.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
